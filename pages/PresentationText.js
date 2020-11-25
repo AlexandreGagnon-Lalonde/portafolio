@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 import { COLORS, ABOUTMETEXT } from "./constant";
 
-const PresentationText = () => {
+export default function PresentationText() {
   return <Container>{ABOUTMETEXT}</Container>;
-};
+}
 
 const Container = styled.div`
   grid-column: 1;
@@ -13,5 +13,3 @@ const Container = styled.div`
   text-indent: 1em;
   text-align: justify;
 `;
-
-export default PresentationText;

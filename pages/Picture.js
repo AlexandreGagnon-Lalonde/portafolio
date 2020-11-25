@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Picture = () => {
+export default function Picture() {
   return (
     <ImageContainer>
       <Image src={"/assets/foxPicture.PNG"} />
@@ -18,5 +18,3 @@ const Image = styled.img`
 const ImageContainer = styled.div`
   border-radius: 50%;
 `;
-
-export default Picture;

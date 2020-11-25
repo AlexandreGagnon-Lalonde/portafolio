@@ -25,7 +25,11 @@ const MainProjectOBA = () => {
           <Technology>Node</Technology>
           <Technology>Mongo</Technology>
         </ProjectTechnologies>
-        <ProjectLink href={"https://github.com/AlexandreGagnon-Lalonde/online-booking-system"}>
+        <ProjectLink
+          href={
+            "https://github.com/AlexandreGagnon-Lalonde/online-booking-system"
+          }
+        >
           <VscGithubInverted />
         </ProjectLink>
       </ProjectDetails>
@@ -35,7 +39,7 @@ const MainProjectOBA = () => {
 
 const ProjectContainer = styled.div`
   margin: 40px 20px auto 40px;
-  background-color: ${({ theme }) => theme.yellow};
+  background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
 const ImageContainer = styled.div`
