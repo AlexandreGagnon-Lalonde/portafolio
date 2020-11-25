@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
-import XYZ from './xyz/xyz';
+import XYZ from "./xyz/xyz";
+import Navigation from "../navigation";
 
 const Archive = () => {
   return (
-    <Container><XYZ /></Container>
-  )
-}
+    <>
+      <Navigation />
+      <Container>
+        <XYZ />
+      </Container>
+    </>
+  );
+};
 
 const Container = styled.div`
   margin-top: 40px;
-`
+`;
 
-export default Archive
+export default Archive;
