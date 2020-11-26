@@ -1,7 +1,7 @@
 import "../styles/global.css";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-import { COLORS } from "./constant";
+import { COLORS } from "../public/constant";
 
 const GlobalStyle = createGlobalStyle`
   *, *:before, *:after {

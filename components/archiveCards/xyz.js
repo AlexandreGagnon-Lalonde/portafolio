@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { VscGithubInverted, VscGithub } from "react-icons/vsc";
 import { SiNetlify } from "react-icons/si";
 
-import { COLORS } from "../../constant";
+import { COLORS } from "../../public/constant";
 
 const XYZ = () => {
   return (

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import XYZ from "./xyz/xyz";
+import XYZ from "../../components/archiveCards/xyz";
 import Navigation from "../../components/navigation/navigation";
 
 const Archive = () => {

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { COLORS, ABOUTMETEXT } from "./constant";
+import { COLORS, ABOUTMETEXT } from "../../public/constant";
 
 export default function PresentationText() {
   return <Container>{ABOUTMETEXT}</Container>;

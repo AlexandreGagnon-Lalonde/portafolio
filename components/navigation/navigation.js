@@ -10,7 +10,7 @@ import ProjectsLink from "./projectsLink";
 import ArchiveLink from "./archiveLink";
 import ContactLink from "./contactLink";
 
-import { COLORS } from "../../pages/constant";
+import { COLORS } from "../../public/constant";
 
 export default function Navigation() {
   const [navBar, setNavBar] = useState(true);

@@ -3,12 +3,12 @@ import Link from "next/link";
 
 import styled from "styled-components";
 
-import PresentationText from "./PresentationText";
-import Picture from "./Picture";
-import CoolAnimation from "./CoolAnimation";
+import PresentationText from "../components/mainPage/PresentationText";
+import Picture from "../components/mainPage/Picture";
+import CoolAnimation from "../components/mainPage/CoolAnimation";
 import Navigation from "../components/navigation/navigation";
 
-import { COLORS } from "./constant";
+import { COLORS } from "../public/constant";
 
 export default function Home() {
   return (
