@@ -27,7 +27,6 @@ const SideBarContainer = styled.div`
   border-radius: 10px;
   background-color: ${COLORS.orange};
   padding: 10px;
-
 `;
 const SideBarLink = styled.a`
   display: block;
