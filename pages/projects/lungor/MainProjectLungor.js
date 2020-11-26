@@ -28,7 +28,7 @@ const MainProjectLungor = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 40px 40px auto 20px;
+  margin: 20px 20px auto 10px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
@@ -45,7 +45,9 @@ const ProjectTitle = styled.h3`
 const ProjectDetails = styled.div`
   margin: 10px 20px 20px 20px;
 `;
-const ProjectBio = styled.p``;
+const ProjectBio = styled.p`
+  margin-bottom: 10px;
+`;
 const ProjectLink = styled.a`
   display: block;
   width: 100%;
