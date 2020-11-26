@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styled from "styled-components";
 
-import MainProjectLungor from "../../components/principalCards/MainProjectLungor";
-import MainProjectOBA from "../../components/principalCards/MainProjectOBA";
+import MainProjectLungor from "../../components/principalCards/lungor/MainProjectLungor";
+import MainProjectOBA from "../../components/principalCards/oba/MainProjectOBA";
 import MoreMinorProjects from "./MoreMinorProjects";
 import Navigation from "../../components/navigation/navigation";
 

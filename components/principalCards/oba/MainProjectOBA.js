@@ -1,34 +1,33 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import { COLORS } from "../../public/constant";
+import { COLORS } from "../../../public/constant";
 
 import { VscGithubInverted, VscGithub } from "react-icons/vsc";
+import { BsArrowRight } from "react-icons/bs";
 
-const MainProjectLungor = () => {
+const MainProjectOBA = () => {
   return (
     <ProjectContainer>
       <ImageContainer>
-        <Image src={"/assets/LungorFiller.jpg"} />
+        <Image src={"/assets/OBAFiller.jpg"} />
       </ImageContainer>
       <ProjectDetails>
-        <ProjectTitle>Lungor</ProjectTitle>
+        <ProjectTitle>OBA</ProjectTitle>
         <ProjectBio>
           Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
           massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
           sociosqu ad litora torquent per conubia nostra, per inceptos
           himenaeos. Curabitur sodales ligula in libero.
         </ProjectBio>
-        <Link href={"/projects/lungor"} passHref>
-          <ProjectLink href={"/projects/lungor"}>Continue reading</ProjectLink>
-        </Link>
+        <ProjectLink href={"/projects/oba"}>Continue reading</ProjectLink>
       </ProjectDetails>
     </ProjectContainer>
   );
 };
 
 const ProjectContainer = styled.div`
-  margin: 20px 20px auto 10px;
+  margin: 20px 10px auto 20px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
@@ -62,4 +61,4 @@ const ProjectLink = styled.a`
   }
 `;
 
-export default MainProjectLungor;
+export default MainProjectOBA;
