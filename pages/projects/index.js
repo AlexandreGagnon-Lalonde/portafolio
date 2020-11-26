@@ -4,6 +4,7 @@ import styled from "styled-components";
 import MainProjectLungor from "./lungor/MainProjectLungor";
 import MainProjectOBA from "./oba/MainProjectOBA";
 import MoreMinorProjects from "./MoreMinorProjects";
+import Navigation from "../../components/navigation/navigation";
 
 const Projects = () => {
   return (
@@ -11,6 +12,7 @@ const Projects = () => {
       <Head>
         <title>Projects</title>
       </Head>
+      <Navigation />
       <ProjectContainer>
         <MainProjectOBA />
         <MainProjectLungor />

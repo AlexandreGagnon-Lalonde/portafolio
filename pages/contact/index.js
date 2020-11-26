@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
+import Navigation from "../../components/navigation/navigation";
+
 const Archive = () => {
   return (
-    <div>Contact page</div>
-  )
-}
+    <>
+      <Navigation />
+      <div>Contact page</div>
+    </>
+  );
+};
 
-export default Archive
+export default Archive;

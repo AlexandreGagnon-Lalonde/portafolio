@@ -6,6 +6,7 @@ import styled from "styled-components";
 import PresentationText from "./PresentationText";
 import Picture from "./Picture";
 import CoolAnimation from "./CoolAnimation";
+import Navigation from "../components/navigation/navigation";
 
 import { COLORS } from "./constant";
 
@@ -16,7 +17,7 @@ export default function Home() {
         <title>Portafolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navigation />
       <AboutMeContainer>
         <PresentationText />
         <Picture />

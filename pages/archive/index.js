@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import XYZ from "./xyz/xyz";
-import Navigation from "../navigation";
+import Navigation from "../../components/navigation/navigation";
 
 const Archive = () => {
   return (
