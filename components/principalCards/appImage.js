@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Problems() {
+export default function AppImage() {
   return <InfoContainer>
       problems
     </InfoContainer>

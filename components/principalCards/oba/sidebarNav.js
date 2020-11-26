@@ -36,7 +36,7 @@ const SideBarLink = styled.a`
   transition: all 0.5s;
   width: auto;
   height: 30px;
-  
+
   &:hover {
     color: ${COLORS.blue};
   }
