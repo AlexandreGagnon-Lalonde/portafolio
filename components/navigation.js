@@ -1,23 +1,26 @@
 import Link from "next/link";
-
+import { useRouter } from 'next/router';
 import styled from "styled-components";
 
-import { COLORS } from "./constant";
+import { COLORS } from "../pages/constant";
 
 export default function Navigation() {
+  const router = useRouter();
+
+  console.log(router.route)
   return (
     <LinkContainer>
       <Link href={"/"} passHref>
-        <NavigationLink>Home</NavigationLink>
+        <NavigationLink style={router.route === '/' ? { color: `${COLORS.orange}`} : null}>Home</NavigationLink>
       </Link>
       <Link href={"/projects"} passHref>
-        <NavigationLink>Projects</NavigationLink>
+        <NavigationLink style={router.route === '/projects' ? { color: `${COLORS.orange}`} : null}>Projects</NavigationLink>
       </Link>
       <Link href={"/archive"} passHref>
-        <NavigationLink>Archive</NavigationLink>
+        <NavigationLink style={router.route === '/archive' ? { color: `${COLORS.orange}`} : null}>Archive</NavigationLink>
       </Link>
       <Link href={"/contact"} passHref>
-        <NavigationLink>Contact Me</NavigationLink>
+        <NavigationLink style={router.route === '/contact' ? { color: `${COLORS.orange}`} : null}>Contact Me</NavigationLink>
       </Link>
     </LinkContainer>
   );
@@ -37,4 +40,8 @@ const NavigationLink = styled.a`
   font-weight: bold;
   color: ${COLORS.white};
   text-decoration: none;
+
+  &.active {
+    color: red;
+  }
 `;
