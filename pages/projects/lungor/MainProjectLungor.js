@@ -19,14 +19,9 @@ const MainProjectLungor = () => {
           sociosqu ad litora torquent per conubia nostra, per inceptos
           himenaeos. Curabitur sodales ligula in libero.
         </ProjectBio>
-        <ProjectTechnologies>
-          <Technology>React</Technology>
-          <Technology>Node</Technology>
-          <Technology>Mongo</Technology>
-        </ProjectTechnologies>
-        <ProjectLink href={"https://github.com/AlexandreGagnon-Lalonde/lungor"}>
-          <VscGithubInverted />
-        </ProjectLink>
+        <Link href={"/projects/lungor"} passHref>
+          <ProjectLink href={"/projects/lungor"}>Continue reading</ProjectLink>
+        </Link>
       </ProjectDetails>
     </ProjectContainer>
   );
@@ -38,32 +33,31 @@ const ProjectContainer = styled.div`
   border-radius: 20px;
 `;
 const ImageContainer = styled.div`
-  margin: 40px 40px 20px 40px;
+  margin: 20px 20px 10px 20px;
 `;
 const Image = styled.img`
   width: 100%;
   border-radius: 10px;
 `;
 const ProjectTitle = styled.h3`
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 `;
 const ProjectDetails = styled.div`
-  margin: 20px 40px 20px 40px;
+  margin: 10px 20px 20px 20px;
 `;
-const ProjectBio = styled.p`
-  margin-bottom: 20px;
-`;
-const ProjectTechnologies = styled.ul`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-`;
-const Technology = styled.li``;
-const ProjectLink = styled(Link)`
+const ProjectBio = styled.p``;
+const ProjectLink = styled.a`
   display: block;
   width: 100%;
-  text-align: center;
-  color: ${COLORS.black};
+  text-align: right;
+  color: ${COLORS.white};
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: ${COLORS.orange};
+  }
 `;
 
 export default MainProjectLungor;
