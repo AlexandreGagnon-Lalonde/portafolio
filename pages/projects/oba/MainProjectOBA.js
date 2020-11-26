@@ -5,6 +5,7 @@ import Link from "next/link";
 import { COLORS } from "../../constant";
 
 import { VscGithubInverted, VscGithub } from "react-icons/vsc";
+import { BsArrowRight } from "react-icons/bs";
 
 const MainProjectOBA = () => {
   return (
@@ -20,18 +21,7 @@ const MainProjectOBA = () => {
           sociosqu ad litora torquent per conubia nostra, per inceptos
           himenaeos. Curabitur sodales ligula in libero.
         </ProjectBio>
-        <ProjectTechnologies>
-          <Technology>React</Technology>
-          <Technology>Node</Technology>
-          <Technology>Mongo</Technology>
-        </ProjectTechnologies>
-        <ProjectLink
-          href={
-            "https://github.com/AlexandreGagnon-Lalonde/online-booking-system"
-          }
-        >
-          <VscGithubInverted />
-        </ProjectLink>
+        <ProjectLink href={"/projects/oba"}>Continue reading</ProjectLink>
       </ProjectDetails>
     </ProjectContainer>
   );
