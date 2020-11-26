@@ -1,15 +1,21 @@
-import React from "react";
+import Head from "next/head";
 import styled from "styled-components";
 
 const OBA = () => {
   return (
-    <div>
-      <ProjectTechnologies>
-        <Technology>React</Technology>
-        <Technology>Node</Technology>
-        <Technology>Mongo</Technology>
-      </ProjectTechnologies>
-    </div>
+    <>
+      <Head>
+        <title>OBA</title>
+      </Head>
+
+      <div>
+        <ProjectTechnologies>
+          <Technology>React</Technology>
+          <Technology>Node</Technology>
+          <Technology>Mongo</Technology>
+        </ProjectTechnologies>
+      </div>
+    </>
   );
 };
 
