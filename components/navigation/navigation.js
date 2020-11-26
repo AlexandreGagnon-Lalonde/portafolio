@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { useState } from "react";
 
-import { FaHamburger } from "react-icons/fa";
+import { FaHamburger, FaRegWindowMinimize } from "react-icons/fa";
+import { FiMinimize } from "react-icons/fi";
+import { VscChromeMinimize } from "react-icons/vsc";
 
 import AboutMeLink from "./aboutMeLink";
 import ProjectsLink from "./projectsLink";
@@ -17,17 +19,27 @@ export default function Navigation() {
     setNavBar(!navBar);
   };
 
+  const minimizeMenuStyles = {
+    color: `${COLORS.white}`,
+    transform: "scale(3)",
+    margin: "auto",
+  };
+
   return (
-    <LinkContainer onClick={handleClick}>
+    <LinkContainer>
       {navBar ? (
         <>
+          <VscChromeMinimize style={minimizeMenuStyles} onClick={handleClick} />
           <AboutMeLink />
           <ProjectsLink />
           <ArchiveLink />
           <ContactLink />
         </>
       ) : (
-        <FaHamburger style={{ color: `${COLORS.orange}` }} />
+        <FaHamburger
+          style={{ color: `${COLORS.orange}` }}
+          onClick={handleClick}
+        />
       )}
     </LinkContainer>
   );
@@ -35,8 +47,8 @@ export default function Navigation() {
 
 const LinkContainer = styled.div`
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   background-color: ${COLORS.blue};
   padding: 10px;
   display: flex;
