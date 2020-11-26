@@ -5,6 +5,7 @@ import GeneralInfo from "../../../components/principalCards/oba/generalInfo";
 import Problems from "../../../components/principalCards/oba/problems";
 import Lessons from "../../../components/principalCards/oba/lessons";
 import SideBarNav from "../../../components/principalCards/oba/sidebarNav";
+import Navigation from '../../../components/navigation/navigation';
 
 const OBA = () => {
   return (
@@ -12,6 +13,7 @@ const OBA = () => {
       <Head>
         <title>OBA</title>
       </Head>
+      <Navigation />
       <SideBarNav />
       <a name={"info"}>
         <GeneralInfo id={"info"} />
