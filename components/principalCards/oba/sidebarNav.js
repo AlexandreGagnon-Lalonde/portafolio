@@ -6,14 +6,17 @@ import { COLORS } from "../../../public/constant";
 export default function SideBarNav() {
   return (
     <SideBarContainer>
-      <Link href={"#info"} passHref>
-        <SideBarLink>general info</SideBarLink>
+      <Link href={"#intro"} passHref>
+        <SideBarLink>Introduction</SideBarLink>
       </Link>
-      <Link href={"#problem"} passHref>
-        <SideBarLink>problems</SideBarLink>
+      <Link href={"#purpose"} passHref>
+        <SideBarLink>Purpose</SideBarLink>
+      </Link>
+      <Link href={"#content"} passHref>
+        <SideBarLink>Content</SideBarLink>
       </Link>
       <Link href={"#lesson"} passHref>
-        <SideBarLink>lessons</SideBarLink>
+        <SideBarLink>Lessons</SideBarLink>
       </Link>
     </SideBarContainer>
   );
@@ -23,7 +26,7 @@ const SideBarContainer = styled.div`
   position: fixed;
   bottom: 5px;
   left: 5px;
-  height: 100px;
+  height: 130px;
   border-radius: 10px;
   background-color: ${COLORS.orange};
   padding: 10px;

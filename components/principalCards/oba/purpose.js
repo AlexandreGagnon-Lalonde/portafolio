@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Problems() {
+export default function Purpose() {
   return <InfoContainer>
       problems
     </InfoContainer>

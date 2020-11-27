@@ -2,8 +2,9 @@ import Head from "next/head";
 import styled from "styled-components";
 
 import GeneralInfo from "../../../components/principalCards/oba/generalInfo";
-import Problems from "../../../components/principalCards/oba/problems";
-import Lessons from "../../../components/principalCards/oba/lessons";
+import Purpose from "../../../components/principalCards/oba/purpose";
+import Content from "../../../components/principalCards/oba/content";
+import Lesson from '../../../components/principalCards/oba/lesson.js'
 import SideBarNav from "../../../components/principalCards/oba/sidebarNav";
 import Navigation from '../../../components/navigation/navigation';
 
@@ -18,11 +19,14 @@ const OBA = () => {
       <a name={"info"}>
         <GeneralInfo id={"info"} />
       </a>
-      <a name={"problem"}>
-        <Problems id={"problem"} />
+      <a name={"purpose"}>
+        <Purpose id={"purpose"} />
+      </a>
+      <a name={"content"}>
+        <Content id={"content"} />
       </a>
       <a name={"lesson"}>
-        <Lessons id={"lesson"} />
+        <Lesson id={"lesson"} />
       </a>
     </>
   );

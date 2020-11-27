@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default function Lessons() {
+export default function Lesson() {
   return <InfoContainer>
       lessons
     </InfoContainer>
