@@ -8,10 +8,10 @@ export default function Tools() {
     <Container>
       <AppTitle>OnlineBookingApplication</AppTitle>
       <TechnologiesContainer>
-        <ReactLogo>react</ReactLogo>
-        <NodeLogo>node</NodeLogo>
-        <MongoLogo>mongo</MongoLogo>
-        <StyledComponentLogo>styled compo</StyledComponentLogo>
+        <ReactLogo><ReactImage src={'/assets/react.png'} /></ReactLogo>
+        <NodeLogo><NodeImage src={'/assets/node.png'} /></NodeLogo>
+        <MongoLogo><MongoImage src={'/assets/MongoDB_logo_01.png'} /></MongoLogo>
+        <StyledComponentLogo><StyledCompImage src={'/assets/styled_component.png'} /></StyledComponentLogo>
       </TechnologiesContainer>
     </Container>
   )
@@ -44,37 +44,48 @@ const TechnologiesContainer = styled.div`
   position: absolute;
   top: 30%;
   left: calc(25% - 300px / 2);
-  background-color: turquoise;
   height: 300px;
   width: 300px; 
-  animation: ${rotateLogos} 20s infinite linear
+  animation: ${rotateLogos} 30s infinite linear
 
 `
 const ReactLogo = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-    animation: ${rotateLogo} 20s infinite linear
+    animation: ${rotateLogo} 30s infinite linear
 
+`
+const ReactImage = styled.img`
+  width: 120px;
 `
 const NodeLogo = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-    animation: ${rotateLogo} 20s infinite linear
+    animation: ${rotateLogo} 30s infinite linear
 
+`
+const NodeImage = styled.img`
+  width: 120px;
 `
 const MongoLogo = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-    animation: ${rotateLogo} 20s infinite linear
+    animation: ${rotateLogo} 30s infinite linear
 
+`
+const MongoImage = styled.img`
+  width: 120px;
 `
 const StyledComponentLogo = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
-  animation: ${rotateLogo} 20s infinite linear
+  animation: ${rotateLogo} 30s infinite linear
 
+`
+const StyledCompImage = styled.img`
+  width: 120px;
 `
