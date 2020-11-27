@@ -16,8 +16,8 @@ const OBA = () => {
       </Head>
       <Navigation />
       <SideBarNav />
-      <a name={"info"}>
-        <GeneralInfo id={"info"} />
+      <a name={"intro"}>
+        <GeneralInfo id={"intro"} />
       </a>
       <a name={"purpose"}>
         <Purpose id={"purpose"} />

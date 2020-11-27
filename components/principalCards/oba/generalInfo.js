@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Tools from '../tools';
-import AppImage from '../appImage';
+import Tools from '../GeneralInfo/tools';
+import AppImage from '../GeneralInfo/appImage';
 
 export default function GeneralInfo() {
   return <InfoContainer>
