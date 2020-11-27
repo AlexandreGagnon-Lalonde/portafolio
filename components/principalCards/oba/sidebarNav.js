@@ -21,7 +21,7 @@ export default function SideBarNav() {
 
 const SideBarContainer = styled.div`
   position: fixed;
-  top: 45%;
+  bottom: 5px;
   left: 5px;
   height: 100px;
   border-radius: 10px;

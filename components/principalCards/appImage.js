@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
-export default function AppImage() {
+export default function AppImage({ src }) {
   return <InfoContainer>
-      problems
+      <StyledImage src={src}/>
     </InfoContainer>
 }
 
 const InfoContainer = styled.div`
-  width: 100%;
   height: 100vh;
-  background-color: black;
-  color: white;
+  position: relative;
+`
+const StyledImage = styled.img`
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
 `

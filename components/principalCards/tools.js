@@ -36,17 +36,17 @@ const rotateLogo = keyframes`
 `
 const Container = styled.div`
   height: 100vh;
-
-
 `
 const AppTitle = styled.h3`
 
 `
 const TechnologiesContainer = styled.div`
-  position: relative;
+  position: absolute;
+  top: 30%;
+  left: calc(25% - 300px / 2);
   background-color: turquoise;
-  height: 40%;
-  width: 40%; 
+  height: 300px;
+  width: 300px; 
   animation: ${rotateLogos} 20s infinite linear
 
 `
