@@ -54,4 +54,5 @@ const LinkContainer = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  z-index: 1;
 `;
