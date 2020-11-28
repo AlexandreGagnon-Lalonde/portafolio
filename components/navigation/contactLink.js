@@ -8,9 +8,8 @@ export default function ContactLink() {
   const route = useRouter().route;
 
   return (
-    <Link href={"/contact"} passHref>
+    <Link href={"#contact"} passHref>
       <NavigationLink
-        style={route === "/contact" ? { color: `${COLORS.orange}` } : null}
         onClick={(ev) => ev.stopPropagation()}
       >
         Contact

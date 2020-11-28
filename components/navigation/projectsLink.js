@@ -8,7 +8,7 @@ export default function ProjectsLink() {
   const route = useRouter().route;
 
   return (
-    <Link href={"/projects"} passHref>
+    <Link href={"#project"} passHref>
       <NavigationLink
         style={route === "/projects" ? { color: `${COLORS.orange}` } : null}
         onClick={(ev) => ev.stopPropagation()}

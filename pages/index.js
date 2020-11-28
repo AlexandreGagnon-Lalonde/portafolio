@@ -21,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <AboutMeContainer>
+      <AboutMeContainer id={'about'}>
         <PresentationText />
         <Picture />
         <CoolAnimation />
@@ -31,7 +31,7 @@ export default function Home() {
         <MainProjectLungor />
         <MoreMinorProjects />
       </ProjectContainer>
-      <ContactMe>Contact me form</ContactMe>
+      <ContactMe id={'contact'}>Contact me form</ContactMe>
     </div>
   );
 }
