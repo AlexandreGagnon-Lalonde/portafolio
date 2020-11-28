@@ -13,7 +13,7 @@ export default function ContactLink() {
         style={route === "/contact" ? { color: `${COLORS.orange}` } : null}
         onClick={(ev) => ev.stopPropagation()}
       >
-        Contact Me
+        Contact
       </NavigationLink>
     </Link>
   );

@@ -13,7 +13,7 @@ export default function AboutMeLink() {
         style={route === "/" ? { color: `${COLORS.orange}` } : null}
         onClick={(ev) => ev.stopPropagation()}
       >
-        Home
+        About
       </NavigationLink>
     </Link>
   );

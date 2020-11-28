@@ -32,7 +32,6 @@ export default function Navigation() {
           <VscChromeMinimize style={minimizeMenuStyles} onClick={handleClick} />
           <AboutMeLink />
           <ProjectsLink />
-          <ArchiveLink />
           <ContactLink />
         </>
       ) : (
