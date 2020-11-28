@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { COLORS } from "../../public/constant";
 
 const CoolAnimation = () => {
   return (
     <ButtonContainer>
-      <Button href={"/projects"}>More</Button>
+      <Link href={"#project"}>
+        <NavigationLink>projects down here</NavigationLink>
+      </Link>
     </ButtonContainer>
   );
 };
@@ -13,6 +16,18 @@ const ButtonContainer = styled.div`
   grid-column: 2;
   grid-row: 2;
 `;
-const Button = styled(Link)``;
+const NavigationLink = styled.a`
+  display: block;
+  font-weight: bold;
+  color: ${COLORS.black};
+  text-decoration: none;
+  transition: all 0.5s;
+  width: auto;
+  height: 30px;
+
+  &:hover {
+    color: ${COLORS.blue};
+  }
+`;
 
 export default CoolAnimation;

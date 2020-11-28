@@ -7,6 +7,9 @@ import PresentationText from "../components/mainPage/PresentationText";
 import Picture from "../components/mainPage/Picture";
 import CoolAnimation from "../components/mainPage/CoolAnimation";
 import Navigation from "../components/navigation/navigation";
+import MainProjectLungor from "../components/principalCards/lungor/MainProjectLungor";
+import MainProjectOBA from "../components/principalCards/oba/MainProjectOBA";
+import MoreMinorProjects from "../components/mainPage/MoreMinorProjects";
 
 import { COLORS } from "../public/constant";
 
@@ -23,8 +26,12 @@ export default function Home() {
         <Picture />
         <CoolAnimation />
       </AboutMeContainer>
-      <ProjectContainer></ProjectContainer>
-      <ContactMe></ContactMe>
+      <ProjectContainer id={'project'}>
+        <MainProjectOBA />
+        <MainProjectLungor />
+        <MoreMinorProjects />
+      </ProjectContainer>
+      <ContactMe>Contact me form</ContactMe>
     </div>
   );
 }
@@ -35,5 +42,11 @@ const AboutMeContainer = styled.div`
   grid-template-rows: 60% 40%;
   height: 100vh;
 `;
-const ProjectContainer = styled.div``
-const ContactMe = styled.div``
+const ProjectContainer = styled.div`
+  display: grid;
+  grid-template-columns: 45% 45% 10%;
+  height: 100vh;
+`;
+const ContactMe = styled.div`
+  height: 100vh;
+`;

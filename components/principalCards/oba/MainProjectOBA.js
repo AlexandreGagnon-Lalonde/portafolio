@@ -35,7 +35,7 @@ const ImageContainer = styled.div`
   margin: 20px 20px 10px 20px;
 `;
 const Image = styled.img`
-  width: 100%;
+  width: 80%;
   border-radius: 10px;
 `;
 const ProjectTitle = styled.h3`
