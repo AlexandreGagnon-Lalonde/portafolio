@@ -23,13 +23,17 @@ export default function Home() {
         <Picture />
         <CoolAnimation />
       </AboutMeContainer>
+      <ProjectContainer></ProjectContainer>
+      <ContactMe></ContactMe>
     </div>
   );
 }
 
 const AboutMeContainer = styled.div`
   display: grid;
-  grid-template-columns: 55% 45%;
-  grid-template-rows: 55% 45%;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 60% 40%;
   height: 100vh;
 `;
+const ProjectContainer = styled.div``
+const ContactMe = styled.div``
