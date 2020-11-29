@@ -9,20 +9,20 @@ export default function ContactForm() {
         <FormInputs>
           <MessagerInfo>
             <NameContainer>
-              <label for={"name"}>Full name</label>
+              <label htmlFor={"name"}>Full name</label>
               <input type={"text"} id={"name"} name={"name"} required />
             </NameContainer>
             <EmailContainer>
-              <label for={"email"}>Email</label>
+              <label htmlFor={"email"}>Email</label>
               <input type={"email"} id={"email"} name={"email"} required />
             </EmailContainer>
             <SubjectContainer>
-              <label for={"subject"}>Subject</label>
+              <label htmlFor={"subject"}>Subject</label>
               <input type={"text"} id={"subject"} name={"subject"} required />
             </SubjectContainer>
           </MessagerInfo>
           <MessageContainer>
-            <label for={"message"}>Message</label>
+            <label htmlFor={"message"}>Message</label>
             <TextArea id={"message"} name={"message"} rows={'10'} cols={'50'} />
           </MessageContainer>
         </FormInputs>

@@ -10,7 +10,9 @@ const MainProjectOBA = () => {
   return (
     <ProjectContainer>
       <ImageContainer>
-        <Image src={"/assets/OBAFiller.jpg"} />
+        <Video id={'OBAvideo'} playsinline autoPlay muted loop>
+          <source src={'/assets/OBAvideo.mp4'} />
+        </Video>
       </ImageContainer>
       <ProjectDetails>
         <ProjectTitle>OBA</ProjectTitle>
@@ -38,6 +40,10 @@ const Image = styled.img`
   width: 80%;
   border-radius: 10px;
 `;
+const Video = styled.video`
+  width: 100%;
+  border-radius: 10px;
+`
 const ProjectTitle = styled.h3`
   margin-bottom: 10px;
 `;
