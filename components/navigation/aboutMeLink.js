@@ -25,7 +25,8 @@ const NavigationLink = styled.a`
   text-decoration: none;
   transition: all 0.5s;
   width: auto;
-
+  z-index: 1;
+  
   &:hover {
     color: ${COLORS.orange};
   }

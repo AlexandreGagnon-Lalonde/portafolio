@@ -11,6 +11,7 @@ import MainProjectLungor from "../components/principalCards/lungor/MainProjectLu
 import MainProjectOBA from "../components/principalCards/oba/MainProjectOBA";
 import MoreMinorProjects from "../components/mainPage/MoreMinorProjects";
 import ContactForm from '../components/contact/ContactForm'
+import PlatformLink from '../components/contact/PlatformLink'
 
 import { COLORS } from "../public/constant";
 
@@ -32,7 +33,7 @@ export default function Home() {
         <MainProjectLungor />
         <MoreMinorProjects />
       </ProjectContainer>
-      <ContactMe id={'contact'}><ContactForm /></ContactMe>
+      <ContactMe id={'contact'}><ContactForm /><PlatformLink /></ContactMe>
     </div>
   );
 }
