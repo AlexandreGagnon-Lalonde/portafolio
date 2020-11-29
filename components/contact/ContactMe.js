@@ -18,6 +18,6 @@ export default function ContactMe () {
 };
 
 const ContactContainer = styled.div`
-background: rgb(255,218,119);
-background: linear-gradient(0deg, rgba(255,218,119,1) 90%, rgba(251,246,240,1) 100%);
+background: ${COLORS.blue};
+background: linear-gradient(0deg, ${COLORS.blue} 90%, rgba(251,246,240,1) 100%);
 `

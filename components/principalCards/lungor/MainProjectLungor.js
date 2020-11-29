@@ -14,14 +14,11 @@ const MainProjectLungor = () => {
       <ProjectDetails>
         <ProjectTitle>Lungor</ProjectTitle>
         <ProjectBio>
-          Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-          massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per inceptos
-          himenaeos. Curabitur sodales ligula in libero.
+          Still Loading...
         </ProjectBio>
-        <Link href={"/projects/lungor"} passHref>
+        {/* <Link href={"/projects/lungor"} passHref>
           <ProjectLink href={"/projects/lungor"}>Continue reading</ProjectLink>
-        </Link>
+        </Link> */}
       </ProjectDetails>
     </ProjectContainer>
   );

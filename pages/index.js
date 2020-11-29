@@ -25,7 +25,6 @@ export default function Home() {
       <AboutMeContainer id={'about'}>
         <PresentationText />
         <Picture />
-        <CoolAnimation />
       </AboutMeContainer>
       <ProjectContainer id={'project'}>
         <MainProjectOBA />
@@ -40,7 +39,6 @@ export default function Home() {
 const AboutMeContainer = styled.div`
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 60% 40%;
   height: 100vh;
 `;
 const ProjectContainer = styled.div`
