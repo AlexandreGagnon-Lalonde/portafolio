@@ -7,11 +7,10 @@ export default function PurposeImage({ src }) {
 }
 
 const InfoContainer = styled.div`
-  height: 100vh;
-  position: relative;
-`
+display: block;`
 const StyledImage = styled.img`
-  width: 100%;
-  position: absolute;
-  bottom: 20%;
+width: 90%;
+margin: 20px;
+border-radius: 10px;
+box-shadow: 0px 2px 22px 2px rgba(16,16,16,1);
 `

@@ -7,6 +7,6 @@ export default function ContentText() {
 }
 
 const InfoContainer = styled.div`
-  width: 100%;
-  height: 100vh;
+  margin: 30px auto 30px auto;
+  width: 80%;
 `

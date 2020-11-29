@@ -26,9 +26,6 @@ const OBA = () => {
       <a name={"content"}>
         <Content id={"content"} />
       </a>
-      <a name={"lesson"}>
-        <Lesson id={"lesson"} />
-      </a>
     </>
   );
 };

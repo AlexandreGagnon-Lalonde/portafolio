@@ -15,9 +15,6 @@ export default function SideBarNav() {
       <Link href={"#content"} passHref>
         <SideBarLink>Content</SideBarLink>
       </Link>
-      <Link href={"#lesson"} passHref>
-        <SideBarLink>Lessons</SideBarLink>
-      </Link>
     </SideBarContainer>
   );
 }
@@ -26,7 +23,7 @@ const SideBarContainer = styled.div`
   position: fixed;
   bottom: 5px;
   left: 5px;
-  height: 130px;
+  height: 100px;
   border-radius: 10px;
   background-color: ${COLORS.orange};
   padding: 10px;
