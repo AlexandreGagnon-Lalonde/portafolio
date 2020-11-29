@@ -28,7 +28,8 @@ const MainProjectLungor = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 20px 20px auto 10px;
+grid-column: 1;
+  margin: 20px 20px auto 20px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;

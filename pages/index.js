@@ -46,8 +46,7 @@ const AboutMeContainer = styled.div`
 `;
 const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: 45% 45% 10%;
-  height: 100vh;
+  grid-template-columns: 80% 20%;
 `;
 const ContactMe = styled.div`
   height: 100vh;
