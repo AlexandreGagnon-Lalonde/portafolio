@@ -11,7 +11,7 @@ const MainProjectOBA = () => {
     <ProjectContainer>
       <ImageContainer>
         <Video id={'OBAvideo'} playsinline autoPlay muted loop>
-          <source src={'/assets/OBAvideo.mp4'} />
+          <source src={'/assets/OBAvideoo.mp4'} />
         </Video>
       </ImageContainer>
       <ProjectDetails>
@@ -29,7 +29,7 @@ const MainProjectOBA = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 20px 10px auto 20px;
+  margin: 20px 20px auto 20px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
