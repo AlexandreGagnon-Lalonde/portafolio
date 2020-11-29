@@ -13,11 +13,10 @@ const Image = styled.img`
   display: block;
   margin: 0 auto;
   height: auto;
-  width: 400px;
-  border-radius: 50%;
+  width: 80%;
+  border-radius: 10px;
 `;
 const ImageContainer = styled.div`
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
