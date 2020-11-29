@@ -10,7 +10,6 @@ export default function AboutMeLink() {
   return (
     <Link href={"#about"} passHref>
       <NavigationLink
-        style={route === "/" ? { color: `${COLORS.orange}` } : null}
         onClick={(ev) => ev.stopPropagation()}
       >
         About

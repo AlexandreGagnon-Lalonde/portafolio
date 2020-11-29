@@ -10,6 +10,7 @@ import Navigation from "../components/navigation/navigation";
 import MainProjectLungor from "../components/principalCards/lungor/MainProjectLungor";
 import MainProjectOBA from "../components/principalCards/oba/MainProjectOBA";
 import MoreMinorProjects from "../components/mainPage/MoreMinorProjects";
+import ContactForm from '../components/contact/ContactForm'
 
 import { COLORS } from "../public/constant";
 
@@ -31,7 +32,7 @@ export default function Home() {
         <MainProjectLungor />
         <MoreMinorProjects />
       </ProjectContainer>
-      <ContactMe id={'contact'}>Contact me form</ContactMe>
+      <ContactMe id={'contact'}><ContactForm /></ContactMe>
     </div>
   );
 }

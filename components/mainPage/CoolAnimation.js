@@ -23,7 +23,8 @@ const NavigationLink = styled.a`
   text-decoration: none;
   transition: all 0.5s;
   width: auto;
-  height: 30px;
+  height: 100%;
+  
 
   &:hover {
     color: ${COLORS.blue};
