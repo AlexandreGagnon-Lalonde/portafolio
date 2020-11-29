@@ -9,7 +9,7 @@ export default function HomeLink() {
       <NavigationLink
         onClick={(ev) => ev.stopPropagation()}
       >
-        Contact
+        BringMeBack
       </NavigationLink>
     </Link>
   );
@@ -22,8 +22,12 @@ const NavigationLink = styled.a`
   text-decoration: none;
   transition: all 0.5s;
   width: auto;
+  letter-spacing: 0px;
+  background-color: ${COLORS.blue};
+  border-radius: 10px;
+  padding: 10px;
 
   &:hover {
-    color: ${COLORS.orange};
+    letter-spacing: 10px;
   }
 `;
