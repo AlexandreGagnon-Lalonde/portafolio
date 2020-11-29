@@ -10,8 +10,7 @@ import Navigation from "../components/navigation/navigation";
 import MainProjectLungor from "../components/principalCards/lungor/MainProjectLungor";
 import MainProjectOBA from "../components/principalCards/oba/MainProjectOBA";
 import MoreMinorProjects from "../components/mainPage/MoreMinorProjects";
-import ContactForm from '../components/contact/ContactForm'
-import PlatformLink from '../components/contact/PlatformLink'
+import ContactMe from '../components/contact/ContactMe'
 
 import { COLORS } from "../public/constant";
 
@@ -33,7 +32,7 @@ export default function Home() {
         <MainProjectLungor />
         <MoreMinorProjects />
       </ProjectContainer>
-      <ContactMe id={'contact'}><ContactForm /><PlatformLink /></ContactMe>
+      <ContactMe />
     </div>
   );
 }
@@ -47,7 +46,4 @@ const AboutMeContainer = styled.div`
 const ProjectContainer = styled.div`
   display: grid;
   grid-template-columns: 80% 20%;
-`;
-const ContactMe = styled.div`
-  height: 100vh;
 `;

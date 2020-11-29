@@ -7,7 +7,8 @@ import Content from "../../../components/principalCards/oba/content";
 import Lesson from '../../../components/principalCards/oba/lesson.js'
 import SideBarNav from "../../../components/principalCards/oba/sidebarNav";
 import Navigation from '../../../components/navigation/navigation';
-import HomeLink from '../../../components/navigation/HomeLink'
+import HomeLink from '../../../components/navigation/HomeLink';
+import ContactMe from '../../../components/contact/ContactMe';
 
 const OBA = () => {
   return (
@@ -25,6 +26,9 @@ const OBA = () => {
       </a>
       <a name={"content"}>
         <Content id={"content"} />
+      </a>
+      <a name={"contact"}>
+        <ContactMe id={"contact"} />
       </a>
     </>
   );
