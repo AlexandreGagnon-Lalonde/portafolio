@@ -11,13 +11,13 @@ export default function Picture() {
 
 const Image = styled.img`
   display: block;
-  margin: 0 auto;
   height: auto;
   width: 80%;
   border-radius: 10px;
 `;
 const ImageContainer = styled.div`
+grid-row: 1 / 3;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 `;
