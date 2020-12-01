@@ -20,10 +20,7 @@ const MainProjectOBA = () => {
           <ProjectLink href={"/projects/oba"}>Continue reading</ProjectLink>
         </ProjectHeader>
         <ProjectBio>
-          Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
-          massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per inceptos
-          himenaeos. Curabitur sodales ligula in libero.
+          Online platform that allows gym members to register for some specific classes. Users can interact with eachothers through private messages and they can leave comments every day on the workout of the day (WOD). To allow members to give anonymous (or not) feedback there is a suggestion box on the homepage and the admin is able to see all of them on his profile page.
         </ProjectBio>
       </ProjectDetails>
     </ProjectContainer>
