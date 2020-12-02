@@ -4,11 +4,11 @@ import styled from "styled-components";
 import GeneralInfo from "../../../components/principalCards/oba/generalInfo";
 import Purpose from "../../../components/principalCards/oba/purpose";
 import Content from "../../../components/principalCards/oba/content";
-import Lesson from '../../../components/principalCards/oba/lesson.js'
+import Lesson from "../../../components/principalCards/oba/lesson.js";
 import SideBarNav from "../../../components/principalCards/oba/sidebarNav";
-import Navigation from '../../../components/navigation/navigation';
-import HomeLink from '../../../components/navigation/HomeLink';
-import ContactMe from '../../../components/contact/ContactMe';
+import Navigation from "../../../components/navigation/navigation";
+import HomeLink from "../../../components/navigation/HomeLink";
+import ContactMe from "../../../components/contact/ContactMe";
 
 const OBA = () => {
   return (
@@ -17,19 +17,14 @@ const OBA = () => {
         <title>OBA</title>
       </Head>
       <Navigation />
-      <SideBarNav />
-      <a name={"intro"}>
+      <FirstPartOfProject>
         <GeneralInfo id={"intro"} />
-      </a>
-      <a name={"purpose"}>
         <Purpose id={"purpose"} />
-      </a>
-      <a name={"content"}>
+      </FirstPartOfProject>
+      <SecondPartOfProject>
         <Content id={"content"} />
-      </a>
-      <a name={"contact"}>
         <ContactMe id={"contact"} />
-      </a>
+      </SecondPartOfProject>
     </>
   );
 };
@@ -40,5 +35,8 @@ const ProjectTechnologies = styled.ul`
   margin-bottom: 20px;
 `;
 const Technology = styled.li``;
-
+const FirstPartOfProject = styled.div`
+  display: flex;
+`;
+const SecondPartOfProject = styled.div``;
 export default OBA;

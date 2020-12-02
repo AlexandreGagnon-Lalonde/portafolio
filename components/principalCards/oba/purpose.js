@@ -11,7 +11,7 @@ export default function Purpose() {
 }
 
 const InfoContainer = styled.div`
-display: grid;
-grid-template-columns: 1fr 1fr;
+display: flex;
+flex-direction: column;
   width: 100%;
 `
