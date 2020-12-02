@@ -9,7 +9,7 @@ const MainProjectLungor = () => {
   return (
     <ProjectContainer>
       <ImageContainer>
-        <Image src={"/assets/LungorFiller.jpg"} />
+        <Image src={"/assets/lungorFiller.png"} />
       </ImageContainer>
       <ProjectDetails>
         <ProjectTitle>Lungor</ProjectTitle>
@@ -34,7 +34,7 @@ const ImageContainer = styled.div`
   margin: 20px 20px 10px 20px;
 `;
 const Image = styled.img`
-  width: 80%;
+  width: 100%;
   border-radius: 10px;
 `;
 const ProjectTitle = styled.h3`
