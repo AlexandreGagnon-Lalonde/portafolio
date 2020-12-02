@@ -2,6 +2,7 @@ import Head from "next/head";
 import styled from "styled-components";
 
 import HomeLink from '../../../components/navigation/HomeLink'
+import Navigation from '../../../components/navigation/navigation';
 
 const Lungor = () => {
   return (
@@ -9,7 +10,7 @@ const Lungor = () => {
       <Head>
         <title>Lungor</title>
       </Head>
-      <HomeLink />
+      <Navigation />
       <div>
         <ProjectTechnologies>
           <Technology>React</Technology>

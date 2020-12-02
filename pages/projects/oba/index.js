@@ -16,7 +16,7 @@ const OBA = () => {
       <Head>
         <title>OBA</title>
       </Head>
-      <HomeLink />
+      <Navigation />
       <SideBarNav />
       <a name={"intro"}>
         <GeneralInfo id={"intro"} />

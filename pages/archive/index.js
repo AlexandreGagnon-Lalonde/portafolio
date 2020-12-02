@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 import XYZ from "../../components/archiveCards/xyz";
-import Navigation from "../../components/navigation/navigation";
 import HomeLink from '../../components/navigation/HomeLink'
+import Navigation from '../../components/navigation/navigation';
 
 const Archive = () => {
   return (
     <>
-      <HomeLink />
+      <Navigation />
       <Container>
         <XYZ />
       </Container>
