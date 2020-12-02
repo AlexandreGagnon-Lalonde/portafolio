@@ -10,7 +10,7 @@ export default function PresentationText() {
         in Thailand after the 14th IDBF World Dragon Boat Racing Championships,
         but that story is for some other time. The reason you're here is
         probably because I can help you with{" "}
-        <Emphasis>&lt;dev&gt;</Emphasis> developing a website{" "}
+        <Emphasis>&lt;dev&gt;</Emphasis>developing a website
         <Emphasis>&lt;/dev&gt;</Emphasis>. Well, look no further! Under your
         eyes is my web portfolio and everything you need to know about my
         skills.{" "}
