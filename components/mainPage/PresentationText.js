@@ -10,8 +10,8 @@ export default function PresentationText() {
         in Thailand after the 14th IDBF World Dragon Boat Racing Championships,
         but that story is for some other time. The reason you're here is
         probably because I can help you with{" "}
-        <Emphasis>&lt;dev&gt;</Emphasis>developing a website
-        <Emphasis>&lt;/dev&gt;</Emphasis>. Well, look no further! Under your
+        <Tag>&lt;Dev&gt;</Tag>developing a website
+        <Tag>&lt;/Dev&gt;</Tag>. Well, look no further! Under your
         eyes is my web portfolio and everything you need to know about my
         skills.{" "}
       </FirstParagraph>
@@ -45,4 +45,10 @@ const SecondParagraph = styled.p`
 const Emphasis = styled.span`
   font-weight: bold;
   font-style: italic;
+  color: ${COLORS.orange};
 `;
+const Tag = styled.span`
+font-weight: bold;
+font-style: italic;
+color: ${COLORS.blue};
+`
