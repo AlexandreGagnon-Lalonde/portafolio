@@ -23,13 +23,19 @@ const LinkyContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 80px;
+border-top-left-radius: 40px;
+border-top-right-radius: 40px;
+background: ${COLORS.blue};
+background: linear-gradient(0deg, ${COLORS.blue} 90%, rgba(251,246,240,1) 100%);
+
 `
 const Linky = styled.a`
   color: ${COLORS.white};
   background-color: ${COLORS.orange};
   padding: 15px;
   border-radius: 10px;
-  opacity: 0.8;
+  opacity: 0.7;
   transition: all 0.2s;
   display: flex;
   align-items: center;
