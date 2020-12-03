@@ -6,3 +6,5 @@ export const COLORS = {
   black: '#101010',
   transparent: 'transparent',
 }
+
+export const SERVER_URL = "http://localhost:3001";
