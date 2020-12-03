@@ -7,7 +7,7 @@ import { SiNetlify } from "react-icons/si";
 
 import { COLORS } from "../../public/constant";
 
-const XYZ = () => {
+const ABC = () => {
   return (
     <>
     <Head>
@@ -67,7 +67,7 @@ const ProjectContainer = styled.div`
   background: radial-gradient(
     circle,
     rgba(255, 255, 255, 1) 60%,
-    ${COLORS.orange} 70%
+    ${COLORS.blue} 70%
   );
   position: relative;
   transition: all 0.3s;
@@ -94,4 +94,4 @@ const ProjectImage = styled.img`
   border-radius: 50%;
 `;
 
-export default XYZ;
+export default ABC;
