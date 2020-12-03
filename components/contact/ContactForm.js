@@ -1,33 +1,61 @@
+import React from 'react'
 import styled from "styled-components";
 import Link from "next/link";
 
 import PlatformLink from "./PlatformLink";
 
-import { COLORS } from "../../public/constant";
+import { COLORS, SERVER_URL } from "../../public/constant";
 
 export default function ContactForm() {
+  const [email, setEmail] = React.useState("");
+  const [name, setName] = React.useState("");
+  const [subject, setSubject] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
+  const submitForm = (ev) => {
+    ev.preventDefault();
+
+    const messageObject = {
+      email,
+      name,
+      subject,
+      message,
+    }
+console.log(messageObject)
+    fetch(SERVER_URL + "/api/submitform", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(messageObject),
+    })
+      .then((res) => res.json())
+      .then(data => console.log(data))
+      .catch((err) => console.log(err));
+  };
+
   return (
     <FooterContainer>
       <PlatformLink />
-      <Form>
+      <Form onSubmit={submitForm}>
         <FormInputs>
           <MessagerInfo>
             <NameContainer>
               <label htmlFor={"name"}>Full name</label>
-              <Input type={"text"} id={"name"} name={"name"} required />
+              <Input type={"text"} id={"name"} name={"name"} onChange={(ev) => setName(ev.currentTarget.value)} required />
             </NameContainer>
             <EmailContainer>
               <label htmlFor={"email"}>Email</label>
-              <Input type={"email"} id={"email"} name={"email"} required />
+              <Input type={"email"} id={"email"} name={"email"} onChange={(ev) => setEmail(ev.currentTarget.value)} required />
             </EmailContainer>
             <SubjectContainer>
               <label htmlFor={"subject"}>Subject</label>
-              <Input type={"text"} id={"subject"} name={"subject"} required />
+              <Input type={"text"} id={"subject"} name={"subject"} onChange={(ev) => setSubject(ev.currentTarget.value)} required />
             </SubjectContainer>
           </MessagerInfo>
           <MessageContainer>
             <label htmlFor={"message"}>Message</label>
-            <TextArea id={"message"} name={"message"} rows={"10"} cols={"50"} />
+            <TextArea id={"message"} name={"message"} rows={"10"} cols={"50"} onChange={(ev) => setMessage(ev.currentTarget.value)} />
           </MessageContainer>
         </FormInputs>
         <SubmitButton>Let's get it</SubmitButton>
