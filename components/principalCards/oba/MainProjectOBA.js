@@ -28,7 +28,7 @@ const MainProjectOBA = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 20px 20px auto 20px;
+  margin: 40px 40px auto 40px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;

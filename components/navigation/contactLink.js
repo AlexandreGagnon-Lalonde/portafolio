@@ -9,11 +9,7 @@ export default function ContactLink() {
 
   return (
     <Link href={"#contact"} passHref>
-      <NavigationLink
-        onClick={(ev) => ev.stopPropagation()}
-      >
-        Contact
-      </NavigationLink>
+      <NavigationLink>Contact</NavigationLink>
     </Link>
   );
 }

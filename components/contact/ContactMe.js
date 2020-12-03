@@ -10,7 +10,7 @@ import { COLORS } from "../../public/constant";
 
 export default function ContactMe () {
   return (
-      <PlatformLink id={'contact'}/>
+      <PlatformLink />
   );
 };
 

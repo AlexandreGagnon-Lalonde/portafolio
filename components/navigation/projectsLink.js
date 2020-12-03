@@ -9,12 +9,7 @@ export default function ProjectsLink() {
 
   return (
     <Link href={"#project"} passHref>
-      <NavigationLink
-        style={route === "/projects" ? { color: `${COLORS.orange}` } : null}
-        onClick={(ev) => ev.stopPropagation()}
-      >
-        Projects
-      </NavigationLink>
+      <NavigationLink>Projects</NavigationLink>
     </Link>
   );
 }

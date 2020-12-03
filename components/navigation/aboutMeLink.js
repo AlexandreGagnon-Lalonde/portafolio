@@ -9,11 +9,7 @@ export default function AboutMeLink() {
 
   return (
     <Link href={"#about"} passHref>
-      <NavigationLink
-        onClick={(ev) => ev.stopPropagation()}
-      >
-        About
-      </NavigationLink>
+      <NavigationLink>About</NavigationLink>
     </Link>
   );
 }
@@ -26,7 +22,7 @@ const NavigationLink = styled.a`
   transition: all 0.5s;
   width: auto;
   z-index: 1;
-  
+
   &:hover {
     color: ${COLORS.orange};
   }
