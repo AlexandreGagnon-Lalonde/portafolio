@@ -38,7 +38,6 @@ const rotateLogo = keyframes`
 
 `
 const Container = styled.div`
-  height: 100vh;
 `
 const AppTitle = styled.h3`
   width: 100%;
@@ -58,7 +57,7 @@ margin: 60px 0 40px 0;
 `
 const TechnologiesContainer = styled.div`
   height: 300px;
-  margin: 60px auto 60px auto;
+  margin: 40px auto 40px auto;
   width: 300px; 
   animation: ${rotateLogos} 30s infinite linear
 
@@ -104,9 +103,17 @@ const StyledCompImage = styled.img`
   width: 120px;
 `
 const GeneralInfoFirstPart = styled.p`
-  margin: 20px 20px auto 40px;
+  margin: 20px 40px auto 40px;
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 2;
+  font-weight: 600;
 `
 const GeneralInfoSecondPart = styled.p`
-margin: 20px 20px auto 40px;
+margin: 20px 40px auto 40px;
+text-indent: 2em;
+text-align: justify;
+line-height: 2;
+font-weight: 600;
 
 `
