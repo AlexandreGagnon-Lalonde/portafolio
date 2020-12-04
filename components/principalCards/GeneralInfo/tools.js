@@ -7,14 +7,14 @@ export default function Tools() {
   return (
     <Container>
       <AppTitle>OnlineBookingApplication</AppTitle>
-      <GeneralInfoFirstPart>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. </GeneralInfoFirstPart>
+      <GeneralInfoFirstPart>I personally chose to do this project from scratch as the last of my bootcamp to recreate and optimize a platform I often use at the gym I go to. Members can navigate through the days and the weeks to book multiple classes. They can also interact with eachother privately and interact on the workout of the day publicly.</GeneralInfoFirstPart>
       <TechnologiesContainer>
         <ReactLogo><ReactImage src={'/assets/react.png'} /></ReactLogo>
         <NodeLogo><NodeImage src={'/assets/node.png'} /></NodeLogo>
         <MongoLogo><MongoImage src={'/assets/MongoDB_logo_01.png'} /></MongoLogo>
         <StyledComponentLogo><StyledCompImage src={'/assets/styled_component.png'} /></StyledComponentLogo>
       </TechnologiesContainer>
-      <GeneralInfoSecondPart>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.
+      <GeneralInfoSecondPart>The two main dishes here are the calendar and the messages between users. The ability to switch between a single day view to a weekly view and to steer from date to date should be mandatory when building a project like mine. The messaging part though is a little plus from the other platforms.
 </GeneralInfoSecondPart>
     </Container>
   )
@@ -54,7 +54,7 @@ text-decoration: none;
 font-style: normal;
 font-variant: small-caps;
 text-transform: none;
-margin-top: 20px;
+margin: 60px 0 40px 0;
 `
 const TechnologiesContainer = styled.div`
   height: 300px;
