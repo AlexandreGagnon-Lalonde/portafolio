@@ -26,16 +26,18 @@ const MainProjectLungor = () => {
 
 const ProjectContainer = styled.div`
 grid-column: 1;
-  margin: 40px 40px auto 40px;
+  margin: 75px 75px auto 75px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
 const ImageContainer = styled.div`
-  margin: 20px 20px 10px 20px;
+  margin: 0 0 10px 0;
 `;
 const Image = styled.img`
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 `;
 const ProjectTitle = styled.h3`
   margin-bottom: 10px;

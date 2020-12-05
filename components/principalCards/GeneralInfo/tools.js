@@ -102,14 +102,14 @@ const StyledCompImage = styled.img`
   width: 120px;
 `
 const GeneralInfoFirstPart = styled.p`
-  margin: 20px 30px auto 60px;
+  margin: 20px 60px auto 60px;
   text-indent: 2em;
   text-align: justify;
   line-height: 2;
   font-weight: 600;
 `
 const GeneralInfoSecondPart = styled.p`
-margin: 20px 30px auto 60px;
+margin: 20px 60px auto 60px;
 text-indent: 2em;
 text-align: justify;
 line-height: 2;

@@ -7,12 +7,23 @@ import { VscGithubInverted, VscGithub } from "react-icons/vsc";
 import { BsArrowRight } from "react-icons/bs";
 
 const MainProjectOBA = () => {
+  const YoutubeStyles = {
+    width: "100%",
+    borderBottomLeftRadius: "0px",
+    borderBottomRightRadius: "0px",
+    borderRadius: "20px",
+    height: "41.5vw",
+  };
   return (
     <ProjectContainer>
       <ImageContainer>
-        <Video id={"OBAvideo"} playsinline autoPlay muted loop>
-          <source src={"/assets/OBAvideoo.mp4"} />
-        </Video>
+        <iframe
+          style={YoutubeStyles}
+          src="https://www.youtube-nocookie.com/embed/54cIm3Dfp6I"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </ImageContainer>
       <ProjectDetails>
         <ProjectHeader>
@@ -20,7 +31,12 @@ const MainProjectOBA = () => {
           <ProjectLink href={"/projects/oba"}>Continue reading</ProjectLink>
         </ProjectHeader>
         <ProjectBio>
-          Online platform that allows gym members to register for some specific classes. Users can interact with eachothers through private messages and they can leave comments every day on the workout of the day (WOD). To allow members to give anonymous (or not) feedback there is a suggestion box on the homepage and the admin is able to see all of them on his profile page.
+          Online platform that allows gym members to register for some specific
+          classes. Users can interact with eachothers through private messages
+          and they can leave comments every day on the workout of the day (WOD).
+          To allow members to give anonymous (or not) feedback there is a
+          suggestion box on the homepage and the admin is able to see all of
+          them on his profile page.
         </ProjectBio>
       </ProjectDetails>
     </ProjectContainer>
@@ -28,18 +44,18 @@ const MainProjectOBA = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 40px 40px auto 40px;
+  margin: 75px 75px auto 75px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
 const ImageContainer = styled.div`
-  margin: 20px 20px 10px 20px;
+  margin: 0 0 10px 0;
 `;
 const Image = styled.img`
   width: 80%;
   border-radius: 10px;
 `;
-const Video = styled.video`
+const Video = styled.div`
   width: 100%;
   border-radius: 10px;
 `;
