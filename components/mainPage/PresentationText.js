@@ -57,7 +57,7 @@ const ObjectName = styled.h2`
 `;
 const Hello = styled.h2``;
 const NameContainer = styled.div`
-  margin: 60px 40px 20px 75px;
+  margin: 80px 40px 20px 75px;
 `;
 const FirstParagraph = styled.p`
   line-height: 2;
