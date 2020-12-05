@@ -115,7 +115,7 @@ const ASpan = styled.span`
   display: block;
   width: 20px;
   right: -30px;
-  top: 41%;
+  top: 35%;
   text-align: center;
 `
 const RSpan = styled.span`
@@ -123,7 +123,7 @@ const RSpan = styled.span`
   display: block;
   width: 20px;
   right: -30px;
-  top: 44%;
+  top: 40%;
   text-align: center;
 
 `
@@ -132,7 +132,7 @@ const CSpan = styled.span`
   display: block;
   width: 20px;
   right: -30px;
-  top: 47%;
+  top: 45%;
   text-align: center;
 
 `
@@ -150,7 +150,7 @@ const ISpan = styled.span`
   display: block;
   width: 20px;
   right: -30px;
-  top: 53%;
+  top: 55%;
   text-align: center;
 
 `
@@ -159,7 +159,7 @@ const VSpan = styled.span`
   display: block;
   width: 20px;
   right: -30px;
-  top: 56%;
+  top: 60%;
   text-align: center;
 
 `
@@ -168,7 +168,7 @@ const ESpan = styled.span`
   display: block;
   width: 20px;
   right: -30px;
-  top: 59%;
+  top: 65%;
   text-align: center;
 
 `
@@ -181,8 +181,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 position: relative;
-  grid-row: 1 / 3;
-  grid-column: 2;
   background: ${COLORS.blue};
   background: radial-gradient(ellipse at right, ${COLORS.blue} 0%, ${COLORS.white} 50%);
   transition: all 0.2s;
