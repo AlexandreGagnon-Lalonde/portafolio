@@ -27,7 +27,7 @@ const LinkyContainer = styled.div`
 border-top-left-radius: 40px;
 border-top-right-radius: 40px;
 background: ${COLORS.blue};
-background: linear-gradient(0deg, ${COLORS.blue} 90%, rgba(251,246,240,1) 100%);
+background: linear-gradient(0deg, ${COLORS.blue} 60%, rgba(251,246,240,1) 100%);
 
 `
 const Linky = styled.a`

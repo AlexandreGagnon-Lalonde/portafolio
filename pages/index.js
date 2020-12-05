@@ -39,9 +39,9 @@ export default function Home() {
 const AboutMeContainer = styled.div`
   display: grid;
   grid-template-columns: 60% 40%;
-  height: 100vh;
+  min-height: 100vh;
 `;
 const ProjectContainer = styled.div`
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 45% 45% 10%;
 `;

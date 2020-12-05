@@ -48,7 +48,7 @@ const Container = styled.div`
   grid-row: 1 / 3;
 `;
 const TextContainer = styled.div`
-  margin: auto 75px;
+  margin: auto 100px;
   text-indent: 2em;
   text-align: justify;
 `;
@@ -57,7 +57,7 @@ const ObjectName = styled.h2`
 `;
 const Hello = styled.h2``;
 const NameContainer = styled.div`
-  margin: 80px 40px 20px 75px;
+  margin: 100px 40px 20px 100px;
 `;
 const FirstParagraph = styled.p`
   line-height: 2;
