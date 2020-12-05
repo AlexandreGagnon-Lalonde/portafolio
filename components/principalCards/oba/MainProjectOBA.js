@@ -8,18 +8,22 @@ import { BsArrowRight } from "react-icons/bs";
 
 const MainProjectOBA = () => {
   const YoutubeStyles = {
-    width: "100%",
+    borderTopLeftRadius: "20px",
+    borderTopRightRadius: "20px",
     borderBottomLeftRadius: "0px",
     borderBottomRightRadius: "0px",
-    borderRadius: "20px",
-    height: "41.5vw",
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    top: '0',
+    left: '0',
   };
   return (
     <ProjectContainer>
       <ImageContainer>
         <iframe
           style={YoutubeStyles}
-          src="https://www.youtube-nocookie.com/embed/54cIm3Dfp6I"
+          src="https://www.youtube-nocookie.com/embed/B_FsLWXAr0w"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -44,12 +48,14 @@ const MainProjectOBA = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 75px 75px auto 75px;
+  margin: 0 20px auto 40px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
 `;
 const ImageContainer = styled.div`
+position: relative;
   margin: 0 0 10px 0;
+  padding-bottom: 56.25%;
 `;
 const Image = styled.img`
   width: 80%;
