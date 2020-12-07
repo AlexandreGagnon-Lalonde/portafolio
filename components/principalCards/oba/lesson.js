@@ -6,7 +6,7 @@ import LessonImage from "../Lesson/lessonImage";
 export default function Lesson() {
   return (
     <InfoContainer>
-      <LessonImage src={"/assets/calendarcomments.png"} />
+      <LessonImage src={"/assets/mainapp.png"} />
     </InfoContainer>
   );
 }
