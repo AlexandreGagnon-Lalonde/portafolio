@@ -6,7 +6,7 @@ import ContentImage from '../Content/contentImage';
 export default function Content() {
   return <InfoContainer>
       <ContentText />
-      <ContentImage src={"/assets/calendarcomments.png"} />
+      <ContentImage src={"/assets/mainapp.png"} />
     </InfoContainer>
 }
 
