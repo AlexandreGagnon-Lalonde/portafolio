@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export default function ContentText() {
   return <InfoContainer>
-      <ContentParagraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</ContentParagraph>
+      <ContentParagraph>I would definitely take more time before getting into the core of the application before doing anything major. Whether it's the choice of packages, date picker or just general behavior. After a couple of discussions with my technical coaches, I did change my database structure a lot. This change was necessary so that I don't have any duplicated data. Obviously it's not perfect, but satisfaction is the main feeling I have looking back at this project.
+      </ContentParagraph>
     </InfoContainer>
 }
 
