@@ -6,6 +6,7 @@ export const COLORS = {
   black: '#101010',
   transparent: 'transparent',
   todolist: '#f8efd4',
+  patatap: '#f2b077',
 }
 
 export const SERVER_URL = "http://localhost:3001";

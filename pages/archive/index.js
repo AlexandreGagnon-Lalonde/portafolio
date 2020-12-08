@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import ToDoList from "../../components/archiveCards/todolist";
-import ABC from "../../components/archiveCards/abc";
+import ABC from "../../components/archiveCards/patatapClone";
 import HomeLink from '../../components/navigation/HomeLink'
 import Navigation from '../../components/navigation/navigation';
 
