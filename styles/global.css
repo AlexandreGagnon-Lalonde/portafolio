@@ -65,3 +65,17 @@ body {
   line-height: 1.25;
   background: #fbf6f0;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #aee6e6;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffda77;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc832;
+}
