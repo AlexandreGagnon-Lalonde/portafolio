@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import XYZ from "../../components/archiveCards/xyz";
+import ToDoList from "../../components/archiveCards/todolist";
 import ABC from "../../components/archiveCards/abc";
 import HomeLink from '../../components/navigation/HomeLink'
 import Navigation from '../../components/navigation/navigation';
@@ -10,7 +10,7 @@ const Archive = () => {
     <>
       <Navigation />
       <Container>
-        <XYZ />
+        <ToDoList />
         <ABC />
       </Container>
     </>

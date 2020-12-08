@@ -5,6 +5,7 @@ export const COLORS = {
   blue: '#aee6e6',
   black: '#101010',
   transparent: 'transparent',
+  todolist: '#f8efd4',
 }
 
 export const SERVER_URL = "http://localhost:3001";

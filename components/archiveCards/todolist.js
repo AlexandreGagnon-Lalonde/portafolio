@@ -7,7 +7,7 @@ import { SiNetlify } from "react-icons/si";
 
 import { COLORS } from "../../public/constant";
 
-const XYZ = () => {
+const ToDoList = () => {
   return (
     <>
     <Head>
@@ -15,17 +15,18 @@ const XYZ = () => {
     </Head>
       <ProjectContainer>
         <ProjectLinks>
-          <PlatformLink href={"/githublink"}>
-            <VscGithubInverted />
-          </PlatformLink>
-          <PlatformLink href={"/netlifylink"}>
-            <SiNetlify />
-          </PlatformLink>
+          <Link href={"https://github.com/AlexandreGagnon-Lalonde/To-Do-List"} passHref>
+            <PlatformLink>
+              <VscGithubInverted />
+            </PlatformLink>
+          </Link>
+          <Link href={"https://to-do-list-alexandregl.netlify.app/"} passHref>
+            <PlatformLink>
+              <SiNetlify />
+            </PlatformLink>
+          </Link>
         </ProjectLinks>
-        <ProjectImage src={"/assets/1projfill.jpg"} />
-        <ProjectTechnologies>
-          <Technology>HTML - CSS - JS</Technology>
-        </ProjectTechnologies>
+        <ProjectImage src={"/assets/todolist.PNG"} />
       </ProjectContainer>
     </>
   );
@@ -34,13 +35,15 @@ const XYZ = () => {
 const ProjectTechnologies = styled.div`
   display: none;
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  transform: translateY(20%);
   left: 0;
   color: ${COLORS.white};
 
   transition: color 0.3s;
 `;
 const Technology = styled.p`
+  color: ${COLORS.black};
   display: flex;
   justify-content: center;
   font-weight: bold;
@@ -50,48 +53,45 @@ const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-const PlatformLink = styled(Link)`
-  color: ${COLORS.white};
-  display: block;
-  padding: 10px;
+const PlatformLink = styled.a`
+  color: ${COLORS.black};
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0;
 
-  transition: color 0.3s;
+  &:hover {
+    color: ${COLORS.blue};
+    transform: scale(1.3);
+  }
 `;
 const ProjectContainer = styled.div`
   width: 200px;
   height: 200px;
   margin: 20px;
   padding: 10px;
-  border-radius: 100px;
-  background: rgb(238, 238, 238);
+  background: ${COLORS.todolist};
   background: radial-gradient(
     circle,
-    rgba(255, 255, 255, 1) 60%,
+    ${COLORS.todolist} 60%,
     ${COLORS.orange} 70%
   );
   position: relative;
   transition: all 0.3s;
+  border-radius: 100px;
 
-  &:hover ${ProjectTechnologies}, &:hover ${PlatformLink} {
-    color: ${COLORS.black};
-    display: flex;
-    justify-content: center;
+  &:hover ${PlatformLink} {
+    opacity: 1;
   }
   &:hover {
-    border-radius: 10px;
-    height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 `;
 const ProjectImage = styled.img`
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  margin: 0 auto;
+  width: 80%;
   display: block;
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  border-radius: 50%;
+  margin: 30px auto;
+  border-radius: 10px;
 `;
 
-export default XYZ;
+export default ToDoList;
