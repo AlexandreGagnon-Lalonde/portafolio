@@ -26,7 +26,7 @@ const ToDoList = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ProjectImage src={"/assets/todolist.PNG"} />
+        <ImageContainer><ProjectImage src={"/assets/todolist.PNG"} /></ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -52,6 +52,8 @@ const Technology = styled.p`
 const ProjectLinks = styled.div`
   display: flex;
   justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 20px);
 `;
 const PlatformLink = styled.a`
   color: ${COLORS.black};
@@ -69,12 +71,7 @@ const ProjectContainer = styled.div`
   height: 200px;
   margin: 20px;
   padding: 10px;
-  background: ${COLORS.todolist};
-  background: radial-gradient(
-    circle,
-    ${COLORS.todolist} 60%,
-    ${COLORS.orange} 70%
-  );
+  background: ${COLORS.orange};
   position: relative;
   transition: all 0.3s;
   border-radius: 100px;
@@ -87,10 +84,18 @@ const ProjectContainer = styled.div`
     border-top-right-radius: 10px;
   }
 `;
+const ImageContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  background-color: ${COLORS.todolist};
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+`
 const ProjectImage = styled.img`
   width: 80%;
   display: block;
-  margin: 30px auto;
+  margin: 0 auto;
   border-radius: 10px;
 `;
 
