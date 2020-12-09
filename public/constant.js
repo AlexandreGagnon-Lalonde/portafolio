@@ -7,6 +7,7 @@ export const COLORS = {
   transparent: 'transparent',
   todolist: '#f8efd4',
   patatap: '#f2b077',
+  sortingAlgo: '#004643',
 }
 
 export const SERVER_URL = "http://localhost:3001";
