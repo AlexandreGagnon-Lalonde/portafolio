@@ -26,7 +26,7 @@ const PatatapClone = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ProjectImage src={"/assets/patatap.PNG"} />
+        <ImageContainer><ProjectImage src={"/assets/patatap.PNG"} /></ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -84,12 +84,19 @@ const ProjectContainer = styled.div`
     border-top-right-radius: 10px;
   }
 `;
-const ProjectImage = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
   height: 100%;
+  background-color: ${COLORS.patatap};
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+`
+const ProjectImage = styled.img`
+  width: 100%;
   display: block;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 10px;
 `;
-
 export default PatatapClone;
