@@ -5,7 +5,7 @@ import PatatapClone from "../../components/archiveCards/patatapClone";
 import SortingAlgo from '../../components/archiveCards/sortingAlgo'
 import HomeLink from '../../components/navigation/HomeLink'
 import Navigation from '../../components/navigation/navigation';
-
+import ScoreKeeper from '../../components/archiveCards/scoreKeeper'
 const Archive = () => {
   return (
     <>
@@ -14,6 +14,7 @@ const Archive = () => {
         <ToDoList />
         <PatatapClone />
         <SortingAlgo />
+        <ScoreKeeper />
       </Container>
     </>
   );

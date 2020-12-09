@@ -8,6 +8,7 @@ export const COLORS = {
   todolist: '#f8efd4',
   patatap: '#f2b077',
   sortingAlgo: '#004643',
+  scoreKeeper: '#24702a',
 }
 
 export const SERVER_URL = "http://localhost:3001";
