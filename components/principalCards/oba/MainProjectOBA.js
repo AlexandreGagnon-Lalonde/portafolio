@@ -24,9 +24,9 @@ const MainProjectOBA = () => {
         <iframe
           style={YoutubeStyles}
           src="https://www.youtube-nocookie.com/embed/B_FsLWXAr0w"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </ImageContainer>
       <ProjectDetails>

@@ -8,7 +8,7 @@ export default function HomeLink() {
   return (
 <Link href={"/"} passHref>
             <NavigationLink onClick={(ev) => ev.stopPropagation()}>
-              <FaHamburger />
+              Alexandre GL
             </NavigationLink>
           </Link>  );
 }
