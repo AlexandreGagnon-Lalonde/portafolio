@@ -9,6 +9,7 @@ export const COLORS = {
   patatap: '#f2b077',
   sortingAlgo: '#004643',
   scoreKeeper: '#24702a',
+  guessingGame: '#232323',
 }
 
 export const SERVER_URL = "http://localhost:3001";

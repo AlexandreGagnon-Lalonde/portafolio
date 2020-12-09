@@ -6,6 +6,7 @@ import SortingAlgo from '../../components/archiveCards/sortingAlgo'
 import HomeLink from '../../components/navigation/HomeLink'
 import Navigation from '../../components/navigation/navigation';
 import ScoreKeeper from '../../components/archiveCards/scoreKeeper'
+import GuessingGame from '../../components/archiveCards/guessingGame'
 const Archive = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Archive = () => {
         <PatatapClone />
         <SortingAlgo />
         <ScoreKeeper />
+        <GuessingGame />
       </Container>
     </>
   );
