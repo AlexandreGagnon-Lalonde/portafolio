@@ -7,6 +7,7 @@ import HomeLink from '../../components/navigation/HomeLink'
 import Navigation from '../../components/navigation/navigation';
 import ScoreKeeper from '../../components/archiveCards/scoreKeeper'
 import GuessingGame from '../../components/archiveCards/guessingGame'
+import Library from '../../components/archiveCards/library'
 const Archive = () => {
   return (
     <>
@@ -17,6 +18,7 @@ const Archive = () => {
         <SortingAlgo />
         <ScoreKeeper />
         <GuessingGame />
+        <Library />
       </Container>
     </>
   );

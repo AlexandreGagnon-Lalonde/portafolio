@@ -10,6 +10,7 @@ export const COLORS = {
   sortingAlgo: '#004643',
   scoreKeeper: '#24702a',
   guessingGame: '#232323',
+  library: '#eeeeee',
 }
 
 export const SERVER_URL = "http://localhost:3001";
