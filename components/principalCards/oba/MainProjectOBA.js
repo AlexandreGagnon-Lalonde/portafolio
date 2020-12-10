@@ -48,9 +48,11 @@ const MainProjectOBA = () => {
 };
 
 const ProjectContainer = styled.div`
-  margin: 0 20px auto 40px;
   background-color: ${COLORS.yellow};
   border-radius: 20px;
+  width: 75%;
+  margin: 60px auto auto auto;
+  padding-bottom: 20px;
 `;
 const ImageContainer = styled.div`
 position: relative;
@@ -70,14 +72,13 @@ const ProjectTitle = styled.h3`
   font-size: 1.25em;
 `;
 const ProjectDetails = styled.div`
-  margin: 10px 20px 20px 20px;
+  margin: 10px 20px 0 20px;
 `;
 const ProjectHeader = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 const ProjectBio = styled.p`
-  margin-bottom: 10px;
 `;
 const ProjectLink = styled.a`
   text-align: right;

@@ -25,10 +25,11 @@ const MainProjectLungor = () => {
 };
 
 const ProjectContainer = styled.div`
-grid-column: 2;
-  margin: 0 40px auto 20px;
-  background-color: ${COLORS.yellow};
-  border-radius: 20px;
+background-color: ${COLORS.yellow};
+border-radius: 20px;
+width: 75%;
+margin: 60px auto auto auto;
+padding-bottom: 20px;
 `;
 const ImageContainer = styled.div`
   margin: 0 0 10px 0;
