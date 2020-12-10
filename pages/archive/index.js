@@ -11,6 +11,7 @@ import Library from '../../components/archiveCards/library'
 import FrogRace from '../../components/archiveCards/frogRace'
 import DotGame from '../../components/archiveCards/dotGame'
 import Stopwatch from '../../components/archiveCards/stopwatch'
+import GeneratedArt from '../../components/archiveCards/generatedArt'
 const Archive = () => {
   return (
     <>
@@ -25,6 +26,7 @@ const Archive = () => {
         <FrogRace />
         <DotGame />
         <Stopwatch />
+        <GeneratedArt />
       </Container>
     </>
   );

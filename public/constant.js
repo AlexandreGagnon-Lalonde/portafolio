@@ -14,6 +14,7 @@ export const COLORS = {
   frogRace: '#ffffff',
   dotGame: '#ffffff',
   stopwatch: '#ffffff',
+  generatedArt: '#ffffff',
 }
 
 export const SERVER_URL = "http://localhost:3001";
