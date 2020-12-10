@@ -11,6 +11,7 @@ export const COLORS = {
   scoreKeeper: '#24702a',
   guessingGame: '#232323',
   library: '#eeeeee',
+  frogRace: '#ffffff',
 }
 
 export const SERVER_URL = "http://localhost:3001";
