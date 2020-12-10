@@ -1,6 +1,9 @@
-import "../styles/global.css";
+
+
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "../styles/global.css";
 import { COLORS } from "../public/constant";
 
 const GlobalStyle = createGlobalStyle`
