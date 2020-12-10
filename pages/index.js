@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Carousel from 'react-bootstrap/Carousel'
 
 import styled from "styled-components";
 
@@ -16,7 +17,7 @@ import { COLORS } from "../public/constant";
 
 export default function Home() {
   return (
-    <div className="container">
+    <AppContainer>
       <Head>
         <title>Portafolio</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,21 +28,33 @@ export default function Home() {
         <Picture />
       </AboutMeContainer>
       <ProjectContainer id={'project'}>
-        <MainProjectOBA />
-        <MainProjectLungor />
-        <MoreMinorProjects />
+      <Carousel interval={null}>
+        <Carousel.Item><MainProjectOBA /></Carousel.Item>
+        <Carousel.Item><MainProjectLungor /></Carousel.Item>
+        <Carousel.Item><MoreMinorProjects /></Carousel.Item>
+        <Carousel.Item>asdf</Carousel.Item>
+      </Carousel>
+        
+        
+        
       </ProjectContainer>
       <ContactMe />
-    </div>
+      <style jsx>{`
+        .carousel a {
+          color: ${COLORS.blue};
+`}</style>
+    </AppContainer>
   );
 }
 
+const AppContainer = styled.div`
+  width: 100%;
+`
 const AboutMeContainer = styled.div`
   display: grid;
   grid-template-columns: 60% 40%;
   min-height: 100vh;
 `;
 const ProjectContainer = styled.div`
-  display: grid;
-  grid-template-columns: 45% 45% 10%;
+  height: 100vh;
 `;
