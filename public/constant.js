@@ -12,6 +12,7 @@ export const COLORS = {
   guessingGame: '#232323',
   library: '#eeeeee',
   frogRace: '#ffffff',
+  dotGame: '#ffffff',
 }
 
 export const SERVER_URL = "http://localhost:3001";

@@ -9,6 +9,7 @@ import ScoreKeeper from '../../components/archiveCards/scoreKeeper'
 import GuessingGame from '../../components/archiveCards/guessingGame'
 import Library from '../../components/archiveCards/library'
 import FrogRace from '../../components/archiveCards/frogRace'
+import DotGame from '../../components/archiveCards/dotGame'
 const Archive = () => {
   return (
     <>
@@ -21,6 +22,7 @@ const Archive = () => {
         <GuessingGame />
         <Library />
         <FrogRace />
+        <DotGame />
       </Container>
     </>
   );
