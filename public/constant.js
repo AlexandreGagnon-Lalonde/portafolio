@@ -13,6 +13,7 @@ export const COLORS = {
   library: '#eeeeee',
   frogRace: '#ffffff',
   dotGame: '#ffffff',
+  stopwatch: '#ffffff',
 }
 
 export const SERVER_URL = "http://localhost:3001";
