@@ -27,9 +27,9 @@ const MainProjectLungor = () => {
 const ProjectContainer = styled.div`
 background-color: ${COLORS.yellow};
 border-radius: 20px;
-width: 75%;
+width: 65%;
 margin: 60px auto auto auto;
-padding-bottom: 20px;
+padding-bottom: 30px;
 `;
 const ImageContainer = styled.div`
   margin: 0 0 10px 0;
