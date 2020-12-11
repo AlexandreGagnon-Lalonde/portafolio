@@ -6,216 +6,74 @@ import { COLORS } from "../../public/constant";
 
 const MoreMinorProjects = () => {
   return (
-      <MoreProjectsLink href={"/archive"} passHref>
-        <ArchiveLink><ASpan>A</ASpan> <RSpan>R</RSpan> <CSpan>C</CSpan> <HSpan>H</HSpan> <ISpan>I</ISpan> <VSpan>V</VSpan> <ESpan>E</ESpan></ArchiveLink>
-      </MoreProjectsLink>
+      <ProjectContainer>
+        <ImageContainer>
+            <Image src={'/assets/archive.jpg'} />
+        </ImageContainer>
+        <ProjectDetails>
+        <ProjectHeader>
+          <ProjectTitle>Archive</ProjectTitle>
+          <ProjectLink href={"/archive"}>Continue reading</ProjectLink>
+        </ProjectHeader>
+
+        <ProjectBio>
+          This section contains all my other minor projects.
+        </ProjectBio>
+      </ProjectDetails>
+      </ProjectContainer>
   );
 };
 
-const ASlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const RSlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const CSlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const HSlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const ISlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const VSlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const ESlideIn = keyframes`
-  0% {
-    right: -30px;
-  }
-  50% {
-    right: 40px;
-  }
-  55% {
-    right: 40px;
-  }
-  100% {
-    right: 20px;
-  }
-`
-const ASpan = styled.span`
-  position: absolute;
-  display: block;
-  width: 20px;
-  right: -30px;
-  top: 35%;
-  text-align: center;
-`
-const RSpan = styled.span`
-  position: absolute;
-  display: block;
-  width: 20px;
-  right: -30px;
-  top: 40%;
-  text-align: center;
+const ProjectContainer = styled.div`
+background-color: ${COLORS.yellow};
+border-radius: 20px;
+width: 65%;
+margin: 60px auto auto auto;
+padding-bottom: 30px;
+`;
+const ImageContainer = styled.div`
+`;
+const Image = styled.img`
+  width: 100%;
+  border-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+`;
+const ProjectHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+`;
 
-`
-const CSpan = styled.span`
-  position: absolute;
+const ProjectTitle = styled.h3`
+  flex: 1;
+`;
+const ProjectDetails = styled.div`
+  margin: 10px 20px 10px 20px;
+`;
+const ProjectBio = styled.p`
+`;
+const ProjectLink = styled.a`
   display: block;
-  width: 20px;
-  right: -30px;
-  top: 45%;
-  text-align: center;
-
-`
-const HSpan = styled.span`
-  position: absolute;
-  display: block;
-  width: 20px;
-  right: -30px;
-  top: 50%;
-  text-align: center;
-
-`
-const ISpan = styled.span`
-  position: absolute;
-  display: block;
-  width: 20px;
-  right: -30px;
-  top: 55%;
-  text-align: center;
-
-`
-const VSpan = styled.span`
-  position: absolute;
-  display: block;
-  width: 20px;
-  right: -30px;
-  top: 60%;
-  text-align: center;
-
-`
-const ESpan = styled.span`
-  position: absolute;
-  display: block;
-  width: 20px;
-  right: -30px;
-  top: 65%;
-  text-align: center;
-
-`
-
-const Container = styled.div`
-`
-const ArchiveLink = styled.a`
-height: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-  background: ${COLORS.blue};
-  background: radial-gradient(ellipse at right, ${COLORS.blue} 0%, ${COLORS.white} 50%);
-  transition: all 0.2s;
+  text-align: right;
+  color: ${COLORS.white};
   font-weight: bold;
-  font-size: 1.25em;
-  color: ${COLORS.orange};
+  text-decoration: none;
+  transition: all 0.3s;
 
   &:hover {
-    background: radial-gradient(ellipse at right, ${COLORS.blue} 30%, ${COLORS.white} 65%);
+    color: ${COLORS.orange};
+    text-decoration: none;
   }
-  &:hover ${ASpan} {
-      animation: 0.5s ${ASlideIn} ease-out forwards;
-  }
-  &:hover ${RSpan} {
-      animation: 0.6s ${RSlideIn} ease-out forwards;
-  }
-  &:hover ${CSpan} {
-      animation: 0.7s ${CSlideIn} ease-out forwards;
-  }
-  &:hover ${HSpan} {
-      animation: 0.8s ${HSlideIn} ease-out forwards;
-  }
-  &:hover ${ISpan} {
-      animation: 0.9s ${ISlideIn} ease-out forwards;
-  }
-  &:hover ${VSpan} {
-      animation: 1s ${VSlideIn} ease-out forwards;
-  }
-  &:hover ${ESpan} {
-      animation: 1.1s ${ESlideIn} ease-out forwards;
-  }
-`
+`;
 
+const ArchiveLink = styled.a`
+
+`
 const MoreProjectsLink = styled(Link)`
-  height: 100%;
+width: 100%;
+height: 100%;
 `;
 
 export default MoreMinorProjects;
