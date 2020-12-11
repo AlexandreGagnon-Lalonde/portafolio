@@ -43,5 +43,6 @@ const Linky = styled.a`
 
   &:hover {
     opacity: 1;
+    color: ${COLORS.white};
   }
 `

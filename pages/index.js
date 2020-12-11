@@ -32,7 +32,6 @@ export default function Home() {
         <Carousel.Item><MainProjectOBA /></Carousel.Item>
         <Carousel.Item><MainProjectLungor /></Carousel.Item>
         <Carousel.Item><MoreMinorProjects /></Carousel.Item>
-        <Carousel.Item>asdf</Carousel.Item>
       </Carousel>
         
         
@@ -56,5 +55,6 @@ const AboutMeContainer = styled.div`
   min-height: 100vh;
 `;
 const ProjectContainer = styled.div`
-  height: 100vh;
+  width: 90%;
+  margin: 0 auto;
 `;
