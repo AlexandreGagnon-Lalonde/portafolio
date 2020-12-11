@@ -24,5 +24,7 @@ const NavigationLink = styled.a`
 
   &:hover {
     color: ${COLORS.orange};
+    text-decoration: none;
+
   }
 `;

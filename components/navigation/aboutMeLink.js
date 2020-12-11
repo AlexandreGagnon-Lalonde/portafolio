@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 import { COLORS } from "../../public/constant";
 
 export default function AboutMeLink() {
-  const route = useRouter().route;
-
   return (
     <Link href={"#about"} passHref>
       <NavigationLink>About</NavigationLink>
@@ -25,5 +23,7 @@ const NavigationLink = styled.a`
 
   &:hover {
     color: ${COLORS.orange};
+    text-decoration: none;
+
   }
 `;

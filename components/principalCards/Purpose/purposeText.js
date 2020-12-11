@@ -12,7 +12,6 @@ export default function PurposeText() {
         theme to save the users eyes since adding that functionality would've
         made me late for the deadline.
       </PurposeParagraph>
-      <GenericAnimation>a</GenericAnimation>
       <PurposeParagraph>
         MongoDB is the main database used to contain the data useful for the
         users and the classes. It would be interesting to see if SQL would be a
@@ -32,7 +31,7 @@ const InfoContainer = styled.div`
   height: 100vh;
 `;
 const PurposeParagraph = styled.p`
-  margin: 20px 60px auto 30px;
+  margin: 100px 60px auto 30px;
   text-indent: 2em;
   text-align: justify;
   line-height: 2;
@@ -40,4 +39,5 @@ const PurposeParagraph = styled.p`
 `;
 const GenericAnimation = styled.div`
   margin: 100px auto;
+  height: 200px;
 `
