@@ -50,9 +50,9 @@ const MainProjectOBA = () => {
 const ProjectContainer = styled.div`
   background-color: ${COLORS.yellow};
   border-radius: 20px;
-  width: 75%;
+  width: 65%;
   margin: 60px auto auto auto;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 `;
 const ImageContainer = styled.div`
 position: relative;
@@ -69,7 +69,6 @@ const Video = styled.div`
 `;
 const ProjectTitle = styled.h3`
   margin-bottom: 10px;
-  font-size: 1.25em;
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 0 20px;
@@ -77,6 +76,7 @@ const ProjectDetails = styled.div`
 const ProjectHeader = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 const ProjectBio = styled.p`
 `;
@@ -90,6 +90,7 @@ const ProjectLink = styled.a`
 
   &:hover {
     color: ${COLORS.orange};
+    text-decoration: none;
   }
 `;
 
