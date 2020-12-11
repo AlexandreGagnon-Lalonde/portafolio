@@ -12,9 +12,7 @@ import MainProjectLungor from "../components/principalCards/lungor/MainProjectLu
 import MainProjectOBA from "../components/principalCards/oba/MainProjectOBA";
 import MoreMinorProjects from "../components/mainPage/MoreMinorProjects";
 import ContactMe from '../components/contact/ContactMe'
-
-import { COLORS } from "../public/constant";
-
+import ScrollToTopButton from '../components/mainPage/ScrollToTopButton'
 export default function Home() {
   return (
     <AppContainer>
@@ -38,10 +36,7 @@ export default function Home() {
         
       </ProjectContainer>
       <ContactMe />
-      <style jsx>{`
-        .carousel a {
-          color: ${COLORS.blue};
-`}</style>
+      <ScrollToTopButton />
     </AppContainer>
   );
 }
