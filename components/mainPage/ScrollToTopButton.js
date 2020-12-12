@@ -15,7 +15,7 @@ const scrollTopButtonFadeIn = keyframes`
 
 export default function ScrollToTopButton() {
   const [showScroll, setShowScroll] = useState(false);
-  const scrollButtonStyle = { display: showScroll ? 'block' : 'none'}
+  const scrollButtonStyle = { display: showScroll ? 'inline-flex' : 'none'}
   const ScrollToTop = () => {
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
@@ -36,11 +36,12 @@ export default function ScrollToTopButton() {
 }
 
 const Button = styled.button`
+  align-items: center;
   position: fixed;
   left: 10px;
   bottom: 125px;
   width: 40px;
-  height: 30px;
+  height: 40px;
   background-color: ${COLORS.orange};
   border-radius: 10px;
   border: none;
