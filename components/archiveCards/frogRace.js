@@ -10,12 +10,15 @@ import { COLORS } from "../../public/constant";
 const FrogRace = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
+      <Head>
+        <title>Archive</title>
+      </Head>
       <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Frog-Race"} passHref>
+          <Link
+            href={"https://github.com/AlexandreGagnon-Lalonde/Frog-Race"}
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +29,9 @@ const FrogRace = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/frog-race.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/frog-race.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -93,7 +98,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-`
+`;
 const ProjectImage = styled.img`
   height: 75%;
   display: block;

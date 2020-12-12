@@ -10,12 +10,15 @@ import { COLORS } from "../../public/constant";
 const SortingAlgo = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
+      <Head>
+        <title>Archive</title>
+      </Head>
       <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Sorting-Algo"} passHref>
+          <Link
+            href={"https://github.com/AlexandreGagnon-Lalonde/Sorting-Algo"}
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +29,9 @@ const SortingAlgo = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/sorting-algo.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/sorting-algo.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -91,7 +96,7 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   border-radius: 50%;
-`
+`;
 const ProjectImage = styled.img`
   width: 90%;
   display: block;

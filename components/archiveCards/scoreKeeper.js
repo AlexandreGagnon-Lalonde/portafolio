@@ -10,12 +10,15 @@ import { COLORS } from "../../public/constant";
 const ScoreKeeper = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
-    <ProjectContainer>
+      <Head>
+        <title>Archive</title>
+      </Head>
+      <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Score-Keeper"} passHref>
+          <Link
+            href={"https://github.com/AlexandreGagnon-Lalonde/Score-Keeper"}
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +29,9 @@ const ScoreKeeper = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/score-keeper.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/score-keeper.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -92,7 +97,7 @@ const ImageContainer = styled.div`
   align-items: center;
   border-radius: 50%;
   overflow: hidden;
-`
+`;
 const ProjectImage = styled.img`
   width: 100%;
   display: block;

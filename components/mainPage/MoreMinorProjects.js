@@ -1,16 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from "styled-components";
 
 import { COLORS } from "../../public/constant";
 
 const MoreMinorProjects = () => {
   return (
-      <ProjectContainer>
-        <ImageContainer>
-            <Image src={'/assets/archive.jpg'} />
-        </ImageContainer>
-        <ProjectDetails>
+    <ProjectContainer>
+      <ImageContainer>
+        <Image src={"/static/archive.jpg"} />
+      </ImageContainer>
+      <ProjectDetails>
         <ProjectHeader>
           <ProjectTitle>Archive</ProjectTitle>
           <ProjectLink href={"/archive"}>Continue reading</ProjectLink>
@@ -20,19 +20,18 @@ const MoreMinorProjects = () => {
           This section contains all my other minor projects.
         </ProjectBio>
       </ProjectDetails>
-      </ProjectContainer>
+    </ProjectContainer>
   );
 };
 
 const ProjectContainer = styled.div`
-background-color: ${COLORS.yellow};
-border-radius: 20px;
-width: 65%;
-margin: 60px auto auto auto;
-padding-bottom: 30px;
+  background-color: ${COLORS.yellow};
+  border-radius: 20px;
+  width: 65%;
+  margin: 60px auto auto auto;
+  padding-bottom: 30px;
 `;
-const ImageContainer = styled.div`
-`;
+const ImageContainer = styled.div``;
 const Image = styled.img`
   width: 100%;
   border-radius: 20px;
@@ -52,8 +51,7 @@ const ProjectTitle = styled.h3`
 const ProjectDetails = styled.div`
   margin: 10px 20px 10px 20px;
 `;
-const ProjectBio = styled.p`
-`;
+const ProjectBio = styled.p``;
 const ProjectLink = styled.a`
   display: block;
   text-align: right;
@@ -68,12 +66,10 @@ const ProjectLink = styled.a`
   }
 `;
 
-const ArchiveLink = styled.a`
-
-`
+const ArchiveLink = styled.a``;
 const MoreProjectsLink = styled(Link)`
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 `;
 
 export default MoreMinorProjects;

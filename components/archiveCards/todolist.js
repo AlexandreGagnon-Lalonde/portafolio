@@ -10,12 +10,15 @@ import { COLORS } from "../../public/constant";
 const ToDoList = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
+      <Head>
+        <title>Archive</title>
+      </Head>
       <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/To-Do-List"} passHref>
+          <Link
+            href={"https://github.com/AlexandreGagnon-Lalonde/To-Do-List"}
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +29,9 @@ const ToDoList = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/todolist.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/todolist.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -91,7 +96,7 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   border-radius: 50%;
-`
+`;
 const ProjectImage = styled.img`
   width: 80%;
   display: block;

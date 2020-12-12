@@ -10,23 +10,33 @@ import { COLORS } from "../../public/constant";
 const GuessingGame = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
+      <Head>
+        <title>Archive</title>
+      </Head>
       <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/RGB-Guessing-Game"} passHref>
+          <Link
+            href={
+              "https://github.com/AlexandreGagnon-Lalonde/RGB-Guessing-Game"
+            }
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
           </Link>
-          <Link href={"https://guessing-game-alexandregl.netlify.app/"} passHref>
+          <Link
+            href={"https://guessing-game-alexandregl.netlify.app/"}
+            passHref
+          >
             <PlatformLink>
               <SiNetlify />
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/guessingGame.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/guessingGame.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -93,7 +103,7 @@ const ImageContainer = styled.div`
   border-radius: 50%;
   overflow: hidden;
   justify-content: center;
-`
+`;
 const ProjectImage = styled.img`
   height: 100%;
   display: block;

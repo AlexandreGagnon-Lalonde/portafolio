@@ -4,7 +4,7 @@ import styled from "styled-components";
 export default function Picture() {
   return (
     <ImageContainer>
-      <Image src={"/assets/mememe.jpg"} />
+      <Image src={"/static/mememe.jpg"} />
     </ImageContainer>
   );
 }
@@ -16,7 +16,7 @@ const Image = styled.img`
   border-radius: 10px;
 `;
 const ImageContainer = styled.div`
-grid-row: 1 / 3;
+  grid-row: 1 / 3;
   display: flex;
   justify-content: left;
   align-items: center;

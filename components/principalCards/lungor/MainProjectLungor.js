@@ -9,13 +9,11 @@ const MainProjectLungor = () => {
   return (
     <ProjectContainer>
       <ImageContainer>
-        <Image src={"/assets/lungorFiller.png"} />
+        <Image src={"/static/lungorFiller.png"} />
       </ImageContainer>
       <ProjectDetails>
         <ProjectTitle>Lungor</ProjectTitle>
-        <ProjectBio>
-          Still Loading...
-        </ProjectBio>
+        <ProjectBio>Still Loading...</ProjectBio>
         {/* <Link href={"/projects/lungor"} passHref>
           <ProjectLink href={"/projects/lungor"}>Continue reading</ProjectLink>
         </Link> */}
@@ -25,11 +23,11 @@ const MainProjectLungor = () => {
 };
 
 const ProjectContainer = styled.div`
-background-color: ${COLORS.yellow};
-border-radius: 20px;
-width: 65%;
-margin: 60px auto auto auto;
-padding-bottom: 30px;
+  background-color: ${COLORS.yellow};
+  border-radius: 20px;
+  width: 65%;
+  margin: 60px auto auto auto;
+  padding-bottom: 30px;
 `;
 const ImageContainer = styled.div`
   margin: 0 0 10px 0;

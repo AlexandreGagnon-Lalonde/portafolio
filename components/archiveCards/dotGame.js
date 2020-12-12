@@ -10,12 +10,15 @@ import { COLORS } from "../../public/constant";
 const DotGame = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
-    <ProjectContainer>
+      <Head>
+        <title>Archive</title>
+      </Head>
+      <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Dot-Game"} passHref>
+          <Link
+            href={"https://github.com/AlexandreGagnon-Lalonde/Dot-Game"}
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +29,9 @@ const DotGame = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"public/assets/dot-game.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/dot-game.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -93,7 +98,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-`
+`;
 const ProjectImage = styled.img`
   height: 100%;
   display: block;

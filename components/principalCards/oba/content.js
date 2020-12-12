@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
-import ContentText from '../Content/contentText';
-import ContentImage from '../Content/contentImage';
+import ContentText from "../Content/contentText";
+import ContentImage from "../Content/contentImage";
 
 export default function Content() {
-  return <InfoContainer>
+  return (
+    <InfoContainer>
       <ContentText />
-      <ContentImage src={"/assets/mainapp.png"} />
+      <ContentImage src={"/static/mainapp.png"} />
     </InfoContainer>
+  );
 }
 
 const InfoContainer = styled.div`
   width: 100%;
-`
+`;

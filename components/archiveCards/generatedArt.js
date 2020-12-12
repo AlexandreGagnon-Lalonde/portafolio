@@ -10,12 +10,17 @@ import { COLORS } from "../../public/constant";
 const GeneratedArt = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
-    <ProjectContainer>
+      <Head>
+        <title>Archive</title>
+      </Head>
+      <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Basic-Abstract-Generative-Art"} passHref>
+          <Link
+            href={
+              "https://github.com/AlexandreGagnon-Lalonde/Basic-Abstract-Generative-Art"
+            }
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +31,9 @@ const GeneratedArt = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/generated-art.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/generated-art.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -93,7 +100,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-`
+`;
 const ProjectImage = styled.img`
   height: 100%;
   display: block;

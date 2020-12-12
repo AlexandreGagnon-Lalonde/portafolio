@@ -10,23 +10,31 @@ import { COLORS } from "../../public/constant";
 const Library = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
-    <ProjectContainer>
+      <Head>
+        <title>Archive</title>
+      </Head>
+      <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Library-display"} passHref>
+          <Link
+            href={"https://github.com/AlexandreGagnon-Lalonde/Library-display"}
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
           </Link>
-          <Link href={"https://library-display-alexandregl.netlify.app/"} passHref>
+          <Link
+            href={"https://library-display-alexandregl.netlify.app/"}
+            passHref
+          >
             <PlatformLink>
               <SiNetlify />
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/library.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/library.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -92,7 +100,7 @@ const ImageContainer = styled.div`
   align-items: center;
   border-radius: 50%;
   overflow: hidden;
-`
+`;
 const ProjectImage = styled.img`
   width: 100%;
   display: block;

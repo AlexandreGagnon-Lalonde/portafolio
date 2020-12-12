@@ -10,12 +10,17 @@ import { COLORS } from "../../public/constant";
 const Stopwatch = () => {
   return (
     <>
-    <Head>
-      <title>Archive</title>
-    </Head>
+      <Head>
+        <title>Archive</title>
+      </Head>
       <ProjectContainer>
         <ProjectLinks>
-          <Link href={"https://github.com/AlexandreGagnon-Lalonde/Clock---Timer---Countdown"} passHref>
+          <Link
+            href={
+              "https://github.com/AlexandreGagnon-Lalonde/Clock---Timer---Countdown"
+            }
+            passHref
+          >
             <PlatformLink>
               <VscGithubInverted />
             </PlatformLink>
@@ -26,7 +31,9 @@ const Stopwatch = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/stopwatch.PNG"} /></ImageContainer>
+        <ImageContainer>
+          <ProjectImage src={"/static/stopwatch.PNG"} />
+        </ImageContainer>
       </ProjectContainer>
     </>
   );
@@ -93,7 +100,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   border-radius: 50%;
   overflow: hidden;
-`
+`;
 const ProjectImage = styled.img`
   height: 100%;
   display: block;
