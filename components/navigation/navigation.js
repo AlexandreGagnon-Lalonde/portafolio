@@ -66,13 +66,11 @@ const ExpandedNavBar = styled.div`
 `;
 const MinimizedNavBar = styled.div`
   position: fixed;
-  top: 5px;
-  left: 5px;
   background-color: ${COLORS.blue};
   padding: 10px;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
+  border-bottom-right-radius: 10px;
   z-index: 1;
 `;
 const Links = styled.div`
