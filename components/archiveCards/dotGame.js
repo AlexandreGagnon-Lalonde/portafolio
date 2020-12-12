@@ -26,7 +26,7 @@ const DotGame = () => {
             </PlatformLink>
           </Link>
         </ProjectLinks>
-        <ImageContainer><ProjectImage src={"/assets/dot-game.PNG"} /></ImageContainer>
+        <ImageContainer><ProjectImage src={"public/assets/dot-game.PNG"} /></ImageContainer>
       </ProjectContainer>
     </>
   );
