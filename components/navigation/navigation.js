@@ -62,7 +62,7 @@ const ExpandedNavBar = styled.div`
   justify-content: space-between;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  z-index: 1;
+  z-index: 2;
 `;
 const MinimizedNavBar = styled.div`
   position: fixed;
