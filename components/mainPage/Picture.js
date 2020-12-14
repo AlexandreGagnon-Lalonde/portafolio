@@ -16,7 +16,8 @@ const Image = styled.img`
   border-radius: 10px;
 `;
 const ImageContainer = styled.div`
-  grid-row: 1 / 3;
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   justify-content: left;
   align-items: center;

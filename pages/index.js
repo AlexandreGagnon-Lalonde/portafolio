@@ -23,7 +23,6 @@ export default function Home() {
       <Navigation />
       <AboutMeContainer id={'about'}>
         <PresentationText />
-        <Picture />
       </AboutMeContainer>
       <ProjectContainer id={'project'}>
       <Carousel interval={null}>
@@ -45,9 +44,6 @@ const AppContainer = styled.div`
   width: 100%;
 `
 const AboutMeContainer = styled.div`
-  display: grid;
-  grid-template-columns: 60% 40%;
-  min-height: 100vh;
 `;
 const ProjectContainer = styled.div`
   width: 90%;

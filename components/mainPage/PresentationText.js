@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import Picture from './Picture';
 import { COLORS, ABOUTMETEXT } from "../../public/constant";
 
 export default function PresentationText() {
@@ -17,6 +17,7 @@ export default function PresentationText() {
           <ObjectEmphasis>{"}"}</ObjectEmphasis>
         </ObjectName>
       </NameContainer>
+      <Picture />
       <TextContainer>
         <FirstParagraph>
           Look on the right! This is me. You might find my shirt strange... I
@@ -44,11 +45,14 @@ export default function PresentationText() {
 }
 
 const Container = styled.div`
-  grid-column: 1;
-  grid-row: 1 / 3;
+display: grid;
+grid-template-columns: 60% 40%;
+grid-template-rows: 30% 70%;
+min-height: 100vh;
 `;
 const TextContainer = styled.div`
-  margin: auto 100px;
+width: 80%;
+margin: auto;
   text-indent: 2em;
   text-align: justify;
 `;
@@ -57,7 +61,8 @@ const ObjectName = styled.h2`
 `;
 const Hello = styled.h2``;
 const NameContainer = styled.div`
-  margin: 100px 40px 20px 100px;
+grid-column: 1 / 3;
+  margin: 60px auto 20px auto;
 `;
 const FirstParagraph = styled.p`
   line-height: 2;
