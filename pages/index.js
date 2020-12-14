@@ -11,7 +11,7 @@ import Navigation from "../components/navigation/navigation";
 import MainProjectLungor from "../components/principalCards/lungor/MainProjectLungor";
 import MainProjectOBA from "../components/principalCards/oba/MainProjectOBA";
 import MoreMinorProjects from "../components/mainPage/MoreMinorProjects";
-import ContactMe from '../components/contact/ContactMe'
+import PlatformLinks from '../components/contact/PlatformLink'
 import ScrollToTopButton from '../components/mainPage/ScrollToTopButton'
 export default function Home() {
   return (
@@ -34,7 +34,7 @@ export default function Home() {
         
         
       </ProjectContainer>
-      <ContactMe />
+      <PlatformLinks />
       <ScrollToTopButton />
     </AppContainer>
   );

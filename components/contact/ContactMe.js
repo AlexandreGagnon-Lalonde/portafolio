@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-import PlatformLink from './PlatformLink';
+import PlatformLinks from './PlatformLink';
 
 import { VscGithubInverted, VscGithub } from "react-icons/vsc";
 import { SiNetlify } from "react-icons/si";
@@ -10,7 +10,7 @@ import { COLORS } from "../../public/constant";
 
 export default function ContactMe () {
   return (
-      <PlatformLink />
+      <PlatformLinks />
   );
 };
 

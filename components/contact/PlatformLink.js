@@ -19,15 +19,13 @@ export default function PlatformLinks () {
 
 const LinkyContainer = styled.div`
   width: 100%;
-  padding: 40px 0 20px 0;
+  padding: 80px 0 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 80px;
-border-top-left-radius: 40px;
-border-top-right-radius: 40px;
+  margin-top: 40px;
 background: ${COLORS.blue};
-background: linear-gradient(0deg, ${COLORS.blue} 60%, rgba(251,246,240,1) 100%);
+background: linear-gradient(0deg, ${COLORS.blue} 50%, rgba(251,246,240,1) 100%);
 
 `
 const Linky = styled.a`
