@@ -40,6 +40,8 @@ const Image = styled.img`
 `;
 const ProjectTitle = styled.h3`
   margin-bottom: 10px;
+  font-weight: bold;
+
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 20px 20px;

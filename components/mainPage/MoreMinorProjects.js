@@ -47,6 +47,7 @@ const ProjectHeader = styled.div`
 
 const ProjectTitle = styled.h3`
   flex: 1;
+  font-weight: bold;
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 10px 20px;
@@ -57,6 +58,7 @@ const ProjectLink = styled.a`
   text-align: right;
   color: ${COLORS.white};
   font-weight: bold;
+  font-size: 1.25em;
   text-decoration: none;
   transition: all 0.3s;
 
