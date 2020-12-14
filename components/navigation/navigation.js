@@ -66,6 +66,7 @@ const ExpandedNavBar = styled.div`
 `;
 const MinimizedNavBar = styled.div`
   position: fixed;
+  top: 0;
   background-color: ${COLORS.blue};
   padding: 10px;
   display: flex;
