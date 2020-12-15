@@ -63,6 +63,10 @@ const ExpandedNavBar = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: 2;
+  @media (max-width: 768px) {
+    padding: 5px;
+  }
+
 `;
 const MinimizedNavBar = styled.div`
   position: fixed;
@@ -78,4 +82,8 @@ const Links = styled.div`
   width: 300px;
   display: flex;
   justify-content: space-around;
+  @media (max-width: 768px) {
+    width: 250px;
+  }
+
 `;
