@@ -29,6 +29,10 @@ export default function PurposeText() {
 const InfoContainer = styled.div`
   width: 100%;
   height: 100vh;
+  @media (max-width: 768px) {
+    height: 100%;
+  }
+
 `;
 const PurposeParagraph = styled.p`
   margin: 100px 60px auto 30px;
@@ -36,6 +40,11 @@ const PurposeParagraph = styled.p`
   text-align: justify;
   line-height: 2;
   font-weight: 600;
+  @media (max-width: 768px) {
+    margin: 30px;
+    text-indent: 0;
+  }
+
 `;
 const GenericAnimation = styled.div`
   margin: 100px auto;

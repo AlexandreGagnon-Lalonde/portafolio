@@ -70,6 +70,12 @@ const AppTitle = styled.h3`
   font-variant: small-caps;
   text-transform: none;
   margin: 60px 0 40px 60px;
+
+  @media (max-width: 768px) {
+    margin: 60px auto 40px auto;
+    text-align: center;
+  }
+
 `;
 const TechnologiesContainer = styled.div`
   height: 300px;
@@ -119,6 +125,12 @@ const GeneralInfoFirstPart = styled.p`
   text-align: justify;
   line-height: 2;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    text-indent: 0;
+    margin: 20px 30px auto 30px;
+  }
+
 `;
 const GeneralInfoSecondPart = styled.p`
   margin: 20px 60px auto 60px;
@@ -126,4 +138,10 @@ const GeneralInfoSecondPart = styled.p`
   text-align: justify;
   line-height: 2;
   font-weight: 600;
+
+  @media (max-width: 768px) {
+    text-indent: 0;
+    margin: 20px 30px auto 30px;
+  }
+
 `;

@@ -10,6 +10,11 @@ export default function ContentText() {
 const InfoContainer = styled.div`
   margin: 40px auto 40px auto;
   width: 80%;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+  }
+
 `
 const ContentParagraph = styled.p`
 margin: auto 40px;
@@ -17,5 +22,10 @@ text-indent: 2em;
 text-align: justify;
 line-height: 2;
 font-weight: 600;
+
+@media (max-width: 768px) {
+  text-indent: 0;
+  margin: 30px;
+}
 
 `

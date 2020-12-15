@@ -37,6 +37,10 @@ const ProjectTechnologies = styled.ul`
 const Technology = styled.li``;
 const FirstPartOfProject = styled.div`
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
 `;
 const SecondPartOfProject = styled.div``;
 export default OBA;
