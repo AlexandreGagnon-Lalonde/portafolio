@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Picture from './Picture';
+import Picture from "./Picture";
 import { COLORS, ABOUTMETEXT } from "../../public/constant";
 
 export default function PresentationText() {
@@ -45,23 +45,40 @@ export default function PresentationText() {
 }
 
 const Container = styled.div`
-display: grid;
-grid-template-columns: 60% 40%;
-grid-template-rows: 30% 70%;
-min-height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 30% 70%;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 const TextContainer = styled.div`
-width: 80%;
-margin: auto;
+  width: 80%;
+  margin: auto;
   text-indent: 2em;
   text-align: justify;
+  @media (max-width: 768px) {
+    text-indent: 0;
+  }
 `;
 const ObjectName = styled.h2`
   margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+    font-size: 1.5em;
+  }
 `;
-const Hello = styled.h2``;
+const Hello = styled.h2`
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
+`;
 const NameContainer = styled.div`
-grid-column: 1 / 3;
+  grid-column: 1 / 3;
   margin: 60px auto 20px auto;
 `;
 const FirstParagraph = styled.p`
@@ -70,6 +87,9 @@ const FirstParagraph = styled.p`
 const SecondParagraph = styled.p`
   line-height: 2;
   margin-top: 50px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 `;
 const ObjectEmphasis = styled.span`
   font-weight: bold;
@@ -79,9 +99,4 @@ const Emphasis = styled.span`
   font-weight: bold;
   font-style: italic;
   color: ${COLORS.orange};
-`;
-const Tag = styled.span`
-  font-weight: bold;
-  font-style: italic;
-  color: ${COLORS.blue};
 `;

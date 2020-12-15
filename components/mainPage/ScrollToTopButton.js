@@ -54,4 +54,10 @@ const Button = styled.button`
   &:hover {
     opacity: 1;
   }
+  @media (max-width: 768px) {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
 `

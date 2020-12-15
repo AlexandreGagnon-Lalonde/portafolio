@@ -21,4 +21,10 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: left;
   align-items: center;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
 `;
