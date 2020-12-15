@@ -68,8 +68,10 @@ const Video = styled.div`
   border-radius: 10px;
 `;
 const ProjectTitle = styled.h3`
-  margin-bottom: 10px;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 
 `;
 const ProjectDetails = styled.div`
@@ -79,6 +81,7 @@ const ProjectHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 `;
 const ProjectBio = styled.p`
 `;
@@ -94,6 +97,10 @@ const ProjectLink = styled.a`
     color: ${COLORS.orange};
     text-decoration: none;
   }
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+
 `;
 
 export default MainProjectOBA;

@@ -41,6 +41,9 @@ const Image = styled.img`
 const ProjectTitle = styled.h3`
   margin-bottom: 10px;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
 
 `;
 const ProjectDetails = styled.div`

@@ -48,6 +48,10 @@ const ProjectHeader = styled.div`
 const ProjectTitle = styled.h3`
   flex: 1;
   font-weight: bold;
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 10px 20px;
@@ -66,6 +70,10 @@ const ProjectLink = styled.a`
     color: ${COLORS.orange};
     text-decoration: none;
   }
+  @media (max-width: 768px) {
+    font-size: 1em;
+  }
+
 `;
 
 const ArchiveLink = styled.a``;
