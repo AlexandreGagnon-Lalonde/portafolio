@@ -4,7 +4,7 @@ import GeneralInfo from "../../../components/principalCards/oba/generalInfo";
 import Purpose from "../../../components/principalCards/oba/purpose";
 import Content from "../../../components/principalCards/oba/content";
 import Navigation from "../../../components/navigation/navigation";
-import ContactMe from "../../../components/contact/ContactMe";
+import PlatformLinks from "../../../components/contact/PlatformLink";
 
 const OBA = () => {
   return (
@@ -19,7 +19,7 @@ const OBA = () => {
       </FirstPartOfProject>
       <SecondPartOfProject>
         <Content id={"content"} />
-        <ContactMe id={"contact"} />
+        <PlatformLinks id={"contact"} />
       </SecondPartOfProject>
     </>
   );

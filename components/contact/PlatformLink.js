@@ -1,21 +1,24 @@
 import styled from "styled-components";
-import Link from "next/link";
-
-import { VscGithubInverted, VscGithub } from "react-icons/vsc";
+import { VscGithubInverted } from "react-icons/vsc";
 import { SiLinkedin } from "react-icons/si";
-import { HiOutlineMail } from 'react-icons/hi'
-
+import { HiOutlineMail } from "react-icons/hi";
 import { COLORS } from "../../public/constant";
 
-export default function PlatformLinks () {
+export default function PlatformLinks() {
   return (
-    <LinkyContainer id={'contact'}>
-      <Linky href={'https://github.com/AlexandreGagnon-Lalonde'}><VscGithubInverted style={{ fontSize: '1.5em'}} /></Linky>
-      <Linky href={'https://www.linkedin.com/in/alexandregagnonlalonde/'}><SiLinkedin style={{ fontSize: '1.5em'}} /></Linky>
-      <Linky href={'mailto:alexandregagnonlalonde@gmail.com'}><HiOutlineMail style={{ fontSize: '1.5em'}} /></Linky>
+    <LinkyContainer id={"contact"}>
+      <Linky href={"https://github.com/AlexandreGagnon-Lalonde"}>
+        <VscGithubInverted style={{ fontSize: "1.5em" }} />
+      </Linky>
+      <Linky href={"https://www.linkedin.com/in/alexandregagnonlalonde/"}>
+        <SiLinkedin style={{ fontSize: "1.5em" }} />
+      </Linky>
+      <Linky href={"mailto:alexandregagnonlalonde@gmail.com"}>
+        <HiOutlineMail style={{ fontSize: "1.5em" }} />
+      </Linky>
     </LinkyContainer>
   );
-};
+}
 
 const LinkyContainer = styled.div`
   width: 100%;
@@ -24,10 +27,13 @@ const LinkyContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-top: 40px;
-background: ${COLORS.blue};
-background: linear-gradient(0deg, ${COLORS.blue} 50%, rgba(251,246,240,1) 100%);
-
-`
+  background: ${COLORS.blue};
+  background: linear-gradient(
+    0deg,
+    ${COLORS.blue} 50%,
+    rgba(251, 246, 240, 1) 100%
+  );
+`;
 const Linky = styled.a`
   color: ${COLORS.white};
   background-color: ${COLORS.orange};
@@ -43,4 +49,4 @@ const Linky = styled.a`
     opacity: 1;
     color: ${COLORS.white};
   }
-`
+`;

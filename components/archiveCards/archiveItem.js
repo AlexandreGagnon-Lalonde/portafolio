@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { COLORS } from "../../public/constant";
 import ArchiveLinks from "./archiveLinks";
-import Image from "./image";
+import Image from "./projectImage";
 
 export default function ArchiveItem({ ProjectInfo, index }) {
   const ProjectContainer = styled.div`
