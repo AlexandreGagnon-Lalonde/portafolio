@@ -1,16 +1,15 @@
 import styled from "styled-components";
 import Link from "next/link";
-
 import { COLORS } from "../../public/constant";
-import { FaHamburger, FaRegWindowMinimize } from "react-icons/fa";
 
 export default function HomeLink() {
   return (
-<Link href={"/"} passHref>
-            <NavigationLink onClick={(ev) => ev.stopPropagation()}>
-              Alexandre GL
-            </NavigationLink>
-          </Link>  );
+    <Link href={"/"} passHref>
+      <NavigationLink onClick={(ev) => ev.stopPropagation()}>
+        Alexandre GL
+      </NavigationLink>
+    </Link>
+  );
 }
 
 const NavigationLink = styled.a`

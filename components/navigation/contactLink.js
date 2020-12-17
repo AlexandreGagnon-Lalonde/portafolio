@@ -1,12 +1,8 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { useRouter } from "next/router";
-
 import { COLORS } from "../../public/constant";
 
 export default function ContactLink() {
-  const route = useRouter().route;
-
   return (
     <Link href={"#contact"} passHref>
       <NavigationLink>Contact</NavigationLink>
@@ -25,6 +21,5 @@ const NavigationLink = styled.a`
   &:hover {
     color: ${COLORS.orange};
     text-decoration: none;
-
   }
 `;

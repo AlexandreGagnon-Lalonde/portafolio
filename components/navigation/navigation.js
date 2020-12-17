@@ -1,45 +1,17 @@
 import styled from "styled-components";
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from 'next/router';
-
-import { FaHamburger, FaRegWindowMinimize } from "react-icons/fa";
-import { FiMinimize } from "react-icons/fi";
-import { VscChromeMinimize } from "react-icons/vsc";
-import { GiHamburgerMenu } from "react-icons/gi";
-
+import { useRouter } from "next/router";
 import AboutMeLink from "./aboutMeLink";
 import ProjectsLink from "./projectsLink";
-import ArchiveLink from "./archiveLink";
 import ContactLink from "./contactLink";
-import HomeLink from './HomeLink';
-
+import HomeLink from "./HomeLink";
 import { COLORS } from "../../public/constant";
 
 export default function Navigation() {
-  const [minimizedNavBar, setMinimizedNavBar] = useState(true);
-
   const route = useRouter().pathname;
-  console.log(route)
-
-  const handleClick = (ev) => {
-    setMinimizedNavBar(!minimizedNavBar);
-  };
-
-  const minimizeMenuStyles = {
-    color: `${COLORS.white}`,
-    transform: "scale(1.5)",
-    margin: "auto",
-  };
 
   return (
     <>
-      {!minimizedNavBar ? (
-        <MinimizedNavBar>
-          <GiHamburgerMenu style={minimizeMenuStyles} onClick={handleClick} />
-        </MinimizedNavBar>
-      ) : route === '/' ? (
-        
+      {route === "/" ? (
         <ExpandedNavBar>
           <HomeLink />
           <Links>
@@ -48,7 +20,11 @@ export default function Navigation() {
             <ContactLink />
           </Links>
         </ExpandedNavBar>
-      ) : <MinimizedNavBar><HomeLink /></MinimizedNavBar>}
+      ) : (
+        <MinimizedNavBar>
+          <HomeLink />
+        </MinimizedNavBar>
+      )}
     </>
   );
 }
@@ -66,7 +42,6 @@ const ExpandedNavBar = styled.div`
   @media (max-width: 768px) {
     padding: 5px;
   }
-
 `;
 const MinimizedNavBar = styled.div`
   position: fixed;
@@ -85,5 +60,4 @@ const Links = styled.div`
   @media (max-width: 768px) {
     width: 250px;
   }
-
 `;

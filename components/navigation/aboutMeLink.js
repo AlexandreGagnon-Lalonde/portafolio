@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { useRouter } from "next/router";
-
 import { COLORS } from "../../public/constant";
 
 export default function AboutMeLink() {
@@ -24,6 +22,5 @@ const NavigationLink = styled.a`
   &:hover {
     color: ${COLORS.orange};
     text-decoration: none;
-
   }
 `;

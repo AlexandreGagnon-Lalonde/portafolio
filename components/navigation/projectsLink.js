@@ -5,8 +5,6 @@ import { useRouter } from "next/router";
 import { COLORS } from "../../public/constant";
 
 export default function ProjectsLink() {
-  const route = useRouter().route;
-
   return (
     <Link href={"#project"} passHref>
       <NavigationLink>Projects</NavigationLink>
