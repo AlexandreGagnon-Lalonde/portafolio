@@ -18,3 +18,15 @@ export const COLORS = {
 }
 
 export const SERVER_URL = "http://localhost:3001";
+
+export const YoutubeStyles = {
+  borderTopLeftRadius: "20px",
+  borderTopRightRadius: "20px",
+  borderBottomLeftRadius: "0px",
+  borderBottomRightRadius: "0px",
+  width: '100%',
+  height: '100%',
+  position: 'absolute',
+  top: '0',
+  left: '0',
+};

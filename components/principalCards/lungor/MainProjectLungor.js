@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import Link from "next/link";
-
 import { COLORS } from "../../../public/constant";
-
-import { VscGithubInverted, VscGithub } from "react-icons/vsc";
 
 const MainProjectLungor = () => {
   return (
@@ -44,7 +40,6 @@ const ProjectTitle = styled.h3`
   @media (max-width: 768px) {
     font-size: 1em;
   }
-
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 20px 20px;

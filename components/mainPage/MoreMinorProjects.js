@@ -51,7 +51,6 @@ const ProjectTitle = styled.h3`
   @media (max-width: 768px) {
     font-size: 1em;
   }
-
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 10px 20px;
@@ -73,13 +72,6 @@ const ProjectLink = styled.a`
   @media (max-width: 768px) {
     font-size: 1em;
   }
-
-`;
-
-const ArchiveLink = styled.a``;
-const MoreProjectsLink = styled(Link)`
-  width: 100%;
-  height: 100%;
 `;
 
 export default MoreMinorProjects;

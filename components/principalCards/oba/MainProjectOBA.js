@@ -1,23 +1,7 @@
 import styled from "styled-components";
-import Link from "next/link";
-
-import { COLORS } from "../../../public/constant";
-
-import { VscGithubInverted, VscGithub } from "react-icons/vsc";
-import { BsArrowRight } from "react-icons/bs";
+import { COLORS, YoutubeStyles } from "../../../public/constant";
 
 const MainProjectOBA = () => {
-  const YoutubeStyles = {
-    borderTopLeftRadius: "20px",
-    borderTopRightRadius: "20px",
-    borderBottomLeftRadius: "0px",
-    borderBottomRightRadius: "0px",
-    width: '100%',
-    height: '100%',
-    position: 'absolute',
-    top: '0',
-    left: '0',
-  };
   return (
     <ProjectContainer>
       <ImageContainer>
@@ -55,24 +39,15 @@ const ProjectContainer = styled.div`
   padding-bottom: 30px;
 `;
 const ImageContainer = styled.div`
-position: relative;
+  position: relative;
   margin: 0 0 10px 0;
   padding-bottom: 56.25%;
-`;
-const Image = styled.img`
-  width: 80%;
-  border-radius: 10px;
-`;
-const Video = styled.div`
-  width: 100%;
-  border-radius: 10px;
 `;
 const ProjectTitle = styled.h3`
   font-weight: bold;
   @media (max-width: 768px) {
     font-size: 1em;
   }
-
 `;
 const ProjectDetails = styled.div`
   margin: 10px 20px 0 20px;
@@ -83,8 +58,7 @@ const ProjectHeader = styled.div`
   align-items: center;
   margin-bottom: 10px;
 `;
-const ProjectBio = styled.p`
-`;
+const ProjectBio = styled.p``;
 const ProjectLink = styled.a`
   text-align: right;
   color: ${COLORS.white};
@@ -100,7 +74,6 @@ const ProjectLink = styled.a`
   @media (max-width: 768px) {
     font-size: 1em;
   }
-
 `;
 
 export default MainProjectOBA;
