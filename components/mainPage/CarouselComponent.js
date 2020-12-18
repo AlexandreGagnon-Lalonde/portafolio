@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
-import MainProjectLungor from "../principalCards/lungor/MainProjectLungor";
-import MainProjectOBA from "../principalCards/OBA/MainProjectOBA";
+import MainProjectLungor from "./principalCards/MainProjectLungor";
+import MainProjectOBA from "./principalCards/MainProjectOBA";
 import MoreMinorProjects from "./principalCards/MoreMinorProjects";
 import styled from "styled-components";
 
