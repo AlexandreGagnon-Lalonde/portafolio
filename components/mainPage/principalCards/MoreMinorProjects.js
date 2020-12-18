@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import styled, { keyframes } from "styled-components";
 
-import { COLORS } from "../../public/constant";
+import { COLORS } from "../../../public/constant";
 
 const MoreMinorProjects = () => {
   return (

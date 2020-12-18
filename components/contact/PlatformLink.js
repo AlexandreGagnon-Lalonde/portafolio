@@ -6,7 +6,7 @@ import { COLORS } from "../../public/constant";
 
 export default function PlatformLinks() {
   return (
-    <LinkyContainer id={"contact"}>
+    <LinkyContainer>
       <Linky href={"https://github.com/AlexandreGagnon-Lalonde"}>
         <VscGithubInverted style={{ fontSize: "1.5em" }} />
       </Linky>
