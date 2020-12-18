@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styled from "styled-components";
-import GeneralInfo from "../../../components/principalCards/oba/generalInfo";
-import Purpose from "../../../components/principalCards/oba/purpose";
-import Content from "../../../components/principalCards/oba/content";
+import GeneralInfo from "../../../components/ProjectPages/OBA/generalInfo";
+import Purpose from "../../../components/ProjectPages/OBA/purpose";
+import Content from "../../../components/ProjectPages/OBA/content";
 import Navigation from "../../../components/navigation/navigation";
 import PlatformLinks from "../../../components/contact/PlatformLink";
 

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import PurposeImage from "../Purpose/purposeImage";
-import PurposeText from "../Purpose/purposeText";
+import PurposeImage from "./purposeImage";
+import PurposeText from "./purposeText";
 
 export default function Purpose() {
   return (
@@ -19,5 +19,4 @@ const InfoContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
-
 `;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import ContentText from "../Content/contentText";
-import ContentImage from "../Content/contentImage";
+import ContentText from "./contentText";
+import ContentImage from "./contentImage";
 
 export default function Content() {
   return (
