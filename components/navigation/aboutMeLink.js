@@ -4,7 +4,7 @@ import { COLORS } from "../../public/constant";
 
 export default function AboutMeLink() {
   return (
-    <Link href={"#about"} passHref>
+    <Link href={"/#about"} passHref>
       <NavigationLink>About</NavigationLink>
     </Link>
   );

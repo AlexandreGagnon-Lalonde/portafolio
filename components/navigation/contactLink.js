@@ -4,7 +4,7 @@ import { COLORS } from "../../public/constant";
 
 export default function ContactLink() {
   return (
-    <Link href={"#contact"} passHref>
+    <Link href={"/#contact"} passHref>
       <NavigationLink>Contact</NavigationLink>
     </Link>
   );

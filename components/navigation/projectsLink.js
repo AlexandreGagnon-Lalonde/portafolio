@@ -6,7 +6,7 @@ import { COLORS } from "../../public/constant";
 
 export default function ProjectsLink() {
   return (
-    <Link href={"#project"} passHref>
+    <Link href={"/#project"} passHref>
       <NavigationLink>Projects</NavigationLink>
     </Link>
   );
@@ -23,6 +23,5 @@ const NavigationLink = styled.a`
   &:hover {
     color: ${COLORS.orange};
     text-decoration: none;
-
   }
 `;

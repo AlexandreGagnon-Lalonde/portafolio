@@ -5,7 +5,7 @@ import PresentationText from "./PresentationText";
 
 export default function Presentation() {
   return (
-    <Container>
+    <Container id={"about"}>
       <PresentationName />
       <Picture />
       <PresentationText />

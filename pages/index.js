@@ -13,9 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navigation />
-      <Presentation id={"about"} />
-      <CarouselComponent id={"project"} />
-      <PlatformLinks id={"contact"}/>
+      <Presentation />
+      <CarouselComponent />
+      <PlatformLinks />
       <ScrollToTopButton />
     </>
   );

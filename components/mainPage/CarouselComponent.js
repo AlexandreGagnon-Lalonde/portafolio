@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 export default function CarouselComponent() {
   return (
-    <Container>
+    <Container id={"project"}>
       <Carousel interval={null}>
         <Carousel.Item>
           <MainProjectOBA />
