@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import { COLORS } from "../../../public/constant";
-
 export default function PurposeText() {
   return (
     <InfoContainer>
@@ -32,7 +30,6 @@ const InfoContainer = styled.div`
   @media (max-width: 768px) {
     height: 100%;
   }
-
 `;
 const PurposeParagraph = styled.p`
   margin: 100px 60px auto 30px;
@@ -44,9 +41,8 @@ const PurposeParagraph = styled.p`
     margin: 30px;
     text-indent: 0;
   }
-
 `;
 const GenericAnimation = styled.div`
   margin: 100px auto;
   height: 200px;
-`
+`;

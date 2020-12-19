@@ -1,6 +1,4 @@
 import styled from "styled-components";
-
-import LessonText from "../Lesson/lessonText";
 import LessonImage from "../Lesson/lessonImage";
 
 export default function Lesson() {

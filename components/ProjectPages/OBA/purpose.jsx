@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import PurposeImage from "./purposeImage";
 import PurposeText from "./purposeText";
 

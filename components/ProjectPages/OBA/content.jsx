@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 import ContentText from "./contentText";
 import ContentImage from "./contentImage";
 

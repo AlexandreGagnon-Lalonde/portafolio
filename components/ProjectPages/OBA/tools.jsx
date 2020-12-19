@@ -1,6 +1,5 @@
 import { keyframes } from "styled-components";
 import styled from "styled-components";
-import { useSpring, animated } from "react-spring";
 
 export default function Tools() {
   return (
@@ -75,7 +74,6 @@ const AppTitle = styled.h3`
     margin: 60px auto 40px auto;
     text-align: center;
   }
-
 `;
 const TechnologiesContainer = styled.div`
   height: 300px;
@@ -130,7 +128,6 @@ const GeneralInfoFirstPart = styled.p`
     text-indent: 0;
     margin: 20px 30px auto 30px;
   }
-
 `;
 const GeneralInfoSecondPart = styled.p`
   margin: 20px 60px auto 60px;
@@ -143,5 +140,4 @@ const GeneralInfoSecondPart = styled.p`
     text-indent: 0;
     margin: 20px 30px auto 30px;
   }
-
 `;
