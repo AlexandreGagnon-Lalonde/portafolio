@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import GitHubLink from './githubLink';
-import NetlifyLink from './netlifyLink';
+import GitHubLink from "./githubLink";
+import NetlifyLink from "./netlifyLink";
 
 export default function ArchiveLinks({ github, netlify, index }) {
   const ProjectLinks = styled.div`
