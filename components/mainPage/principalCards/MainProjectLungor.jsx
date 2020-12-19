@@ -3,14 +3,14 @@ import { COLORS } from "../../../public/constant";
 import LungorImage from "./LungorImage";
 import LungorDetails from "./LungorDetails";
 
-const MainProjectLungor = () => {
+export default function MainProjectLungor() {
   return (
     <ProjectContainer>
       <LungorImage />
       <LungorDetails />
     </ProjectContainer>
   );
-};
+}
 
 const ProjectContainer = styled.div`
   background-color: ${COLORS.yellow};

@@ -26,5 +26,4 @@ const ImageContainer = styled.div`
     justify-content: center;
     margin-bottom: 20px;
   }
-  
 `;

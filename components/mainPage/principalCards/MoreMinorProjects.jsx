@@ -1,10 +1,8 @@
 import React from "react";
-import Link from "next/link";
-import styled, { keyframes } from "styled-components";
-
+import styled from "styled-components";
 import { COLORS } from "../../../public/constant";
 
-const MoreMinorProjects = () => {
+export default function MoreMinorProjects() {
   return (
     <ProjectContainer>
       <ImageContainer>
@@ -73,5 +71,3 @@ const ProjectLink = styled.a`
     font-size: 1em;
   }
 `;
-
-export default MoreMinorProjects;

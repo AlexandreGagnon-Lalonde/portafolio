@@ -1,8 +1,7 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
-import { useState, useEffect } from 'react'
-
-import { COLORS } from '../../public/constant'
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { useState } from "react";
+import { COLORS } from "../../public/constant";
 
 const scrollTopButtonFadeIn = keyframes`
   0% {
@@ -11,28 +10,32 @@ const scrollTopButtonFadeIn = keyframes`
   100% {
     opacity: 0.7;
   }
-`
+`;
 
 export default function ScrollToTopButton() {
   const [showScroll, setShowScroll] = useState(false);
-  const scrollButtonStyle = { display: showScroll ? 'inline-flex' : 'none'}
+  const scrollButtonStyle = { display: showScroll ? "inline-flex" : "none" };
   const ScrollToTop = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'});
-  }
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   const checkScroll = () => {
-      const pageScrolled = window.pageYOffset > 400;
-  const pageNotScrolled = window.pageYOffset <= 400;
+    const pageScrolled = window.pageYOffset > 400;
+    const pageNotScrolled = window.pageYOffset <= 400;
 
-    if (!showScroll && pageScrolled){
-      setShowScroll(true)    
-    } else if (showScroll && pageNotScrolled){
-      setShowScroll(false)    
-    }   
-  }
+    if (!showScroll && pageScrolled) {
+      setShowScroll(true);
+    } else if (showScroll && pageNotScrolled) {
+      setShowScroll(false);
+    }
+  };
   React.useEffect(() => {
-    window.addEventListener('scroll', checkScroll)
-  })
-  return <Button onClick={ScrollToTop} style={scrollButtonStyle}>Top</Button>
+    window.addEventListener("scroll", checkScroll);
+  });
+  return (
+    <Button onClick={ScrollToTop} style={scrollButtonStyle}>
+      Top
+    </Button>
+  );
 }
 
 const Button = styled.button`
@@ -59,5 +62,4 @@ const Button = styled.button`
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-
-`
+`;
