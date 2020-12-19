@@ -6,7 +6,7 @@ import Content from "../../../components/ProjectPages/OBA/content";
 import Navigation from "../../../components/navigation/navigation";
 import PlatformLinks from "../../../components/contact/PlatformLink";
 
-const OBA = () => {
+export default function OBA() {
   return (
     <>
       <Head>
@@ -23,7 +23,7 @@ const OBA = () => {
       </SecondPartOfProject>
     </>
   );
-};
+}
 
 const FirstPartOfProject = styled.div`
   display: flex;
@@ -32,4 +32,3 @@ const FirstPartOfProject = styled.div`
   }
 `;
 const SecondPartOfProject = styled.div``;
-export default OBA;

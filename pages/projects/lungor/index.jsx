@@ -1,10 +1,8 @@
 import Head from "next/head";
 import styled from "styled-components";
+import Navigation from "../../../components/navigation/navigation";
 
-import HomeLink from '../../../components/navigation/HomeLink'
-import Navigation from '../../../components/navigation/navigation';
-
-const Lungor = () => {
+export default function Lungor() {
   return (
     <>
       <Head>
@@ -20,12 +18,11 @@ const Lungor = () => {
       </div>
     </>
   );
-};
+}
+
 const ProjectTechnologies = styled.ul`
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 `;
 const Technology = styled.li``;
-
-export default Lungor;

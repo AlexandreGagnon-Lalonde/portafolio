@@ -10,7 +10,6 @@ export default function Archive() {
       <Head>
         <title>Archive</title>
       </Head>
-
       <Navigation />
       <Container>
         {ArchiveInfo.map((info, index) => {
