@@ -31,6 +31,61 @@ export const YoutubeStyles = {
   left: "0",
 };
 
+export const Technologies = [
+  {
+    name: 'HTML',
+    src: '/static/html.png',
+  },
+  {
+    name: 'CSS',
+    src: '/static/css.png',
+  },
+  {
+    name: 'JS',
+    src: '/static/javascript.png',
+  },
+  {
+    name: 'NodeJS',
+    src: '/static/node.png',
+  },
+  {
+    name: 'Express',
+    src: '/static/express.png',
+  },
+  {
+    name: 'ReactJS',
+    src: '/static/react.png',
+  },
+  {
+    name: 'Redux',
+    src: '/static/redux.png',
+  },
+  {
+    name: 'MongoDB',
+    src: '/static/mongoDB.png',
+  },
+  {
+    name: 'Firebase',
+    src: '/static/firebase.png',
+  },
+  {
+    name: 'Git',
+    src: '/static/git.png',
+  },
+  {
+    name: 'Yarn',
+    src: '/static/yarn.png',
+  },
+  {
+    name: 'Npm',
+    src: '/static/npm.png',
+  },
+  {
+    name: 'NextJS',
+    src: '/static/next.png',
+  },
+
+]
 export const ArchiveInfo = [
   {
     projectName: "dotGame",
