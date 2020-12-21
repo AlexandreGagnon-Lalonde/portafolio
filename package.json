@@ -9,12 +9,17 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "lodash": "^4.17.20",
     "next": "^10.0.0",
+    "nice-react-ticker": "^1.1.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "16.13.1",
+    "react-double-marquee": "^1.0.6",
     "react-icons": "^3.11.0",
+    "react-marquee-slider": "^1.1.2",
     "react-spring": "^8.0.27",
+    "react-ticker": "^1.2.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

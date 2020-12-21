@@ -19,5 +19,3 @@ const ProjectContainer = styled.div`
   margin: 60px auto auto auto;
   padding-bottom: 30px;
 `;
-
-export default MainProjectLungor;
