@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { useState } from "react";
 import { COLORS } from "../../public/constant";
+import { CgArrowUpR } from 'react-icons/cg';
 
 const scrollTopButtonFadeIn = keyframes`
   0% {
@@ -33,7 +34,7 @@ export default function ScrollToTopButton() {
   });
   return (
     <Button onClick={ScrollToTop} style={scrollButtonStyle}>
-      Top
+      <CgArrowUpR style={{transform: 'scale(1.4)', display: 'block', margin: '0 auto'}} />
     </Button>
   );
 }
