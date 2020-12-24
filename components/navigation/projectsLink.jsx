@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { COLORS } from "../../public/constant";
 
 export default function ProjectsLink() {
   return (
@@ -13,13 +12,13 @@ export default function ProjectsLink() {
 const NavigationLink = styled.a`
   display: inline-block;
   font-weight: bold;
-  color: ${COLORS.white};
+  color: ${(props) => props.theme.navigationProjectLinkColor};
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
   width: auto;
 
   &:hover {
-    color: ${COLORS.orange};
+    color: ${(props) => props.theme.navigationProjectLinkHoverColor};
     text-decoration: none;
   }
 `;

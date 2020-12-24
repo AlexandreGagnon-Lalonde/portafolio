@@ -4,7 +4,6 @@ import AboutMeLink from "./aboutMeLink";
 import ProjectsLink from "./projectsLink";
 import ContactLink from "./contactLink";
 import HomeLink from "./HomeLink";
-import { COLORS } from "../../public/constant";
 
 export default function Navigation() {
   const route = useRouter().pathname;
@@ -32,13 +31,14 @@ export default function Navigation() {
 const ExpandedNavBar = styled.div`
   position: fixed;
   width: 100%;
-  background-color: ${COLORS.blue};
+  background-color: ${(props) => props.theme.navigationBackground};
   padding: 10px;
   display: flex;
   justify-content: space-between;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: 2;
+  transition: all 0.3s;
   @media (max-width: 768px) {
     padding: 5px;
   }
@@ -46,7 +46,7 @@ const ExpandedNavBar = styled.div`
 const MinimizedNavBar = styled.div`
   position: fixed;
   top: 0;
-  background-color: ${COLORS.blue};
+  background-color: ${(props) => props.theme.navigationBackground};
   padding: 10px;
   display: flex;
   justify-content: space-between;

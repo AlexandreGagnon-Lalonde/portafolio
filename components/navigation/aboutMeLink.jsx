@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { COLORS } from "../../public/constant";
 
 export default function AboutMeLink() {
   return (
@@ -13,14 +12,14 @@ export default function AboutMeLink() {
 const NavigationLink = styled.a`
   display: inline-block;
   font-weight: bold;
-  color: ${COLORS.white};
+  color: ${(props) => props.theme.navigationAboutMeLinkColor};
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
   width: auto;
   z-index: 1;
 
   &:hover {
-    color: ${COLORS.orange};
+    color: ${(props) => props.theme.navigationAboutMeLinkHoverColor};
     text-decoration: none;
   }
 `;

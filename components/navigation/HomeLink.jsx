@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { COLORS } from "../../public/constant";
 
 export default function HomeLink() {
   return (
@@ -13,15 +12,15 @@ export default function HomeLink() {
 const NavigationLink = styled.a`
   display: inline-block;
   font-weight: bold;
-  color: ${COLORS.white};
+  color: ${(props) => props.theme.navigationHomeLinkColor};
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
   width: auto;
   letter-spacing: 0px;
-  background-color: ${COLORS.blue};
+  background-color: ${(props) => props.theme.navigationHomeLinkBackground};
 
   &:hover {
-    color: ${COLORS.orange};
+    color: ${(props) => props.theme.navigationHomeLinkHoverColor};
     text-decoration: none;
   }
 `;

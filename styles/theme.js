@@ -1,8 +1,8 @@
-import { COLORS } from '../public/constant';
+import { COLORS } from "../public/constant";
 
 export const lightTheme = {
   body: "#fbf6f0",
-  text: '#101010',
+  text: "#101010",
   contactBackground: COLORS.blue,
   contactGradient: `linear-gradient(0deg, ${COLORS.blue} 50%, ${COLORS.white} 100%)`,
   contactIconColor: COLORS.white,
@@ -11,11 +11,21 @@ export const lightTheme = {
   scrollToTopBackground: COLORS.orange,
   scrollToTopColor: COLORS.white,
   techCarouselBackground: COLORS.white,
-}
+  navigationBackground: COLORS.blue,
+  navigationProjectLinkColor: COLORS.white,
+  navigationProjectLinkHoverColor: COLORS.orange,
+  navigationHomeLinkColor: COLORS.white,
+  navigationHomeLinkBackground: COLORS.blue,
+  navigationHomeLinkHoverColor: COLORS.orange,
+  navigationContactLinkColor: COLORS.white,
+  navigationContactLinkHoverColor: COLORS.orange,
+  navigationAboutMeLinkColor: COLORS.white,
+  navigationAboutMeLinkHoverColor: COLORS.orange,
+};
 
 export const darkTheme = {
   body: "#666",
-  text: '#fafafa',
+  text: "#fafafa",
   contactBackground: COLORS.darkModeGrey,
   contactGradient: `linear-gradient(0deg, ${COLORS.darkModeGrey} 50%, ${COLORS.darkModeBlack} 100%)`,
   contactIconColor: COLORS.darkModeWhite,
@@ -24,4 +34,15 @@ export const darkTheme = {
   scrollToTopBackground: COLORS.darkModeOrange,
   scrollToTopColor: COLORS.darkModeWhite,
   techCarouselBackground: COLORS.darkModeWhite,
-}
+  navigationBackground: COLORS.darkModeWhite,
+  navigationProjectLinkColor: COLORS.darkModeGrey,
+  navigationProjectLinkHoverColor: COLORS.darkModeOrange,
+  navigationHomeLinkColor: COLORS.darkModeGrey,
+  navigationHomeLinkBackground: COLORS.darkModeWhite,
+  navigationHomeLinkHoverColor: COLORS.darkModeOrange,
+  navigationContactLinkColor: COLORS.darkModeGrey,
+  navigationContactLinkHoverColor: COLORS.darkModeOrange,
+  navigationAboutMeLinkColor: COLORS.darkModeGrey,
+  navigationAboutMeLinkHoverColor: COLORS.darkModeOrange,
+
+};
