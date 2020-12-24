@@ -8,6 +8,8 @@ export const lightTheme = {
   contactIconColor: COLORS.white,
   contactIconBackground: COLORS.orange,
   contactIconHoverColor: COLORS.white,
+  scrollToTopBackground: COLORS.orange,
+  scrollToTopColor: COLORS.white,
 }
 
 export const darkTheme = {
@@ -18,4 +20,6 @@ export const darkTheme = {
   contactIconColor: COLORS.darkModeWhite,
   contactIconBackground: COLORS.darkModeOrange,
   contactIconHoverColor: COLORS.darkModeWhite,
+  scrollToTopBackground: COLORS.darkModeOrange,
+  scrollToTopColor: COLORS.darkModeWhite,
 }

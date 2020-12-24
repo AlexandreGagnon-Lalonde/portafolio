@@ -4,14 +4,7 @@ import { useState } from "react";
 import { COLORS } from "../../public/constant";
 import { CgArrowUpR } from 'react-icons/cg';
 
-const scrollTopButtonFadeIn = keyframes`
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.7;
-  }
-`;
+
 
 export default function ScrollToTopButton() {
   const [showScroll, setShowScroll] = useState(false);
@@ -39,18 +32,27 @@ export default function ScrollToTopButton() {
   );
 }
 
+const scrollTopButtonFadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+`;
+
 const Button = styled.button`
   align-items: center;
-  position: fixed;
-  left: 10px;
-  bottom: 125px;
   width: 40px;
   height: 40px;
-  background-color: ${COLORS.orange};
+  position: fixed;
+  left: 10px;
+  bottom: 50px;
+  background-color: ${props => props.theme.scrollToTopBackground};
   border-radius: 10px;
   border: none;
   font-weight: bold;
-  color: ${COLORS.white};
+  color: ${props => props.theme.scrollToTopColor};
   opacity: 0.7;
   animation: ${scrollTopButtonFadeIn} 0.3s;
   transition: all 0.3s;
