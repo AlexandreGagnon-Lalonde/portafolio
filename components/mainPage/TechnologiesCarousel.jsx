@@ -36,7 +36,7 @@ const TickerImage = styled.img`
   }
 `;
 const TickerContainer = styled.div`
-background-color: ${COLORS.white};
+  background-color: ${props => props.theme.techCarouselBackground};
   height: 278px;
   max-width: 100%;
   margin: 30px auto 0 auto;

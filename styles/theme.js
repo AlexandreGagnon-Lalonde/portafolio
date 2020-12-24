@@ -10,6 +10,7 @@ export const lightTheme = {
   contactIconHoverColor: COLORS.white,
   scrollToTopBackground: COLORS.orange,
   scrollToTopColor: COLORS.white,
+  techCarouselBackground: COLORS.white,
 }
 
 export const darkTheme = {
@@ -22,4 +23,5 @@ export const darkTheme = {
   contactIconHoverColor: COLORS.darkModeWhite,
   scrollToTopBackground: COLORS.darkModeOrange,
   scrollToTopColor: COLORS.darkModeWhite,
+  techCarouselBackground: COLORS.darkModeWhite,
 }
