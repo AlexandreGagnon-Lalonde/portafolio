@@ -13,6 +13,9 @@ export const lightTheme = {
 export const darkTheme = {
   body: "#666",
   text: '#fafafa',
-  contactBackground: COLORS.blue,
-  contactGradient: `linear-gradient(0deg, ${COLORS.blue} 50%, ${COLORS.darkGrey} 100%)`,
+  contactBackground: COLORS.darkModeGrey,
+  contactGradient: `linear-gradient(0deg, ${COLORS.darkModeGrey} 50%, ${COLORS.darkModeBlack} 100%)`,
+  contactIconColor: COLORS.darkModeWhite,
+  contactIconBackground: COLORS.darkModeOrange,
+  contactIconHoverColor: COLORS.darkModeWhite,
 }
