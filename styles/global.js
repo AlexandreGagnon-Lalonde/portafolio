@@ -88,5 +88,4 @@ export const GlobalStyle = createGlobalStyle`
     background-color: black;
     border-radius: 1px;
   }
-
 `;

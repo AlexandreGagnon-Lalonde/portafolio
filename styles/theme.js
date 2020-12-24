@@ -27,6 +27,8 @@ export const lightTheme = {
   mainCardLinkHoverColor: COLORS.orange,
   mainCardTextColor: COLORS.black,
   carouselArrow: COLORS.orange,
+  colorModeButton: COLORS.black,
+  colorModeButtonHover: COLORS.orange,
 };
 
 export const darkTheme = {
@@ -56,5 +58,6 @@ export const darkTheme = {
   mainCardLinkHoverColor: COLORS.darkModeOrange,
   mainCardTextColor: COLORS.darkModeBlack,
   carouselArrow: COLORS.darkModeWhite,
-
+  colorModeButton: COLORS.darkModeBlack,
+  colorModeButtonHover: COLORS.darkModeOrange,
 };
