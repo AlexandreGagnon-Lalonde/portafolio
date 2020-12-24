@@ -13,7 +13,8 @@ export default function MainProjectOBA() {
 }
 
 const ProjectContainer = styled.div`
-  background-color: ${COLORS.yellow};
+  background-color: ${props => props.theme.mainCardBackground};
+  color: ${props => props.theme.mainCardTextColor};
   border-radius: 20px;
   width: 65%;
   margin: 60px auto auto auto;

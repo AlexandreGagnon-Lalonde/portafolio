@@ -13,7 +13,6 @@ export default function MoreMinorProjects() {
           <ProjectTitle>Archive</ProjectTitle>
           <ProjectLink href={"/archive"}>Continue reading</ProjectLink>
         </ProjectHeader>
-
         <ProjectBio>
           This section contains all my other minor projects.
         </ProjectBio>
@@ -23,7 +22,8 @@ export default function MoreMinorProjects() {
 };
 
 const ProjectContainer = styled.div`
-  background-color: ${COLORS.yellow};
+  background-color: ${props => props.theme.mainCardBackground};
+  color: ${props => props.theme.mainCardTextColor};
   border-radius: 20px;
   width: 65%;
   margin: 60px auto auto auto;
@@ -57,14 +57,14 @@ const ProjectBio = styled.p``;
 const ProjectLink = styled.a`
   display: block;
   text-align: right;
-  color: ${COLORS.white};
+  color: ${props => props.theme.mainCardLinkColor};
   font-weight: bold;
   font-size: 1.25em;
   text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
-    color: ${COLORS.orange};
+    color: ${props => props.theme.mainCardLinkHoverColor};
     text-decoration: none;
   }
   @media (max-width: 768px) {

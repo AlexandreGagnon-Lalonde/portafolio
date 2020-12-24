@@ -35,17 +35,19 @@ const ProjectHeader = styled.div`
   align-items: center;
   margin-bottom: 10px;
 `;
-const ProjectBio = styled.p``;
+const ProjectBio = styled.p`
+color: ${props => props.theme.mainCardTextColor};
+`;
 const ProjectLink = styled.a`
   text-align: right;
-  color: ${COLORS.white};
+  color: ${props => props.theme.mainCardLinkColor};
   font-weight: bold;
   font-size: 1.25em;
   text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
-    color: ${COLORS.orange};
+    color: ${props => props.theme.mainCardLinkHoverColor};
     text-decoration: none;
   }
   @media (max-width: 768px) {
