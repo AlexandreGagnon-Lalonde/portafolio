@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS, YoutubeStyles } from "../../../public/constant";
 import OBAImage from "./OBAImage";
 import OBADetails from "./OBADetails";
 

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "../../../public/constant";
 import LungorImage from "./LungorImage";
 import LungorDetails from "./LungorDetails";
 

@@ -1,8 +1,8 @@
 import { COLORS } from "../public/constant";
 
 export const lightTheme = {
-  body: "#fbf6f0",
-  text: "#101010",
+  body: COLORS.white,
+  text: COLORS.black,
   contactBackground: COLORS.blue,
   contactGradient: `linear-gradient(0deg, ${COLORS.blue} 50%, ${COLORS.white} 100%)`,
   contactIconColor: COLORS.white,
@@ -22,11 +22,16 @@ export const lightTheme = {
   navigationAboutMeLinkColor: COLORS.white,
   navigationAboutMeLinkHoverColor: COLORS.orange,
   presentationNameEmphasisColor: COLORS.orange,
+  mainCardColor: COLORS.yellow,
+  mainCardLinkColor: COLORS.white,
+  mainCardLinkHoverColor: COLORS.orange,
+  mainCardTextColor: COLORS.black,
+  carouselArrow: COLORS.orange,
 };
 
 export const darkTheme = {
-  body: "#666",
-  text: "#fafafa",
+  body: COLORS.darkModeBlack,
+  text: COLORS.darkModeWhite,
   contactBackground: COLORS.darkModeGrey,
   contactGradient: `linear-gradient(0deg, ${COLORS.darkModeGrey} 50%, ${COLORS.darkModeBlack} 100%)`,
   contactIconColor: COLORS.darkModeWhite,
@@ -46,5 +51,10 @@ export const darkTheme = {
   navigationAboutMeLinkColor: COLORS.darkModeGrey,
   navigationAboutMeLinkHoverColor: COLORS.darkModeOrange,
   presentationNameEmphasisColor: COLORS.darkModeOrange,
+  mainCardBackground: COLORS.darkModeWhite,
+  mainCardLinkColor: COLORS.darkModeBlack,
+  mainCardLinkHoverColor: COLORS.darkModeOrange,
+  mainCardTextColor: COLORS.darkModeBlack,
+  carouselArrow: COLORS.darkModeWhite,
 
 };
