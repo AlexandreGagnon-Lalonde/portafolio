@@ -27,6 +27,8 @@ const ProjectContainer = styled.div`
   width: 65%;
   margin: 60px auto auto auto;
   padding-bottom: 30px;
+  border: ${props => props.theme.mainCardBorder};
+
 `;
 const ImageContainer = styled.div``;
 const Image = styled.img`
