@@ -1,5 +1,5 @@
-import { keyframes } from "styled-components";
 import styled from "styled-components";
+import TechnologiesAnimation from "./TechnologiesAnimation";
 
 export default function Tools() {
   return (
@@ -12,20 +12,7 @@ export default function Tools() {
         classes. They can also interact with eachother privately and interact on
         the workout of the day publicly.
       </GeneralInfoFirstPart>
-      <TechnologiesContainer>
-        <ReactLogo>
-          <ReactImage src={"/static/react.png"} />
-        </ReactLogo>
-        <NodeLogo>
-          <NodeImage src={"/static/node.png"} />
-        </NodeLogo>
-        <MongoLogo>
-          <MongoImage src={"/static/MongoDB_logo_01.png"} />
-        </MongoLogo>
-        <StyledComponentLogo>
-          <StyledCompImage src={"/static/styled_component.png"} />
-        </StyledComponentLogo>
-      </TechnologiesContainer>
+      <TechnologiesAnimation />
       <GeneralInfoSecondPart>
         The two main dishes here are the calendar and the messages between
         users. The ability to switch between a single day view to a weekly view
@@ -37,23 +24,6 @@ export default function Tools() {
   );
 }
 
-const rotateLogos = keyframes`
-0% {
-      transform: rotate(0deg)
-    }
-    100% {
-      transform: rotate(360deg)
-    }
-`;
-const rotateLogo = keyframes`
-0% {
-  transform: rotate(0deg)
-}
-100% {
-  transform: rotate(-360deg)
-}
-
-`;
 const Container = styled.div``;
 const AppTitle = styled.h3`
   width: 100%;
@@ -69,53 +39,12 @@ const AppTitle = styled.h3`
   font-variant: small-caps;
   text-transform: none;
   margin: 60px 0 40px 60px;
+  color: ${props => props.theme.projectPageTitle};
 
   @media (max-width: 768px) {
     margin: 60px auto 40px auto;
     text-align: center;
   }
-`;
-const TechnologiesContainer = styled.div`
-  height: 300px;
-  margin: 40px auto 40px auto;
-  width: 300px;
-  animation: ${rotateLogos} 30s infinite linear;
-`;
-const ReactLogo = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: ${rotateLogo} 30s infinite linear;
-`;
-const ReactImage = styled.img`
-  width: 120px;
-`;
-const NodeLogo = styled.div`
-  position: absolute;
-  top: 0;
-  right: 0;
-  animation: ${rotateLogo} 30s infinite linear;
-`;
-const NodeImage = styled.img`
-  width: 120px;
-`;
-const MongoLogo = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  animation: ${rotateLogo} 30s infinite linear;
-`;
-const MongoImage = styled.img`
-  width: 120px;
-`;
-const StyledComponentLogo = styled.div`
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  animation: ${rotateLogo} 30s infinite linear;
-`;
-const StyledCompImage = styled.img`
-  width: 120px;
 `;
 const GeneralInfoFirstPart = styled.p`
   margin: 20px 60px auto 60px;

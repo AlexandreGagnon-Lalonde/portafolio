@@ -28,8 +28,9 @@ export const lightTheme = {
   mainCardTextColor: COLORS.black,
   mainCardBorder: `none`,
   carouselArrow: COLORS.orange,
-  colorModeButton: COLORS.black,
+  colorModeButton: COLORS.white,
   colorModeButtonHover: COLORS.orange,
+  projectPageTitle: COLORS.black,
 };
 
 export const darkTheme = {
@@ -62,4 +63,6 @@ export const darkTheme = {
   carouselArrow: COLORS.darkModeWhite,
   colorModeButton: COLORS.darkModeBlack,
   colorModeButtonHover: COLORS.darkModeOrange,
+  projectPageTitle: COLORS.darkModeWhite,
+
 };
