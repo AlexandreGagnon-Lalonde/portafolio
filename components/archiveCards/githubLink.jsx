@@ -5,12 +5,14 @@ import { COLORS } from "../../public/constant";
 
 export default function GitHubLink({ github, index }) {
   const PlatformLink = styled.a`
-    color: ${COLORS.black};
+    color: ${(props) => props.theme.archivePlatformColor};
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover {
-      color: ${index % 2 ? COLORS.orange : COLORS.blue};
+      color: ${index % 2
+        ? (props) => props.theme.archiveOdd
+        : (props) => props.theme.archiveEven};
       transform: scale(1.3);
     }
   `;

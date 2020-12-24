@@ -31,6 +31,9 @@ export const lightTheme = {
   colorModeButton: COLORS.white,
   colorModeButtonHover: COLORS.orange,
   projectPageTitle: COLORS.black,
+  archiveEven: COLORS.blue,
+  archiveOdd: COLORS.orange,
+  archivePlatformColor: COLORS.white,
 };
 
 export const darkTheme = {
@@ -64,5 +67,9 @@ export const darkTheme = {
   colorModeButton: COLORS.darkModeBlack,
   colorModeButtonHover: COLORS.darkModeOrange,
   projectPageTitle: COLORS.darkModeWhite,
+  archiveEven: COLORS.darkModeBlue,
+  archiveOdd: COLORS.darkModeOrange,
+  archivePlatformColor: COLORS.darkModeBlack,
+
 
 };

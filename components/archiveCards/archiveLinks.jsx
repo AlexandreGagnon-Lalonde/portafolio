@@ -3,13 +3,6 @@ import GitHubLink from "./githubLink";
 import NetlifyLink from "./netlifyLink";
 
 export default function ArchiveLinks({ github, netlify, index }) {
-  const ProjectLinks = styled.div`
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: calc(100% - 20px);
-  `;
-
   return (
     <ProjectLinks>
       <GitHubLink github={github} index={index} />
@@ -17,3 +10,10 @@ export default function ArchiveLinks({ github, netlify, index }) {
     </ProjectLinks>
   );
 }
+
+const ProjectLinks = styled.div`
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: calc(100% - 20px);
+`;

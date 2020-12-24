@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "../../public/constant";
 import ArchiveLinks from "./archiveLinks";
 import Image from "./projectImage";
 
@@ -9,7 +8,9 @@ export default function ArchiveItem({ ProjectInfo, index }) {
     height: 200px;
     margin: 20px;
     padding: 10px;
-    background: ${index % 2 ? COLORS.blue : COLORS.orange};
+    background: ${index % 2
+      ? (props) => props.theme.archiveEven
+      : (props) => props.theme.archiveOdd};
     position: relative;
     transition: all 0.3s;
     border-radius: 100px;
