@@ -29,7 +29,7 @@ const NameContainer = styled.div`
 `;
 const ObjectEmphasis = styled.span`
   font-weight: bold;
-  color: ${COLORS.orange};
+  color: ${props => props.theme.presentationNameEmphasisColor};
 `;
 const ObjectName = styled.h2`
   margin-bottom: 50px;

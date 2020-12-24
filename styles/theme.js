@@ -21,6 +21,7 @@ export const lightTheme = {
   navigationContactLinkHoverColor: COLORS.orange,
   navigationAboutMeLinkColor: COLORS.white,
   navigationAboutMeLinkHoverColor: COLORS.orange,
+  presentationNameEmphasisColor: COLORS.orange,
 };
 
 export const darkTheme = {
@@ -44,5 +45,6 @@ export const darkTheme = {
   navigationContactLinkHoverColor: COLORS.darkModeOrange,
   navigationAboutMeLinkColor: COLORS.darkModeGrey,
   navigationAboutMeLinkHoverColor: COLORS.darkModeOrange,
+  presentationNameEmphasisColor: COLORS.darkModeOrange,
 
 };

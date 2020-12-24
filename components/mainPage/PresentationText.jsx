@@ -49,5 +49,5 @@ const SecondParagraph = styled.p`
 const Emphasis = styled.span`
   font-weight: bold;
   font-style: italic;
-  color: ${COLORS.orange};
+  color: ${props => props.theme.presentationNameEmphasisColor};
 `;
