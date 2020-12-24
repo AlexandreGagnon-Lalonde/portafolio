@@ -1,10 +1,10 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/global.css";
 import React, { useState, useEffect } from "react";
 import useDarkMode from "use-dark-mode";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { FiMoon, FiSun } from "react-icons/fi";
+import { GlobalStyle } from "../styles/global";
 
 export default function App({ Component, pageProps }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -24,7 +24,12 @@ export default function App({ Component, pageProps }) {
       <button onClick={darkMode.disable}>
         <FiSun />
       </button>
-      {isMounted && <Component {...pageProps} />}{" "}
+      {isMounted && (
+        <>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </>
+      )}
     </ThemeProvider>
   );
 }
