@@ -11,7 +11,7 @@ export default function PresentationName() {
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name
         <ObjectEmphasis>:</ObjectEmphasis> Alexandre Gagnon-Lalonde, <br />{" "}
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aspiration
-        <ObjectEmphasis>:</ObjectEmphasis> Web Developer <br />
+        <ObjectEmphasis>:</ObjectEmphasis> Full-Stack Web Developer <br />
         <ObjectEmphasis>{"}"}</ObjectEmphasis>
       </ObjectName>
     </NameContainer>
