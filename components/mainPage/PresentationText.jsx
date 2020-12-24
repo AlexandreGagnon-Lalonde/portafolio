@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "../../public/constant";
 
 export default function PresentationText() {
   return (
@@ -49,5 +48,5 @@ const SecondParagraph = styled.p`
 const Emphasis = styled.span`
   font-weight: bold;
   font-style: italic;
-  color: ${props => props.theme.presentationNameEmphasisColor};
+  color: ${(props) => props.theme.presentationNameEmphasisColor};
 `;

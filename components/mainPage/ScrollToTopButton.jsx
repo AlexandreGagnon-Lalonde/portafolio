@@ -1,17 +1,17 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { useState } from "react";
-import { COLORS } from "../../public/constant";
-import { CgArrowUpR } from 'react-icons/cg';
-
-
+import { CgArrowUpR } from "react-icons/cg";
 
 export default function ScrollToTopButton() {
   const [showScroll, setShowScroll] = useState(false);
+
   const scrollButtonStyle = { display: showScroll ? "inline-flex" : "none" };
+
   const ScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   const checkScroll = () => {
     const pageScrolled = window.pageYOffset > 400;
     const pageNotScrolled = window.pageYOffset <= 400;
@@ -22,12 +22,16 @@ export default function ScrollToTopButton() {
       setShowScroll(false);
     }
   };
+
   React.useEffect(() => {
     window.addEventListener("scroll", checkScroll);
   });
+
   return (
     <Button onClick={ScrollToTop} style={scrollButtonStyle}>
-      <CgArrowUpR style={{transform: 'scale(1.4)', display: 'block', margin: '0 auto'}} />
+      <CgArrowUpR
+        style={{ transform: "scale(1.4)", display: "block", margin: "0 auto" }}
+      />
     </Button>
   );
 }
@@ -48,11 +52,11 @@ const Button = styled.button`
   position: fixed;
   left: 10px;
   bottom: 50px;
-  background-color: ${props => props.theme.scrollToTopBackground};
+  background-color: ${(props) => props.theme.scrollToTopBackground};
   border-radius: 10px;
   border: none;
   font-weight: bold;
-  color: ${props => props.theme.scrollToTopColor};
+  color: ${(props) => props.theme.scrollToTopColor};
   opacity: 0.7;
   animation: ${scrollTopButtonFadeIn} 0.3s;
   transition: all 0.3s;

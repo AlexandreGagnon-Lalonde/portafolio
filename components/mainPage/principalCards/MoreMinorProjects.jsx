@@ -18,17 +18,16 @@ export default function MoreMinorProjects() {
       </ProjectDetails>
     </ProjectContainer>
   );
-};
+}
 
 const ProjectContainer = styled.div`
-  background-color: ${props => props.theme.mainCardBackground};
-  color: ${props => props.theme.mainCardTextColor};
+  background-color: ${(props) => props.theme.mainCardBackground};
+  color: ${(props) => props.theme.mainCardTextColor};
   border-radius: 20px;
   width: 65%;
   margin: 60px auto auto auto;
   padding-bottom: 30px;
-  border: ${props => props.theme.mainCardBorder};
-
+  border: ${(props) => props.theme.mainCardBorder};
 `;
 const ImageContainer = styled.div``;
 const Image = styled.img`
@@ -58,14 +57,14 @@ const ProjectBio = styled.p``;
 const ProjectLink = styled.a`
   display: block;
   text-align: right;
-  color: ${props => props.theme.mainCardLinkColor};
+  color: ${(props) => props.theme.mainCardLinkColor};
   font-weight: bold;
   font-size: 1.25em;
   text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
-    color: ${props => props.theme.mainCardLinkHoverColor};
+    color: ${(props) => props.theme.mainCardLinkHoverColor};
     text-decoration: none;
   }
   @media (max-width: 768px) {

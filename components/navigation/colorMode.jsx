@@ -21,8 +21,8 @@ const ColorModeButton = styled.button`
   align-items: center;
   color: ${(props) => props.theme.colorModeButton};
   transition: all 0.3s;
-  
+
   &:hover {
-    color: ${props => props.theme.colorModeButtonHover};
+    color: ${(props) => props.theme.colorModeButtonHover};
   }
 `;

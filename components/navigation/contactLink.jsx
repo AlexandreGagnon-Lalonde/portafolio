@@ -13,13 +13,13 @@ export default function ContactLink() {
 const NavigationLink = styled.a`
   display: inline-block;
   font-weight: bold;
-  color: ${props => props.theme.navigationContactLinkColor};
+  color: ${(props) => props.theme.navigationContactLinkColor};
   text-decoration: none;
   transition: all 0.3s;
   width: auto;
 
   &:hover {
-    color: ${props => props.theme.navigationContactLinkHoverColor};
+    color: ${(props) => props.theme.navigationContactLinkHoverColor};
     text-decoration: none;
   }
 `;

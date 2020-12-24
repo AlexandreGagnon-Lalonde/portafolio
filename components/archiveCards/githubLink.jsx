@@ -1,7 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { VscGithubInverted } from "react-icons/vsc";
-import { COLORS } from "../../public/constant";
 
 export default function GitHubLink({ github, index }) {
   const PlatformLink = styled.a`

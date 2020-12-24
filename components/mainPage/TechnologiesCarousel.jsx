@@ -1,7 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import React from "react";
 import { Technologies } from "../../public/constant";
-import { COLORS } from '../../public/constant';
 
 export default function CarouselComponent() {
   return (
@@ -36,7 +35,7 @@ const TickerImage = styled.img`
   }
 `;
 const TickerContainer = styled.div`
-  background-color: ${props => props.theme.techCarouselBackground};
+  background-color: ${(props) => props.theme.techCarouselBackground};
   height: 278px;
   max-width: 100%;
   margin: 30px auto 0 auto;

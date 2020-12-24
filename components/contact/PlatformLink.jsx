@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { VscGithubInverted } from "react-icons/vsc";
 import { SiLinkedin } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
-import { COLORS } from "../../public/constant";
 
 export default function PlatformLinks() {
   return (
@@ -27,12 +26,12 @@ const LinkyContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   margin-top: 40px;
-  background: ${props => props.theme.contactBackground};
-  background: ${props => props.theme.contactGradient};
+  background: ${(props) => props.theme.contactBackground};
+  background: ${(props) => props.theme.contactGradient};
 `;
 const Linky = styled.a`
-  color: ${props => props.theme.contactIconColor};
-  background-color: ${props => props.theme.contactIconBackground};
+  color: ${(props) => props.theme.contactIconColor};
+  background-color: ${(props) => props.theme.contactIconBackground};
   padding: 15px;
   border-radius: 10px;
   opacity: 0.7;
@@ -43,6 +42,6 @@ const Linky = styled.a`
 
   &:hover {
     opacity: 1;
-    color: ${props => props.theme.contactIconHoverColor};
+    color: ${(props) => props.theme.contactIconHoverColor};
   }
 `;

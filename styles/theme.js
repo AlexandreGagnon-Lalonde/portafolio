@@ -70,6 +70,4 @@ export const darkTheme = {
   archiveEven: COLORS.darkModeBlue,
   archiveOdd: COLORS.darkModeOrange,
   archivePlatformColor: COLORS.darkModeBlack,
-
-
 };

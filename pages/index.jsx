@@ -4,7 +4,7 @@ import Navigation from "../components/navigation/navigation";
 import PlatformLinks from "../components/contact/PlatformLink";
 import ScrollToTopButton from "../components/mainPage/ScrollToTopButton";
 import CarouselComponent from "../components/mainPage/CarouselComponent";
-import TechnologiesCarousel from '../components/mainPage/TechnologiesCarousel';
+import TechnologiesCarousel from "../components/mainPage/TechnologiesCarousel";
 
 export default function Home() {
   return (

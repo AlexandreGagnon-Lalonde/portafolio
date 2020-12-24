@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { COLORS } from "../../public/constant";
 
 export default function PresentationName() {
   return (
@@ -29,7 +28,7 @@ const NameContainer = styled.div`
 `;
 const ObjectEmphasis = styled.span`
   font-weight: bold;
-  color: ${props => props.theme.presentationNameEmphasisColor};
+  color: ${(props) => props.theme.presentationNameEmphasisColor};
 `;
 const ObjectName = styled.h2`
   margin-bottom: 50px;

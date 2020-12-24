@@ -35,18 +35,18 @@ const ProjectHeader = styled.div`
   margin-bottom: 10px;
 `;
 const ProjectBio = styled.p`
-color: ${props => props.theme.mainCardTextColor};
+  color: ${(props) => props.theme.mainCardTextColor};
 `;
 const ProjectLink = styled.a`
   text-align: right;
-  color: ${props => props.theme.mainCardLinkColor};
+  color: ${(props) => props.theme.mainCardLinkColor};
   font-weight: bold;
   font-size: 1.25em;
   text-decoration: none;
   transition: all 0.3s;
 
   &:hover {
-    color: ${props => props.theme.mainCardLinkHoverColor};
+    color: ${(props) => props.theme.mainCardLinkHoverColor};
     text-decoration: none;
   }
   @media (max-width: 768px) {
