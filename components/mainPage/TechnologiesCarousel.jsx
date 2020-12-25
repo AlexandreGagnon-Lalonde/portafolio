@@ -35,8 +35,15 @@ const TickerImage = styled.img`
   }
 `;
 const TickerContainer = styled.div`
-  background-color: ${(props) => props.theme.techCarouselBackground};
-  height: 278px;
+  background: rgb(34, 40, 49);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 40, 49, 1) 0%,
+    rgba(238, 238, 238, 1) 5%,
+    rgba(238, 238, 238, 1) 95%,
+    rgba(34, 40, 49, 1) 100%
+  );
+  height: 300px;
   max-width: 100%;
   margin: 30px auto 0 auto;
   overflow: hidden;
@@ -47,6 +54,7 @@ const TickerContainer = styled.div`
 `;
 const MarqueeContainer = styled.div`
   animation: ${marquee} 30s linear infinite;
+  height: 100%;
   width: 10000px;
   position: absolute;
   overflow-x: hidden;

@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     max-width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
   }
   body {
     transition: all 0.3s;

@@ -60,6 +60,7 @@ const Button = styled.button`
   opacity: 0.7;
   animation: ${scrollTopButtonFadeIn} 0.3s;
   transition: all 0.3s;
+  z-index: 1;
 
   &:hover {
     opacity: 1;
