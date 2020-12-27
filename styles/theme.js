@@ -62,7 +62,7 @@ export const darkTheme = {
   mainCardLinkColor: COLORS.darkModeBlack,
   mainCardLinkHoverColor: COLORS.darkModeOrange,
   mainCardTextColor: COLORS.darkModeBlack,
-  mainCardBorder: `1px solid ${COLORS.darkModeWhite}`,
+  mainCardBorder: `none`,
   carouselArrow: COLORS.darkModeWhite,
   colorModeButton: COLORS.darkModeBlack,
   colorModeButtonHover: COLORS.darkModeOrange,
