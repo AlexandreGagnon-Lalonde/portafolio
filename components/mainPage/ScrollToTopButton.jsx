@@ -51,7 +51,7 @@ const Button = styled.button`
   height: 40px;
   position: fixed;
   left: 10px;
-  bottom: 50px;
+  bottom: 10px;
   background-color: ${(props) => props.theme.scrollToTopBackground};
   border-radius: 10px;
   border: none;
@@ -67,6 +67,7 @@ const Button = styled.button`
   }
   @media (max-width: 768px) {
     left: 0;
+    bottom: 100px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }

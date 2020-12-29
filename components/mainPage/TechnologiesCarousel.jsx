@@ -35,14 +35,7 @@ const TickerImage = styled.img`
   }
 `;
 const TickerContainer = styled.div`
-  background: rgb(34, 40, 49);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 40, 49, 1) 0%,
-    rgba(238, 238, 238, 1) 5%,
-    rgba(238, 238, 238, 1) 95%,
-    rgba(34, 40, 49, 1) 100%
-  );
+  background: ${props => props.theme.techCarouselGradient};
   height: 300px;
   max-width: 100%;
   margin: 30px auto 0 auto;
