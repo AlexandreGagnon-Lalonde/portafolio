@@ -7,7 +7,6 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
   body {
-    transition: all 0.3s;
     line-height: 1.25;
     color: ${(props) => props.theme.text};
     background: ${(props) => props.theme.body};
