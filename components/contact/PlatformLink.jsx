@@ -21,7 +21,7 @@ export default function PlatformLinks() {
 
 const LinkyContainer = styled.div`
   width: 100%;
-  padding: 80px 0 10px 0;
+  padding: 160px 0 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
