@@ -95,6 +95,7 @@ export const Technologies = [
 export const ArchiveInfo = [
   {
     projectName: "dotGame",
+    displayName: 'Dot Game',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Dot-Game",
     netlifyLink: "https://dot-game-alexandregl.netlify.app/",
@@ -105,6 +106,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "frogRace",
+    displayName: 'Simulated Frog Race',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Frog-Race",
     netlifyLink: "https://frog-race-alexandregl.netlify.app/",
@@ -115,6 +117,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "generatedArt",
+    displayName: 'Generated Art',
     technologyUsed: "",
     githubLink:
       "https://github.com/AlexandreGagnon-Lalonde/Basic-Abstract-Generative-Art",
@@ -126,6 +129,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "guessingGame",
+    displayName: 'Color Guessing Game',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/RGB-Guessing-Game",
     netlifyLink: "https://guessing-game-alexandregl.netlify.app/",
@@ -136,6 +140,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "library",
+    displayName: 'Library Simulation',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Library-display",
     netlifyLink: "https://library-display-alexandregl.netlify.app/",
@@ -146,6 +151,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "patatap",
+    displayName: 'Patatap Clone',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Tapapat",
     netlifyLink: "https://patatap-clone-alexandregl.netlify.app/",
@@ -156,6 +162,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "scoreKeeper",
+    displayName: 'Score Keeper',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Score-Keeper",
     netlifyLink: "https://score-keeper-alexandregl.netlify.app/",
@@ -166,6 +173,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "sortingAlgo",
+    displayName: 'Sorting Algorithms',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Sorting-Algo",
     netlifyLink: "https://sorting-algo-alexandregl.netlify.app/",
@@ -176,6 +184,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "stopwatch",
+    displayName: 'Time, StopWatch, Countdown',
     technologyUsed: "",
     githubLink:
       "https://github.com/AlexandreGagnon-Lalonde/Clock---Timer---Countdown",
@@ -187,6 +196,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "todolist",
+    displayName: 'To Do List',
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/To-Do-List",
     netlifyLink: "https://to-do-list-alexandregl.netlify.app/",
