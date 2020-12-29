@@ -18,7 +18,7 @@ export default function NetlifyLink({ netlify, index }) {
 
   return (
     <Link href={`${netlify}`} passHref>
-      <PlatformLink>
+      <PlatformLink target={'_blank'}>
         <SiNetlify />
       </PlatformLink>
     </Link>

@@ -18,7 +18,7 @@ export default function GitHubLink({ github, index }) {
 
   return (
     <Link href={`${github}`} passHref>
-      <PlatformLink>
+      <PlatformLink target={'_blank'}>
         <VscGithubInverted />
       </PlatformLink>
     </Link>
