@@ -13,7 +13,7 @@ export default function MoreMinorProjects() {
           <ProjectLink href={"/archive"}>Continue reading</ProjectLink>
         </ProjectHeader>
         <ProjectBio>
-          This section contains all my other minor projects.
+          This section contains all my other single page projects.
         </ProjectBio>
       </ProjectDetails>
     </ProjectContainer>
