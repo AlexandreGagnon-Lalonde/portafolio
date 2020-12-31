@@ -5,15 +5,11 @@ export default function ECommDetails() {
     <ProjectDetails>
       <ProjectHeader>
         <ProjectTitle>E-Commerce</ProjectTitle>{" "}
-        <ProjectLink href={"/projects/oba"}>Continue reading</ProjectLink>
+        <ProjectLink href={"/projects/ECommerce"}>Continue reading</ProjectLink>
       </ProjectHeader>
       <ProjectBio>
-        Online platform that allows gym members to register for some specific
-        classes. Users can interact with eachothers through private messages and
-        they can leave comments every day on the workout of the day (WOD). To
-        allow members to give anonymous (or not) feedback there is a suggestion
-        box on the homepage and the admin is able to see all of them on his
-        profile page.
+        In a team of 4, create an E-Commerce for wearables from scratch with
+        ReactJS and NodeJS.
       </ProjectBio>
     </ProjectDetails>
   );
