@@ -1,7 +1,8 @@
 import Carousel from "react-bootstrap/Carousel";
-import MainProjectLungor from "./principalCards/MainProjectLungor";
-import MainProjectOBA from "./principalCards/MainProjectOBA";
-import MoreMinorProjects from "./principalCards/MoreMinorProjects";
+import MainProjectLungor from "./principalCards/Lungor/MainProjectLungor";
+import MainProjectOBA from "./principalCards/OBA/MainProjectOBA";
+import MoreMinorProjects from "./principalCards/archive/MoreMinorProjects";
+import MainProjectECommerce from "./principalCards/ECommerce/MainProjectECommerce";
 import styled from "styled-components";
 
 export default function CarouselComponent() {
@@ -11,6 +12,10 @@ export default function CarouselComponent() {
         <Carousel.Item>
           <MainProjectOBA />
         </Carousel.Item>
+        <Carousel.Item>
+          <MainProjectECommerce />
+        </Carousel.Item>
+
         <Carousel.Item>
           <MainProjectLungor />
         </Carousel.Item>
