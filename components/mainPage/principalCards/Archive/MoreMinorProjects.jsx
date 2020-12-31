@@ -5,7 +5,7 @@ export default function MoreMinorProjects() {
   return (
     <ProjectContainer>
       <ImageContainer>
-        <Image src={"/static/archive.jpg"} />
+        <Image src={"/static/archive/archive.jpg"} />
       </ImageContainer>
       <ProjectDetails>
         <ProjectHeader>

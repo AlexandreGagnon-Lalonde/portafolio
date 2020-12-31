@@ -40,55 +40,55 @@ export const YoutubeStyles = {
 export const Technologies = [
   {
     name: 'HTML',
-    src: '/static/html.png',
+    src: '/static/technologies/html.png',
   },
   {
     name: 'CSS',
-    src: '/static/css.png',
+    src: '/static/technologies/css.png',
   },
   {
     name: 'JS',
-    src: '/static/javascript.png',
+    src: '/static/technologies/javascript.png',
   },
   {
     name: 'NodeJS',
-    src: '/static/node.png',
+    src: '/static/technologies/node.png',
   },
   {
     name: 'Express',
-    src: '/static/express.png',
+    src: '/static/technologies/express.png',
   },
   {
     name: 'ReactJS',
-    src: '/static/react.png',
+    src: '/static/technologies/react.png',
   },
   {
     name: 'Redux',
-    src: '/static/redux.png',
+    src: '/static/technologies/redux.png',
   },
   {
     name: 'MongoDB',
-    src: '/static/mongoDB.png',
+    src: '/static/technologies/mongoDB.png',
   },
   {
     name: 'Firebase',
-    src: '/static/firebase.png',
+    src: '/static/technologies/firebase.png',
   },
   {
     name: 'Git',
-    src: '/static/git.png',
+    src: '/static/technologies/git.png',
   },
   {
     name: 'Yarn',
-    src: '/static/yarn.png',
+    src: '/static/technologies/yarn.png',
   },
   {
     name: 'Npm',
-    src: '/static/npm.png',
+    src: '/static/technologies/npm.png',
   },
   {
     name: 'NextJS',
-    src: '/static/next.png',
+    src: '/static/technologies/next.png',
   },
 
 ]

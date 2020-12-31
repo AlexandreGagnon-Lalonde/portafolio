@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../../../public/constant";
+import { COLORS } from "../../../../public/constant";
 
 export default function OBADetails() {
   return (

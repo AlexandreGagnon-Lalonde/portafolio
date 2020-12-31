@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { YoutubeStyles } from "../../../public/constant";
+import { YoutubeStyles } from "../../../../public/constant";
 
 export default function OBAImage() {
   return (
