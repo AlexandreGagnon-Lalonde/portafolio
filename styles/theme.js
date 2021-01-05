@@ -48,7 +48,7 @@ export const darkTheme = {
   scrollToTopBackground: COLORS.darkModeOrange,
   scrollToTopColor: COLORS.darkModeWhite,
   techCarouselBackground: COLORS.darkModeWhite,
-  techCarouselGradient: `linear-gradient(0deg, ${COLORS.darkModeGrey} 0%,${COLORS.darkModeWhite} 5%,${COLORS.darkModeWhite} 95%, ${COLORS.darkModeGrey} 100%)`,
+  techCarouselGradient: `linear-gradient(0deg, ${COLORS.darkModeBlack} 0%,${COLORS.darkModeWhite} 5%,${COLORS.darkModeWhite} 95%, ${COLORS.darkModeBlack} 100%)`,
   navigationBackground: COLORS.darkModeWhite,
   navigationProjectLinkColor: COLORS.darkModeGrey,
   navigationProjectLinkHoverColor: COLORS.darkModeOrange,
