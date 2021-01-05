@@ -5,7 +5,7 @@ import PurposeText from "./purposeText";
 export default function Purpose() {
   return (
     <InfoContainer>
-      <PurposeImage src={"/static/profilemobile.png"} />
+      <PurposeImage src={"/static/OBA/profilemobile.png"} />
       <PurposeText />
     </InfoContainer>
   );

@@ -5,16 +5,16 @@ export default function TechnologiesAnimation() {
   return (
     <TechnologiesContainer>
       <ReactLogo>
-        <ReactImage src={"/static/react.png"} />
+        <ReactImage src={"/static/technologies/react.png"} />
       </ReactLogo>
       <NodeLogo>
-        <NodeImage src={"/static/node.png"} />
+        <NodeImage src={"/static/technologies/node.png"} />
       </NodeLogo>
       <MongoLogo>
-        <MongoImage src={"/static/MongoDB_logo_01.png"} />
+        <MongoImage src={"/static/technologies/MongoDB_logo_01.png"} />
       </MongoLogo>
       <StyledComponentLogo>
-        <StyledCompImage src={"/static/styled_component.png"} />
+        <StyledCompImage src={"/static/technologies/styled_component.png"} />
       </StyledComponentLogo>
     </TechnologiesContainer>
   );

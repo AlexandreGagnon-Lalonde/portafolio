@@ -6,7 +6,7 @@ export default function GeneralInfo() {
   return (
     <InfoContainer>
       <Tools />
-      <AppImage src={"/static/OBAmobile.png"} />
+      <AppImage src={"/static/OBA/OBAmobile.png"} />
     </InfoContainer>
   );
 }

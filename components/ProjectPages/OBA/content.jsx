@@ -6,7 +6,7 @@ export default function Content() {
   return (
     <InfoContainer>
       <ContentText />
-      <ContentImage src={"/static/mainapp.png"} />
+      <ContentImage src={"/static/OBA/mainapp.png"} />
     </InfoContainer>
   );
 }
