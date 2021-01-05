@@ -3,7 +3,7 @@ import styled from "styled-components";
 export default function ECommImage() {
   return (
     <ImageContainer>
-      <Image src={"/static/E-commerce/bagelz-main-card.png"} />
+      <Image src={"/static/E-commerce/bagelzMainCard.png"} />
     </ImageContainer>
   );
 }

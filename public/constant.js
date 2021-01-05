@@ -100,7 +100,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Dot-Game",
     netlifyLink: "https://dot-game-alexandregl.netlify.app/",
     image: {
-      path: "/static/dot-game.PNG",
+      path: "/static/archive/dot-game.PNG",
       style: { height: "100%" },
     },
   },
@@ -111,7 +111,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Frog-Race",
     netlifyLink: "https://frog-race-alexandregl.netlify.app/",
     image: {
-      path: "/static/frog-race.PNG",
+      path: "/static/archive/frog-race.PNG",
       style: { height: "75%" },
     },
   },
@@ -123,7 +123,7 @@ export const ArchiveInfo = [
       "https://github.com/AlexandreGagnon-Lalonde/Basic-Abstract-Generative-Art",
     netlifyLink: "https://abstract-art-alexandregl.netlify.app/",
     image: {
-      path: "/static/generated-art.PNG",
+      path: "/static/archive/generated-art.PNG",
       style: { height: "100%" },
     },
   },
@@ -134,7 +134,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/RGB-Guessing-Game",
     netlifyLink: "https://guessing-game-alexandregl.netlify.app/",
     image: {
-      path: "/static/guessingGame.PNG",
+      path: "/static/archive/guessingGame.PNG",
       style: { height: "100%" },
     },
   },
@@ -145,7 +145,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Library-display",
     netlifyLink: "https://library-display-alexandregl.netlify.app/",
     image: {
-      path: "/static/library.PNG",
+      path: "/static/archive/library.PNG",
       style: { width: "100%" },
     },
   },
@@ -156,7 +156,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Tapapat",
     netlifyLink: "https://patatap-clone-alexandregl.netlify.app/",
     image: {
-      path: "/static/patatap.PNG",
+      path: "/static/archive/patatap.PNG",
       style: { width: "100%" },
     },
   },
@@ -167,7 +167,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Score-Keeper",
     netlifyLink: "https://score-keeper-alexandregl.netlify.app/",
     image: {
-      path: "/static/score-keeper.PNG",
+      path: "/static/archive/score-keeper.PNG",
       style: { width: "100%" },
     },
   },
@@ -178,7 +178,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Sorting-Algo",
     netlifyLink: "https://sorting-algo-alexandregl.netlify.app/",
     image: {
-      path: "/static/sorting-algo.PNG",
+      path: "/static/archive/sorting-algo.PNG",
       style: { width: "90%" },
     },
   },
@@ -190,7 +190,7 @@ export const ArchiveInfo = [
       "https://github.com/AlexandreGagnon-Lalonde/Clock---Timer---Countdown",
     netlifyLink: "https://stopwatch-alexandregl.netlify.app/",
     image: {
-      path: "/static/stopwatch.PNG",
+      path: "/static/archive/stopwatch.PNG",
       style: { height: "100%" },
     },
   },
@@ -201,7 +201,7 @@ export const ArchiveInfo = [
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/To-Do-List",
     netlifyLink: "https://to-do-list-alexandregl.netlify.app/",
     image: {
-      path: "/static/todolist.PNG",
+      path: "/static/archive/todolist.PNG",
       style: { width: "80%" },
     },
   },
