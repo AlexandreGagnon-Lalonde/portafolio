@@ -12,9 +12,9 @@ export default function CarouselComponent() {
         <Carousel.Item>
           <MainProjectOBA />
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <MainProjectECommerce />
-        </Carousel.Item>
+        </Carousel.Item> */}
         <Carousel.Item>
           <MainProjectLungor />
         </Carousel.Item>
