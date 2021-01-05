@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
 import MainProjectLungor from "./principalCards/Lungor/MainProjectLungor";
 import MainProjectOBA from "./principalCards/OBA/MainProjectOBA";
-import MoreMinorProjects from "./principalCards/archive/MoreMinorProjects";
+import MoreMinorProjects from "./principalCards/Archive/MoreMinorProjects";
 import MainProjectECommerce from "./principalCards/ECommerce/MainProjectECommerce";
 import styled from "styled-components";
 
