@@ -14,12 +14,14 @@ export default function ECommerce() {
       <ScrollToTopButton />
       <ProjectHeader>
         <AppTitle>Wearables E-Commerce</AppTitle>
-        <BagelzLogo><Image
+        <BagelzLogo>
+          <Image
             src={"/static/E-commerce/bagel.gif"}
             objectFit={"contain"}
             layout={"fill"}
             alt={"first sorting menu"}
-          /></BagelzLogo>
+          />
+        </BagelzLogo>
       </ProjectHeader>
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -86,12 +88,10 @@ const ProjectHeader = styled.div`
   align-items: center;
 `;
 const BagelzLogo = styled.div`
-position: relative;
-width: 150px;
-height: 150px;
-border: 1px solid red;
-
-`
+  position: relative;
+  width: 150px;
+  height: 150px;
+`;
 const AppTitle = styled.h3`
   width: 100%;
   text-shadow: 0px 0px 2px #101010;
@@ -121,11 +121,9 @@ const MenuContainer = styled.div`
   position: relative;
   width: 200px;
   height: 400px;
-  border: 1px solid red;
 `;
 const SingleItemContainer = styled.div`
   position: relative;
   width: 800px;
   height: 400px;
-  border: 1px solid red;
 `;
