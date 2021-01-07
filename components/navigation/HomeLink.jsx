@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { withTranslation } from '../../i18n'
 
-export default function HomeLink() {
+const HomeLink = ({ t }) => {
   return (
     <Link href={"/"} passHref>
+      <p>{t('description')}</p>
       <NavigationLink>Alexandre GL</NavigationLink>
     </Link>
   );
@@ -24,3 +26,5 @@ const NavigationLink = styled.a`
     text-decoration: none;
   }
 `;
+
+export default withTranslation('common')(HomeLink)

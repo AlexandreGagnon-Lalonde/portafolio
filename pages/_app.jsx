@@ -4,8 +4,9 @@ import useDarkMode from "use-dark-mode";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "../styles/theme";
 import { GlobalStyle } from "../styles/global";
+import { appWithTranslation } from '../i18n';
 
-export default function App({ Component, pageProps }) {
+function App ({ Component, pageProps }) {
   const [isMounted, setIsMounted] = useState(false);
   const darkMode = useDarkMode(true);
 
@@ -26,3 +27,10 @@ export default function App({ Component, pageProps }) {
     </ThemeProvider>
   );
 }
+
+App.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+  return { ...appProps }
+}
+
+export default appWithTranslation(App);
