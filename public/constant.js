@@ -4,12 +4,12 @@ export const COLORS = {
   white: "#fbf6f0",
   blue: "#aee6e6",
   black: "#101010",
-  darkGrey: '#666',
-  darkModeBlack: '#222831',
-  darkModeGrey: '#393e46',
-  darkModeOrange: '#fd7014',
-  darkModeBlue: '#00adb5',
-  darkModeWhite: '#eee',
+  darkGrey: "#666",
+  darkModeBlack: "#222831",
+  darkModeGrey: "#393e46",
+  darkModeOrange: "#fd7014",
+  darkModeBlue: "#00adb5",
+  darkModeWhite: "#eee",
   transparent: "transparent",
   todolist: "#f8efd4",
   patatap: "#f2b077",
@@ -39,63 +39,63 @@ export const YoutubeStyles = {
 
 export const Technologies = [
   {
-    name: 'HTML',
-    src: '/static/technologies/html.png',
+    name: "HTML",
+    src: "/static/technologies/html.png",
   },
   {
-    name: 'CSS',
-    src: '/static/technologies/css.png',
+    name: "CSS",
+    src: "/static/technologies/css.png",
   },
   {
-    name: 'JS',
-    src: '/static/technologies/javascript.png',
+    name: "JS",
+    src: "/static/technologies/javascript.png",
   },
   {
-    name: 'NodeJS',
-    src: '/static/technologies/node.png',
+    name: "NodeJS",
+    src: "/static/technologies/node.png",
   },
   {
-    name: 'Express',
-    src: '/static/technologies/express.png',
+    name: "Express",
+    src: "/static/technologies/express.png",
   },
   {
-    name: 'ReactJS',
-    src: '/static/technologies/react.png',
+    name: "ReactJS",
+    src: "/static/technologies/react.png",
   },
   {
-    name: 'Redux',
-    src: '/static/technologies/redux.png',
+    name: "Redux",
+    src: "/static/technologies/redux.png",
   },
   {
-    name: 'MongoDB',
-    src: '/static/technologies/mongoDB.png',
+    name: "MongoDB",
+    src: "/static/technologies/mongoDB.png",
   },
   {
-    name: 'Firebase',
-    src: '/static/technologies/firebase.png',
+    name: "Firebase",
+    src: "/static/technologies/firebase.png",
   },
   {
-    name: 'Git',
-    src: '/static/technologies/git.png',
+    name: "Git",
+    src: "/static/technologies/git.png",
   },
   {
-    name: 'Yarn',
-    src: '/static/technologies/yarn.png',
+    name: "Yarn",
+    src: "/static/technologies/yarn.png",
   },
   {
-    name: 'Npm',
-    src: '/static/technologies/npm.png',
+    name: "Npm",
+    src: "/static/technologies/npm.png",
   },
   {
-    name: 'NextJS',
-    src: '/static/technologies/next.png',
+    name: "NextJS",
+    src: "/static/technologies/next.png",
   },
+];
 
-]
 export const ArchiveInfo = [
   {
     projectName: "dotGame",
-    displayName: 'Dot Game',
+    displayName: "Dot Game",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Dot-Game",
     netlifyLink: "https://dot-game-alexandregl.netlify.app/",
@@ -106,7 +106,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "frogRace",
-    displayName: 'Simulated Frog Race',
+    displayName: "Simulated Frog Race",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Frog-Race",
     netlifyLink: "https://frog-race-alexandregl.netlify.app/",
@@ -117,7 +117,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "generatedArt",
-    displayName: 'Generated Art',
+    displayName: "Generated Art",
     technologyUsed: "",
     githubLink:
       "https://github.com/AlexandreGagnon-Lalonde/Basic-Abstract-Generative-Art",
@@ -129,7 +129,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "guessingGame",
-    displayName: 'Color Guessing Game',
+    displayName: "Color Guessing Game",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/RGB-Guessing-Game",
     netlifyLink: "https://guessing-game-alexandregl.netlify.app/",
@@ -140,7 +140,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "library",
-    displayName: 'Library Simulation',
+    displayName: "Library Simulation",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Library-display",
     netlifyLink: "https://library-display-alexandregl.netlify.app/",
@@ -151,7 +151,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "patatap",
-    displayName: 'Patatap Clone',
+    displayName: "Patatap Clone",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Tapapat",
     netlifyLink: "https://patatap-clone-alexandregl.netlify.app/",
@@ -162,7 +162,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "scoreKeeper",
-    displayName: 'Score Keeper',
+    displayName: "Score Keeper",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Score-Keeper",
     netlifyLink: "https://score-keeper-alexandregl.netlify.app/",
@@ -173,7 +173,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "sortingAlgo",
-    displayName: 'Sorting Algorithms',
+    displayName: "Sorting Algorithms",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/Sorting-Algo",
     netlifyLink: "https://sorting-algo-alexandregl.netlify.app/",
@@ -184,7 +184,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "stopwatch",
-    displayName: 'Time, StopWatch, Countdown',
+    displayName: "Time, StopWatch, Countdown",
     technologyUsed: "",
     githubLink:
       "https://github.com/AlexandreGagnon-Lalonde/Clock---Timer---Countdown",
@@ -196,7 +196,7 @@ export const ArchiveInfo = [
   },
   {
     projectName: "todolist",
-    displayName: 'To Do List',
+    displayName: "To Do List",
     technologyUsed: "",
     githubLink: "https://github.com/AlexandreGagnon-Lalonde/To-Do-List",
     netlifyLink: "https://to-do-list-alexandregl.netlify.app/",
@@ -206,3 +206,13 @@ export const ArchiveInfo = [
     },
   },
 ];
+
+export const en = {
+  about: 'About'
+}
+export const fr = {
+  about: 'À Propos'
+}
+export const sp = {
+  about: 'A Proposito'
+}

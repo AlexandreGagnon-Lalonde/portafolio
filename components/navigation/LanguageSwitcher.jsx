@@ -3,15 +3,21 @@ import { useRouter } from 'next/router';
 import Link from "next/link";
 
 export default function LanguageSwitcher() {
-let router = useRouter();
+  const router = useRouter();
+  const { locale } = router;
+
+  const handleLanguageChange = (e) => {
+    const locale = e.target.value;
+    router.push('/', '/', {locale})
+  }
+  
   return (
     <>
-    <ul style={{ color: 'red'}}>
-      {router.locales.map(locale => {
-        return (
-          <li><Link href={router.asPath} locale={locale}><a>{locale}</a></Link></li>)
-      })}
-    </ul>
+    <select onChange={handleLanguageChange} defaultValue={'en-US'} >
+      <option value={'en-US'}>En</option>
+      <option value={'fr'}>Fr</option>
+      <option value={'sp'}>Sp</option>
+    </select>
     </>
   );
 }

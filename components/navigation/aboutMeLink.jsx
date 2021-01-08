@@ -1,10 +1,19 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { en } from "../../public/constant";
+import { fr } from "../../public/constant";
+import { sp } from "../../public/constant";
 
 export default function AboutMeLink() {
+  const router = useRouter();
+  const { locale } = router;
+  const t =
+    locale === "en-US" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
   return (
     <Link href={"/#about"} passHref>
-      <NavigationLink>About</NavigationLink>
+      <NavigationLink>{t.about}</NavigationLink>
     </Link>
   );
 }

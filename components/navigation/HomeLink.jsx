@@ -1,16 +1,11 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
-export default function HomeLink () {
-  let router = useRouter();
-
-  let greeting = router.locale === 'en-US' ? 'Hello' : router.locale === 'fr' ? 'Bonjour' : router.locale === 'sp' ? 'Hola' : ''
-
-
+export default function HomeLink() {
   return (
     <Link href={"/"} passHref>
-      <NavigationLink>{greeting}</NavigationLink>
+      <NavigationLink>Alexandre GL</NavigationLink>
     </Link>
   );
 }
