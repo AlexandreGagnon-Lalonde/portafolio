@@ -5,6 +5,7 @@ import ProjectsLink from "./projectsLink";
 import ContactLink from "./contactLink";
 import HomeLink from "./HomeLink";
 import ColorMode from "./colorMode";
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
   const route = useRouter().pathname;
@@ -16,6 +17,7 @@ export default function Navigation() {
           <HomeLink />
           <Links>
             <ColorMode />
+            <LanguageSwitcher />
             <AboutMeLink />
             <ProjectsLink />
             <ContactLink />

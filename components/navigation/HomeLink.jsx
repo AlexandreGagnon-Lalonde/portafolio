@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { withTranslation } from '../../i18n'
+import { useRouter } from 'next/router';
 
-const HomeLink = ({ t }) => {
+export default function HomeLink () {
+  let router = useRouter();
+
+  let greeting = router.locale === 'en-US' ? 'Hello' : router.locale === 'fr' ? 'Bonjour' : router.locale === 'sp' ? 'Hola' : ''
+
+
   return (
     <Link href={"/"} passHref>
-      <p>{t('description')}</p>
-      <NavigationLink>Alexandre GL</NavigationLink>
+      <NavigationLink>{greeting}</NavigationLink>
     </Link>
   );
 }
@@ -26,5 +30,3 @@ const NavigationLink = styled.a`
     text-decoration: none;
   }
 `;
-
-export default withTranslation('common')(HomeLink)
