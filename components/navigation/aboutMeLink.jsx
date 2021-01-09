@@ -9,8 +9,8 @@ export default function AboutMeLink() {
   const router = useRouter();
   const { locale } = router;
   const t =
-    locale === "en-US" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
-
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+console.log(locale)
   return (
     <Link href={"/#about"} passHref>
       <NavigationLink>{t.about}</NavigationLink>

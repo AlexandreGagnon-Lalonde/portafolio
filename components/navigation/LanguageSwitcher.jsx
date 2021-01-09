@@ -8,13 +8,14 @@ export default function LanguageSwitcher() {
 
   const handleLanguageChange = (e) => {
     const locale = e.target.value;
+    localStorage.setItem('locale', locale)
     router.push('/', '/', {locale})
   }
-  
+
   return (
     <>
-    <select onChange={handleLanguageChange} defaultValue={'en-US'} >
-      <option value={'en-US'}>En</option>
+    <select onChange={handleLanguageChange} defaultValue={'en'} >
+      <option value={'en'}>En</option>
       <option value={'fr'}>Fr</option>
       <option value={'sp'}>Sp</option>
     </select>
