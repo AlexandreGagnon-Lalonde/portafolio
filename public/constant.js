@@ -208,11 +208,134 @@ export const ArchiveInfo = [
 ];
 
 export const en = {
-  about: 'About'
+  mainPage: {
+    hello: '',
+    nameKey: '',
+    nameValue: '',
+    jobKey: '',
+    jobValue: '',
+    introFirstParagraph: '',
+    introSecondParagraph: '',
+    OBA: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+    Lungor: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+    Archive: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+  },
+  navBar: {
+    about: 'About',
+    project: 'Projects',
+    contact: 'Contact',
+  },
+  OBA: {
+    title: 'OnlineBookingApplication',
+    generalInforFirstPart: '',
+    generalInforSecondPart: '',
+    purposeFirstParagraph: '',
+    purposeSecondParagraph: '',
+    contentText: '',
+  },
+  ECommerce: {
+    title: '',
+    firstParagraph: '',
+    secondParagraph: '',
+  }
 }
 export const fr = {
-  about: 'À Propos'
+  mainPage: {
+    hello: '',
+    nameKey: '',
+    nameValue: '',
+    jobKey: '',
+    jobValue: '',
+    introFirstParagraph: '',
+    introSecondParagraph: '',
+    OBA: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+    Lungor: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+    Archive: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+  },
+  navBar: {
+    about: 'À Propos',
+    project: 'Projets',
+    contact: 'Contact',
+  },
+  OBA: {
+    title: 'ApplicationPourRéserverEnLigne',
+    generalInforFirstPart: '',
+    generalInforSecondPart: '',
+    purposeFirstParagraph: '',
+    purposeSecondParagraph: '',
+    contentText: '',
+  },
+  ECommerce: {
+    title: '',
+    firstParagraph: '',
+    secondParagraph: '',
+  }
 }
 export const sp = {
-  about: 'A Proposito'
+  mainPage: {
+    hello: '',
+    nameKey: '',
+    nameValue: '',
+    jobKey: '',
+    jobValue: '',
+    introFirstParagraph: '',
+    introSecondParagraph: '',
+    OBA: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+    Lungor: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+    Archive: {
+      title: '',
+      continue: '',
+      summary: '',
+    },
+  },
+  navBar: {
+    about: 'Sobre',
+    project: 'Proyectos',
+    contact: 'Contacto',
+  },
+  OBA: {
+    title: 'AplicaciónParaReservarEnLínea',
+    generalInforFirstPart: '',
+    generalInforSecondPart: '',
+    purposeFirstParagraph: '',
+    purposeSecondParagraph: '',
+    contentText: '',
+  },
+  ECommerce: {
+    title: '',
+    firstParagraph: '',
+    secondParagraph: '',
+  }
 }

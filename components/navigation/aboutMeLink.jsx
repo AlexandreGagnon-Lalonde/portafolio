@@ -13,7 +13,7 @@ export default function AboutMeLink() {
 
   return (
     <Link href={"/#about"} passHref>
-      <NavigationLink>{translatedLanguage.about}</NavigationLink>
+      <NavigationLink>{translatedLanguage.navBar.about}</NavigationLink>
     </Link>
   );
 }
