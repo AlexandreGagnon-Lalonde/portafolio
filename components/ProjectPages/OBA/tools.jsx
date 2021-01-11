@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import TechnologiesAnimation from "./TechnologiesAnimation";
+import { en } from "../../../public/constant";
+import { fr } from "../../../public/constant";
+import { sp } from "../../../public/constant";
 
 export default function Tools() {
-  return (
+  const locale = localStorage.getItem("locale");
+  const translatedLanguage =
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
+    return (
     <Container>
-      <AppTitle>OnlineBookingApplication</AppTitle>
+      <AppTitle>{translatedLanguage.OBA.title}</AppTitle>
       <GeneralInfoFirstPart>
         I personally chose to do this project from scratch as the last of my
         bootcamp to recreate and optimize a platform I often use at the gym I go
@@ -39,7 +46,7 @@ const AppTitle = styled.h3`
   font-variant: small-caps;
   text-transform: none;
   margin: 60px 0 40px 60px;
-  color: ${props => props.theme.projectPageTitle};
+  color: ${(props) => props.theme.projectPageTitle};
 
   @media (max-width: 768px) {
     margin: 60px auto 40px auto;
