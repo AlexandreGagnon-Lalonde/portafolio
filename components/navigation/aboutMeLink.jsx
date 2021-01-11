@@ -8,12 +8,12 @@ import { sp } from "../../public/constant";
 export default function AboutMeLink() {
   const router = useRouter();
   const { locale } = router;
-  const t =
+  const translatedLanguage =
     locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
-console.log(locale)
+
   return (
     <Link href={"/#about"} passHref>
-      <NavigationLink>{t.about}</NavigationLink>
+      <NavigationLink>{translatedLanguage.about}</NavigationLink>
     </Link>
   );
 }
