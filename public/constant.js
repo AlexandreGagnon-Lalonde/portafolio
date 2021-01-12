@@ -224,9 +224,9 @@ export const en = {
     introSecondParagraph5: "fast-learner",
     introSecondParagraph6: " are the most frequent words you would hear if you asked someone who knows me to describe me. Coding makes me feel like a child again, it makes me feel like i'm playing with Legos! You have so many different blocks and so many paths you can take to create something cool.",
     OBA: {
-      title: '',
-      continue: '',
-      summary: '',
+      title: 'OBA',
+      continue: 'Continue reading',
+      summary: 'Online platform that allows gym members to register for some specific classes and interact between eachother.',
     },
     Lungor: {
       title: '',

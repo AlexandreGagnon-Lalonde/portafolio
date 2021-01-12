@@ -1,20 +1,24 @@
 import styled from "styled-components";
+import { useRouter } from "next/router";
+import { en } from "../../../../public/constant";
+import { fr } from "../../../../public/constant";
+import { sp } from "../../../../public/constant";
 
 export default function OBADetails() {
+  const router = useRouter();
+  const { locale } = router;
+  const translatedLanguage =
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
   return (
     <ProjectDetails>
       <ProjectHeader>
-        <ProjectTitle>OBA</ProjectTitle>{" "}
-        <ProjectLink href={"/projects/oba"}>Continue reading</ProjectLink>
+        <ProjectTitle>{translatedLanguage.mainPage.OBA.title}</ProjectTitle>
+        <ProjectLink href={"/projects/oba"}>
+          {translatedLanguage.mainPage.OBA.continue}
+        </ProjectLink>
       </ProjectHeader>
-      <ProjectBio>
-        Online platform that allows gym members to register for some specific
-        classes. Users can interact with eachothers through private messages and
-        they can leave comments every day on the workout of the day (WOD). To
-        allow members to give anonymous (or not) feedback there is a suggestion
-        box on the homepage and the admin is able to see all of them on his
-        profile page.
-      </ProjectBio>
+      <ProjectBio>{translatedLanguage.mainPage.OBA.summary}</ProjectBio>
     </ProjectDetails>
   );
 }
