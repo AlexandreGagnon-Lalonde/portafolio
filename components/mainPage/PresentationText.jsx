@@ -1,26 +1,32 @@
 import styled from "styled-components";
+import { useRouter } from "next/router";
+import { en } from "../../public/constant";
+import { fr } from "../../public/constant";
+import { sp } from "../../public/constant";
 
 export default function PresentationText() {
+  const router = useRouter();
+  const { locale } = router;
+  const translatedLanguage =
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
   return (
     <TextContainer>
       <FirstParagraph>
-        Look on the right! This is me. You might find my shirt strange... I was
-        in Thailand after the 14th IDBF World Dragon Boat Racing Championships,
-        but that story is for some other time. The reason you're here is
-        probably because I can help you with <Emphasis>&lt;Dev&gt;</Emphasis>
-        developing a website
-        <Emphasis>&lt;/Dev&gt;</Emphasis>. Well, look no further! Under your
-        eyes is my web portfolio and everything you need to know about my
-        skills.{" "}
+        {translatedLanguage.mainPage.introFirstParagraph1}
+        <Emphasis>&lt;Dev&gt;</Emphasis>
+        {translatedLanguage.mainPage.introFirstParagraph2}
+        <Emphasis>&lt;/Dev&gt;</Emphasis>
+        {translatedLanguage.mainPage.introFirstParagraph3}
       </FirstParagraph>
       <SecondParagraph>
-        Before I let you go explore my work let me tell you a little bit about
-        myself. <Emphasis>Disciplined</Emphasis>, <Emphasis>adaptable</Emphasis>{" "}
-        and <Emphasis>fast-learner</Emphasis> are the most frequent words you
-        would hear if you asked someone who knows me to describe me. Coding
-        makes me feel like a child again, it makes me feel like i'm playing with
-        Legos! You have so many different blocks and so many paths you can take
-        to create something cool.
+        {translatedLanguage.mainPage.introSecondParagraph1}
+        <Emphasis>{translatedLanguage.mainPage.introSecondParagraph2}</Emphasis>
+        ,{" "}
+        <Emphasis>{translatedLanguage.mainPage.introSecondParagraph3}</Emphasis>{" "}
+        {translatedLanguage.mainPage.introSecondParagraph4}
+        <Emphasis>{translatedLanguage.mainPage.introSecondParagraph5}</Emphasis>
+        {translatedLanguage.mainPage.introSecondParagraph6}
       </SecondParagraph>
     </TextContainer>
   );
