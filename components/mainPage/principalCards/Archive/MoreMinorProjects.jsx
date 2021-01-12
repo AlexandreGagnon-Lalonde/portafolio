@@ -1,7 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { useRouter } from "next/router";
+import { en } from "../../../../public/constant";
+import { fr } from "../../../../public/constant";
+import { sp } from "../../../../public/constant";
 
 export default function MoreMinorProjects() {
+  const router = useRouter();
+  const { locale } = router;
+  const translatedLanguage =
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
   return (
     <ProjectContainer>
       <ImageContainer>
@@ -9,12 +18,14 @@ export default function MoreMinorProjects() {
       </ImageContainer>
       <ProjectDetails>
         <ProjectHeader>
-          <ProjectTitle>Archive</ProjectTitle>
-          <ProjectLink href={"/archive"}>Continue reading</ProjectLink>
+          <ProjectTitle>
+            {translatedLanguage.mainPage.Archive.title}
+          </ProjectTitle>
+          <ProjectLink href={"/archive"}>
+            {translatedLanguage.mainPage.Archive.continue}
+          </ProjectLink>
         </ProjectHeader>
-        <ProjectBio>
-          This section contains all my other single page projects.
-        </ProjectBio>
+        <ProjectBio>{translatedLanguage.mainPage.Archive.summary}</ProjectBio>
       </ProjectDetails>
     </ProjectContainer>
   );

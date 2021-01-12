@@ -234,9 +234,9 @@ export const en = {
       summary: 'Work in progress',
     },
     Archive: {
-      title: '',
-      continue: '',
-      summary: '',
+      title: 'Archive',
+      continue: 'Continue reading',
+      summary: 'this section contains all my other single page projects.',
     },
   },
   navBar: {
