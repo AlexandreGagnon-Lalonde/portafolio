@@ -229,9 +229,9 @@ export const en = {
       summary: 'Online platform that allows gym members to register for some specific classes and interact between eachother.',
     },
     Lungor: {
-      title: '',
-      continue: '',
-      summary: '',
+      title: 'Lungor',
+      continue: 'Continue reading',
+      summary: 'Work in progress',
     },
     Archive: {
       title: '',
