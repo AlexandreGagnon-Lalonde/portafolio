@@ -1,16 +1,29 @@
 import styled from "styled-components";
+import { useRouter } from "next/router";
+import { en } from "../../public/constant";
+import { fr } from "../../public/constant";
+import { sp } from "../../public/constant";
 
 export default function PresentationName() {
+  const router = useRouter();
+  const { locale } = router;
+  const translatedLanguage =
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
   return (
     <NameContainer>
       <Hello>
-        Hello! <ObjectEmphasis>{"{"}</ObjectEmphasis>
+        {translatedLanguage.mainPage.hello}{" "}
+        <ObjectEmphasis>{"{"}</ObjectEmphasis>
       </Hello>
       <ObjectName>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name
-        <ObjectEmphasis>:</ObjectEmphasis> Alexandre Gagnon-Lalonde, <br />{" "}
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aspiration
-        <ObjectEmphasis>:</ObjectEmphasis> Full-Stack Web Developer <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {translatedLanguage.mainPage.nameKey}
+        <ObjectEmphasis>:</ObjectEmphasis> Alexandre Gagnon-Lalonde, <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{translatedLanguage.mainPage.jobKey}
+        <ObjectEmphasis>:</ObjectEmphasis>
+        {translatedLanguage.mainPage.jobValue}
+        <br />
         <ObjectEmphasis>{"}"}</ObjectEmphasis>
       </ObjectName>
     </NameContainer>
