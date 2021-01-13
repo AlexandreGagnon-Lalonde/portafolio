@@ -1,31 +1,25 @@
 import styled from "styled-components";
 import TechnologiesAnimation from "./TechnologiesAnimation";
+import { useRouter } from "next/router";
 import { en } from "../../../public/constant";
 import { fr } from "../../../public/constant";
 import { sp } from "../../../public/constant";
 
 export default function Tools() {
-  const locale = localStorage.getItem("locale");
+  const router = useRouter();
+  const { locale } = router;
   const translatedLanguage =
     locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
 
-    return (
+  return (
     <Container>
       <AppTitle>{translatedLanguage.OBA.title}</AppTitle>
       <GeneralInfoFirstPart>
-        I personally chose to do this project from scratch as the last of my
-        bootcamp to recreate and optimize a platform I often use at the gym I go
-        to. Members can navigate through the days and the weeks to book multiple
-        classes. They can also interact with eachother privately and interact on
-        the workout of the day publicly.
+        {translatedLanguage.OBA.generalInfoFirstPart}
       </GeneralInfoFirstPart>
       <TechnologiesAnimation />
       <GeneralInfoSecondPart>
-        The two main dishes here are the calendar and the messages between
-        users. The ability to switch between a single day view to a weekly view
-        and to steer from date to date should be mandatory when building a
-        project like mine. The messaging part though is a little plus from the
-        other platforms.
+        {translatedLanguage.OBA.generalInfoSecondPart}
       </GeneralInfoSecondPart>
     </Container>
   );

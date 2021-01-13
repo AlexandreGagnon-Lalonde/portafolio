@@ -236,7 +236,7 @@ export const en = {
     Archive: {
       title: 'Archive',
       continue: 'Continue reading',
-      summary: 'this section contains all my other single page projects.',
+      summary: 'This section contains all my other single page projects.',
     },
   },
   navBar: {
@@ -246,11 +246,11 @@ export const en = {
   },
   OBA: {
     title: 'OnlineBookingApplication',
-    generalInforFirstPart: '',
-    generalInforSecondPart: '',
-    purposeFirstParagraph: '',
-    purposeSecondParagraph: '',
-    contentText: '',
+    generalInfoFirstPart: "I personally chose to do this project from scratch as the last of my bootcamp to recreate and optimize a platform I often use at the gym I go to. Members can navigate through the days and the weeks to book multiple classes. They can also interact with eachother privately and interact on the workout of the day publicly.",
+    generalInfoSecondPart: "The two main dishes here are the calendar and the messages between users. The ability to switch between a single day view to a weekly view and to steer from date to date should be mandatory when building a project like mine. The messaging part though is a little plus from the other platforms.",
+    purposeFirstParagraph: "The project is also adapted for a seemless mobile experience. The UI is pretty simple, all the boxes of content are in order of importance. Dark mode is rather popular these days. I decided to go with only the dark theme to save the users eyes since adding that functionality would've made me late for the deadline.",
+    purposeSecondParagraph: "MongoDB is the main database used to contain the data useful for the users and the classes. It would be interesting to see if SQL would be a better use rather than collecting all the users data for a specific information. The interactions between the front-end, the back-end and the database were quite straightforward, but the main issue is to structure all those interactions together to make a smooth relation between the stacks. The amount of planification required for this kind of project took me by surprise.",
+    contentText: "I would definitely take more time before getting into the core of the application before doing anything major. Whether it's the choice of packages, date picker or just general behavior. After a couple of discussions with my technical coaches, I did change my database structure a lot. This change was necessary so that I don't have any duplicated data. Obviously it's not perfect, but satisfaction is the main feeling I have looking back at this project.",
   },
   ECommerce: {
     title: '',

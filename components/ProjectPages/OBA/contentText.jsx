@@ -1,16 +1,19 @@
 import styled from "styled-components";
+import { useRouter } from "next/router";
+import { en } from "../../../public/constant";
+import { fr } from "../../../public/constant";
+import { sp } from "../../../public/constant";
 
 export default function ContentText() {
+  const router = useRouter();
+  const { locale } = router;
+  const translatedLanguage =
+    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+
   return (
     <InfoContainer>
       <ContentParagraph>
-        I would definitely take more time before getting into the core of the
-        application before doing anything major. Whether it's the choice of
-        packages, date picker or just general behavior. After a couple of
-        discussions with my technical coaches, I did change my database
-        structure a lot. This change was necessary so that I don't have any
-        duplicated data. Obviously it's not perfect, but satisfaction is the
-        main feeling I have looking back at this project.
+        {translatedLanguage.OBA.contentText}
       </ContentParagraph>
     </InfoContainer>
   );
