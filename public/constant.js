@@ -313,9 +313,9 @@ export const language = {
     },
     OBA: {
       title: "ApplicationPourRéserverEnLigne",
-      generalInforFirstPart:
+      generalInfoFirstPart:
         "J'ai personnellement choisi de faire ce projet parce que c'est une version améliorer de celle que j'utilise au centre d'entraînement que je fréquente. La plateforme a été construite de A à Z. Les utilisateurs peuvent circuler sur le calendrier en mode semaine ou en mode journée tout en ayant la possibilité de réserver leur place dans un cours. Ils peuvent aussi interagir entre eux de manière privée ou sur l'entraînement de la journée de manière publique.",
-      generalInforSecondPart:
+      generalInfoSecondPart:
         "Les deux principales caractéristiques de ce projet sont le calendrier et les messages entre les membres. La fonctionnalité de changer d'affichage de jour et de semaine est prioritaire lorsqu'on construit une plateforme de la sorte. Par contre, la possibilité d'envoyer des messages entre utilisateurs est un petit plus qui permet à tout le monde de renforcer l'esprit convivial des membres du gym.",
       purposeFirstParagraph:
         "L'application est adaptée pour une expérience mobile très fluide. L'interface est simple de compréhension et les boîtes de contenus sont en ordre d'importance. Le mode nuit est devenu très populaire dernièrement. J'ai donc décidé, par contrainte de temps, que ce soit le seul mode de couleur.",

@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { language } from "../../public/constant";
 
 export default function ProjectsLink() {
+  const router = useRouter();
+  let locale = localStorage.getItem('locale') || router.locale;
+  const translatedLanguage =
+    locale === "en" ? language.en : locale === "fr" ? language.fr : locale === "sp" ? language.sp : "";
+
   return (
     <Link href={"/#project"} passHref>
-      <NavigationLink>Projects</NavigationLink>
+      <NavigationLink>{translatedLanguage.navBar.project}</NavigationLink>
     </Link>
   );
 }

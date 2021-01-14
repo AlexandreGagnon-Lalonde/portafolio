@@ -1,11 +1,17 @@
 import styled from "styled-components";
 import Link from "next/link";
-import { COLORS } from "../../public/constant";
+import { useRouter } from "next/router";
+import { language } from "../../public/constant";
 
 export default function ContactLink() {
+  const router = useRouter();
+  let locale = localStorage.getItem('locale') || router.locale;
+  const translatedLanguage =
+    locale === "en" ? language.en : locale === "fr" ? language.fr : locale === "sp" ? language.sp : "";
+
   return (
     <Link href={"/#contact"} passHref>
-      <NavigationLink>Contact</NavigationLink>
+      <NavigationLink>{translatedLanguage.navBar.contact}</NavigationLink>
     </Link>
   );
 }

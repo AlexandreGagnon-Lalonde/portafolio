@@ -4,9 +4,10 @@ import { language } from "../../public/constant";
 
 export default function PresentationName() {
   const router = useRouter();
-  const { locale } = router;
+  let locale = localStorage.getItem('locale') || router.locale;
   const translatedLanguage =
     locale === "en" ? language.en : locale === "fr" ? language.fr : locale === "sp" ? language.sp : "";
+
 
   return (
     <NameContainer>

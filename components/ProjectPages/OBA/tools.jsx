@@ -4,8 +4,7 @@ import { useRouter } from "next/router";
 import { language } from "../../../public/constant";
 
 export default function Tools() {
-  const router = useRouter();
-  const { locale } = router;
+  const locale = localStorage.getItem('locale')
   const translatedLanguage =
     locale === "en" ? language.en : locale === "fr" ? language.fr : locale === "sp" ? language.sp : "";
 
