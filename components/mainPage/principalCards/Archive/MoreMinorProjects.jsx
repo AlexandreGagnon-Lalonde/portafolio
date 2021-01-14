@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-import { en } from "../../../../public/constant";
-import { fr } from "../../../../public/constant";
-import { sp } from "../../../../public/constant";
+import { language } from "../../../../public/constant";
 
 export default function MoreMinorProjects() {
   const router = useRouter();
   const { locale } = router;
   const translatedLanguage =
-    locale === "en" ? en : locale === "fr" ? fr : locale === "sp" ? sp : "";
+    locale === "en" ? language.en : locale === "fr" ? language.fr : locale === "sp" ? language.sp : "";
 
   return (
     <ProjectContainer>
