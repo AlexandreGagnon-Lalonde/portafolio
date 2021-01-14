@@ -313,11 +313,16 @@ export const language = {
     },
     OBA: {
       title: "ApplicationPourRéserverEnLigne",
-      generalInforFirstPart: "",
-      generalInforSecondPart: "",
-      purposeFirstParagraph: "",
-      purposeSecondParagraph: "",
-      contentText: "",
+      generalInforFirstPart:
+        "J'ai personnellement choisi de faire ce projet parce que c'est une version améliorer de celle que j'utilise au centre d'entraînement que je fréquente. La plateforme a été construite de A à Z. Les utilisateurs peuvent circuler sur le calendrier en mode semaine ou en mode journée tout en ayant la possibilité de réserver leur place dans un cours. Ils peuvent aussi interagir entre eux de manière privée ou sur l'entraînement de la journée de manière publique.",
+      generalInforSecondPart:
+        "Les deux principales caractéristiques de ce projet sont le calendrier et les messages entre les membres. La fonctionnalité de changer d'affichage de jour et de semaine est prioritaire lorsqu'on construit une plateforme de la sorte. Par contre, la possibilité d'envoyer des messages entre utilisateurs est un petit plus qui permet à tout le monde de renforcer l'esprit convivial des membres du gym.",
+      purposeFirstParagraph:
+        "L'application est adaptée pour une expérience mobile très fluide. L'interface est simple de compréhension et les boîtes de contenus sont en ordre d'importance. Le mode nuit est devenu très populaire dernièrement. J'ai donc décidé, par contrainte de temps, que ce soit le seul mode de couleur.",
+      purposeSecondParagraph:
+        "MongoDB est la base de données principale utilisée pour contenir toute l'information nécessaire au bon déroulement de l'application. Ce serait intéressant de voir si une base de données SQL serait mieux adaptée pour notre cas. Présentement toute l'information d'un utilisateur est envoyé, même lorsque non nécessaire. L'interaction entre le front-end et le back-end est très simple, par contre la principale difficulté était de structurer toutes ces interactions pour avoir une utilisation fluide de l'application. La quantité de préparation requise pour ce genre de projet m'a pris par surprise.",
+      contentText:
+        "Pour mes prochaines réalisations je prendrai certainement plus de temps pour planifier la structure générale du projet. Que se soit le choix des packages NPM, du calendrier ou simplement de l'allure de l'application, il est important de bien y réfléchir avant de débuter pour s'assurer d'avoir une bonne base. Après plusieurs discussions avec mes mentors, j'ai beaucoup modifié l'organisation de mes données. Pour optimiser la performance de l'application, il était important de ne pas avoir deux fois la même information et de ne pas répéter une étape plusieurs fois. C'est évident que mon projet n'est pas parfait, mais je suis très satisfait du résultat obtenu compte tenu du temps alloué.",
     },
     ECommerce: {
       title: "",
