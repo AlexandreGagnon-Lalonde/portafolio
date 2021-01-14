@@ -223,7 +223,7 @@ export const language = {
       introSecondParagraph1:
         "Before I let you go explore my work let me tell you a little bit about myself. ",
       introSecondParagraph2: "Disciplined",
-      introSecondParagraph3: "adaptable ",
+      introSecondParagraph3: "adaptable",
       introSecondParagraph4: "and ",
       introSecondParagraph5: "fast-learner",
       introSecondParagraph6:
@@ -271,24 +271,29 @@ export const language = {
   },
   fr: {
     mainPage: {
-      hello: "Salut!",
+      hello: "Bonjour!",
       nameKey: "nom",
       nameValue: "Alexandre Gagnon-Lalonde",
       jobKey: "vocation",
       jobValue: " Développeur Web Full-Stack,",
-      introFirstParagraph1: "",
-      introFirstParagraph2: "",
-      introFirstParagraph3: "",
-      introSecondParagraph1: "",
-      introSecondParagraph2: "",
-      introSecondParagraph3: "",
-      introSecondParagraph4: "",
-      introSecondParagraph5: "",
-      introSecondParagraph6: "",
+      introFirstParagraph1:
+        "Regarder à droite! C'est moi. Vous allez peut-être trouvé mon chandail étrange... J'étais en Thaïlande après les 14ième Championnats Mondiaux de course de Bateau Dragon, mais laissons cette histoire pour une autre fois. Vous êtes probablement ici parce que je peux vous aider à ",
+      introFirstParagraph2: "développer un site web",
+      introFirstParagraph3:
+        ". Ne cherchez pas plus loin! Sous vos yeux se trouve mon portfolio web et tout ce dont vous avez besoin de savoir à propos de mes habilités techniques.",
+      introSecondParagraph1:
+        "Avant que je vous laisse explorer mon portfolio, laissez-moi vous en dire un peu plus sur moi. ",
+      introSecondParagraph2: "Discipliné",
+      introSecondParagraph3: "versatile",
+      introSecondParagraph4: "et ",
+      introSecondParagraph5: "apprentissage rapide",
+      introSecondParagraph6:
+        " sont les caractéristiques les plus fréquentes que l'on peut entendre lorsqu'on demande à quelqu'un de me décrire. La programmation me ramène en enfance, elle me fait sentir comme si je jouais encore avec des Legos. Un monde rempli de couleur et de liberté, on est capable de construire tout et n'importe quoi.",
       OBA: {
         title: "OBA",
         continue: "Poursuivez la lecture",
-        summary: "Plateforme en ligne qui permet aux membres d'une salle d'entraînement de s'enregistrer pour des classes spécifiques et d'interagir entre eux.",
+        summary:
+          "Plateforme en ligne qui permet aux membres d'une salle d'entraînement de s'enregistrer pour des classes spécifiques et d'interagir entre eux.",
       },
       Lungor: {
         title: "Lungor",
