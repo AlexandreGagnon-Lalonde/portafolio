@@ -288,17 +288,17 @@ export const language = {
       OBA: {
         title: "OBA",
         continue: "Poursuivez la lecture",
-        summary: "",
+        summary: "Plateforme en ligne qui permet aux membres d'une salle d'entraînement de s'enregistrer pour des classes spécifiques et d'interagir entre eux.",
       },
       Lungor: {
-        title: "",
+        title: "Lungor",
         continue: "Poursuivez la lecture",
-        summary: "",
+        summary: "Travail en cours",
       },
       Archive: {
-        title: "",
+        title: "Archive",
         continue: "Poursuivez la lecture",
-        summary: "",
+        summary: "Cette section contient tous mes autres projets d'une page",
       },
     },
     navBar: {
