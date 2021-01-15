@@ -4,10 +4,15 @@ import { language } from "../../public/constant";
 
 export default function PresentationName() {
   const router = useRouter();
-  let locale = localStorage.getItem('locale') || router.locale;
+  let locale = localStorage.getItem("locale") || router.locale;
   const translatedLanguage =
-    locale === "en" ? language.en : locale === "fr" ? language.fr : locale === "sp" ? language.sp : "";
-
+    locale === "en"
+      ? language.en
+      : locale === "fr"
+      ? language.fr
+      : locale === "sp"
+      ? language.sp
+      : "";
 
   return (
     <NameContainer>
@@ -31,7 +36,7 @@ export default function PresentationName() {
 
 const Hello = styled.h2`
   @media (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 `;
 const NameContainer = styled.div`
@@ -47,6 +52,6 @@ const ObjectName = styled.h2`
 
   @media (max-width: 768px) {
     margin-bottom: 0;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 `;

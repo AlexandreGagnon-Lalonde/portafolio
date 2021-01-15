@@ -5,7 +5,7 @@ import ProjectsLink from "./projectsLink";
 import ContactLink from "./contactLink";
 import HomeLink from "./HomeLink";
 import ColorMode from "./colorMode";
-import LanguageSwitcher from './LanguageSwitcher';
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navigation() {
   const route = useRouter().pathname;
@@ -17,10 +17,10 @@ export default function Navigation() {
           <HomeLink />
           <Links>
             <ColorMode />
-            <LanguageSwitcher />
             <AboutMeLink />
             <ProjectsLink />
             <ContactLink />
+            <LanguageSwitcher />
           </Links>
         </ExpandedNavBar>
       ) : (
@@ -58,11 +58,11 @@ const MinimizedNavBar = styled.div`
   z-index: 1;
 `;
 const Links = styled.div`
-  width: 300px;
+  width: 350px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   @media (max-width: 768px) {
-    width: 250px;
+    width: 300px;
   }
 `;
