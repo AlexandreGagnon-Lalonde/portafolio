@@ -8,12 +8,12 @@ export default function ECommerce() {
   return (
     <>
       <Head>
-        <title>E-Commerce</title>
+        <title>Collab</title>
       </Head>
       <Navigation />
       <ScrollToTopButton />
       <ProjectHeader>
-        <AppTitle>Wearables E-Commerce</AppTitle>
+        <AppTitle>Decision Maker App</AppTitle>
         <BagelzLogo>
           <Image
             src={"/static/E-commerce/bagel.gif"}

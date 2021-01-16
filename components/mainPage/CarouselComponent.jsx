@@ -3,12 +3,16 @@ import MainProjectLungor from "./principalCards/Lungor/MainProjectLungor";
 import MainProjectOBA from "./principalCards/OBA/MainProjectOBA";
 import MoreMinorProjects from "./principalCards/Archive/MoreMinorProjects";
 import MainProjectECommerce from "./principalCards/ECommerce/MainProjectECommerce";
+import MainProjectCollab from './principalCards/Collab/MainProjectCollab';
 import styled from "styled-components";
 
 export default function CarouselComponent() {
   return (
     <Container id={"project"}>
       <Carousel interval={null}>
+        {/* <Carousel.Item>
+          <MainProjectCollab />
+        </Carousel.Item> */}
         <Carousel.Item>
           <MainProjectOBA />
         </Carousel.Item>
